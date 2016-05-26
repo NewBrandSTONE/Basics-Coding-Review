@@ -75,6 +75,10 @@ enum ElementType {
 
 **Java代码中的三种状态**
 ![](Java代码的三种状态.png)
+
+**Java代码的三种状态详解**
+![](Java代码的三种状态详细分析.png)
+
 ---
 
 ##4.自定义注解
@@ -125,6 +129,10 @@ public @interface 注解名 {
 
 ```java
 public boolean isAnnotationPresent(Class annotationClass); // 判断该成员上是否有指定的注解标注。
+
+public Annotation getAnnotation(Class annotationClass); // 获取该成员上的指定的注解
+
+public Annotation[] getAnnotation(); // 获取该成员上所有的注解
 ```
 
 
