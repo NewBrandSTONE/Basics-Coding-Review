@@ -87,6 +87,11 @@ public @interface MyAnno {
   Gender sex() default Gender.OTHER;
 }
 ```
+**注意：
+1.注解中属性的类型：**
+  *基本数据类型，String，Class，注解，枚举，一位数组*
+**2.
+**
 
 
 
