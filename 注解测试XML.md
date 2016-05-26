@@ -142,6 +142,10 @@ public class MyAnnoDemo {
     // 获取到MyAnnoDemo类的字节码对象
     Class clz = MyAnnoDemo.class;
     // 判断当前类上是否有MyAnno注解
+    if (clz.isAnnotationPresent(MyAnno.class)) {
+      Annotation anno = clz.getAnnotation(MyAnno.class);
+      MyAnno 
+    }
   }
 }
 
