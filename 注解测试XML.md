@@ -215,6 +215,18 @@ public static void end() {
 
 
 
+---
+
+##9.使用断言做测试
+测试的步骤
+```xml
+1.定义一个接口：IMath
+2.定义一个IMath的实现类：MathImpl
+3.完成测试代码
+4.完成实现类
+```
+
+
 
 
 
