@@ -104,7 +104,8 @@ public @interface MyAnno {
 ##5.注解的定义和使用
 1.定义注解：
 ```java
-
+@Target(ElementType.Type) // 表明只能贴在类，接口或者枚举中
+@Retention(RetentionPolicy.RUNTIME) // 表明存在的时期，是在Runtime的时候
 ```
 
 
