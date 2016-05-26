@@ -144,7 +144,8 @@ public class MyAnnoDemo {
     // 判断当前类上是否有MyAnno注解
     if (clz.isAnnotationPresent(MyAnno.class)) {
       Annotation annotation = clz.getAnnotation(MyAnno.class);
-      MyAnno
+      // 可以直接强转一下
+      MyAnno anno = (MyAnno) annotation;
     }
   }
 }
