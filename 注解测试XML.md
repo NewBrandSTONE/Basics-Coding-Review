@@ -4,7 +4,7 @@
 所有的Annotation都是java.lang.annotation.Annotation接口的子接口，所以Annotation是一种特殊的接口（枚举是特殊的类）;
 
 ```java
-@interface Override{} ---> interface Over extends java.lang.annotation.Annotation{}
+@interface Override{} ---> interface Override extends java.lang.annotation.Annotation{}
 ```
     
 所有的枚举类，都是java.lang.Enum类的子类。
@@ -97,6 +97,15 @@ public @interface MyAnno {
   
 **2.注解中如果需要给value属性传值，那么可以省略掉value(前提是只有value这么一个属性)
 **
+
+
+---
+
+##5.注解的定义和使用
+1.定义注解：
+```java
+  
+```
 
 
 
