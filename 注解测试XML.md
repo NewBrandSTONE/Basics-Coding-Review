@@ -167,6 +167,8 @@ public class MyAnnoDemo {
 
 ```xml
 步骤：
+1.导入Junit3.x的jar包
+2.创建一个测试类JUnit3Test，继承TestCast类
 
 ```
 
