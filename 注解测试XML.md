@@ -52,7 +52,13 @@
 ```java
 enum ElementType {
     ElementType.ANNOTATION_TYPE // 只能修饰Annotation
-    
+    ElementType.CONSTRUCTOR // 只能修饰构造器方法
+    ELementType.FIELD // 只能修饰字段（属性），包括枚举常量
+    ElementType.LOCAL_VARIABLE // 只能修饰局部变量
+    ElementType.METHOD // 只能修饰方法
+    ELementType.PACKAGE // 只能修饰包（极少使用）
+    ElementType.PARAMETER // 只能修饰参数
+    ElementType.TYPE // 只能修饰类，接口，枚举
 }
 ```
 
