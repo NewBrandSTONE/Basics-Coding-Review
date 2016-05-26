@@ -229,6 +229,10 @@ public static void end() {
 
 核心类：Assert
 
+断言需要：期望值，真实值
+
+在Eclipse中，断言成功，使用绿条表示，反之使用红条。
+
 
 
 
