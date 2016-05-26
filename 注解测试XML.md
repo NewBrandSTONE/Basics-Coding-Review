@@ -81,6 +81,11 @@ enum ElementType {
 ```java
 @Target({ ElementType.TYPE, ElementType.METHOD }) // 可以使用在类，接口，枚举，以及方法
 @Retention(RetentionPolicy.RUNTIME) // 保存到运行时
+public @interface MyAnno {
+  String value();
+  int age() default 18;
+  Gender sex() default Gender.OTHER;
+}
 ```
 
 
