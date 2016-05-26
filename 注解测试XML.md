@@ -120,6 +120,13 @@ public @interface 注解名 {
   @注解名词，但是上面那个只能贴在Target所规定的范围中
 ```
 
+3.获取注解：
+>因为注解可以贴在类，构造器，方法，字段等上面。所以可以在Class,Constructor,Field,Method类中，有操作注解相关的方法：
+
+```java
+public boolean isAnnotationPresent(Class annotationClass); // 判断该成员上是否有指定的注解标注。
+```
+
 
 
 
