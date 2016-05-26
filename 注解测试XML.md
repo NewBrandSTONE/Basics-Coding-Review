@@ -73,13 +73,14 @@ enum ElementType {
 
 > @Inherited *标注的标签可以被子类继承*
 
-
-
+**Java代码中的三种状态**
+![](Java代码的三种状态.png)
 ---
 
 ##4.自定义注解
 ```java
 @Target({ ElementType.TYPE, ElementType.METHOD }) // 可以使用在类，接口，枚举，以及方法
+@Retention(RetentionPolicy.RUNTIME) // 保存到运行时
 ```
 
 
