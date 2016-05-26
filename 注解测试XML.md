@@ -134,6 +134,18 @@ public Annotation getAnnotation(Class annotationClass); // 获取该成员上的
 
 public Annotation[] getAnnotation(); // 获取该成员上所有的注解
 ```
+示例代码
+```java
+@MyAnno(value = "Frank", age = 18)
+public class MyAnnoDemo {
+  public static void main(String[] args) {
+    // 获取到MyAnnoDemo类的字节码对象
+    Class clz = MyAnnoDemo.class;
+    // 判断当前类上是否有MyAnno注解
+  }
+}
+
+```
 
 
 
