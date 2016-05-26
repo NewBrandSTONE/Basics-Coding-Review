@@ -36,7 +36,7 @@
 
 > @Deprecated *标记已过时的成员，不推荐使用*
 
-> @SuppressWarings *抑制编译器发出的警告*
+> @SuppressWarings *抑制编译器发出的警告**代码的问题任然存在，只是把警告消除了而已***
 
 
 
