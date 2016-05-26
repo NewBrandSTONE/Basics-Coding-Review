@@ -242,6 +242,12 @@ Assert.assertEquals(message, expected, actual);
 
 
 
+---
+
+##10.XML
+定义
+>XML，是一种可扩展的标记语言。
+
 
 
 
