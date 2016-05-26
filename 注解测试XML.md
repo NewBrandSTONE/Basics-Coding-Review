@@ -95,7 +95,7 @@ public @interface MyAnno {
 
     基本数据类型，String，Class，注解，枚举，一位数组
   
-**2.
+**2.注解中如果需要给value属性传值，那么可以省略掉value(前提是只有value这么一个属性)
 **
 
 
