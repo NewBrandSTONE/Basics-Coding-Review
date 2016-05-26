@@ -106,6 +106,10 @@ public @interface MyAnno {
 ```java
 @Target(ElementType.Type) // 表明只能贴在类，接口或者枚举中
 @Retention(RetentionPolicy.RUNTIME) // 表明存在的时期，是在Runtime的时候
+public @interface 注解名 {
+  String value(); // 必须使用抽象方法，在直接中，我们称之为属性，属性使用名词表示
+  int age() default 18; // 设置默认值
+}
 ```
 
 
