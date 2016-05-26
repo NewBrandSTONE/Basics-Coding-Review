@@ -233,6 +233,13 @@ public static void end() {
 
 在Eclipse中，断言成功，使用绿条表示，反之使用红条。
 
+```java
+Assert.assertEquals(message, expected, actual);
+// message : 断言失败的提示信息，成功不会提示
+// expected : 期望值
+// actual : 真实值 
+```
+
 
 
 
