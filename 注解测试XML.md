@@ -225,6 +225,10 @@ public static void end() {
 3.完成测试代码
 4.完成实现类
 ```
+使用 <u>*断言*</u> 做测试
+
+核心类：Assert
+
 
 
 
