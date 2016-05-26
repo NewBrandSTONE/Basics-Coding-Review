@@ -49,6 +49,12 @@
 
 >@Target *表示注解可以贴在哪些位置（类，方法，构造器等等）.位置的常量封装在**ElementType枚举类中***
 
+```java
+enum ElementType {
+  
+}
+```
+
 
 
 
