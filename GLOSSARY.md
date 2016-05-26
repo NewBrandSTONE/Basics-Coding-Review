@@ -1,5 +1,2 @@
 # Glossary
 
-## qwe
-
-123
