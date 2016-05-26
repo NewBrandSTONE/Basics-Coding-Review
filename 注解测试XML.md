@@ -115,6 +115,10 @@ public @interface 注解名 {
 
   ***数据只能是：基本数据类型，String，Class，Annotation，Enum，数组***
 
+2.使用注解：
+```
+  @注解名词，但是上面那个只能贴在Target所规定的范围中
+```
 
 
 
