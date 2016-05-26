@@ -62,10 +62,9 @@ enum ElementType {
 }
 ```
 
-> @Documented 使用@Document标注的标签会保存到API文档中。
+> @Documented *使用@Document标注的标签会保存到API文档中。*
 
-> @Inherited 标注的标签可以被子类继承
-
+> @Inherited *标注的标签可以被子类继承*
 
 
 
