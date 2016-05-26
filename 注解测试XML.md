@@ -154,7 +154,7 @@ public class MyAnnoDemo {
 }
 
 ```
-**注意：MyAnno记得加上Retention(RetentionPolicy.RUNTIME)，否则编译之后就没有注释效果了**
+**注意：MyAnno记得加上Retention(RetentionPolicy.RUNTIME)，否则运行之后就没有注释效果了**
 
 
 
