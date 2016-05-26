@@ -79,7 +79,7 @@ enum ElementType {
 
 ##4.自定义注解
 ```java
-@Target({ ElementType.TYPE, ElementType.METHOD }) // 类，接口，枚举
+@Target({ ElementType.TYPE, ElementType.METHOD }) // 可以使用在类，接口，枚举，以及方法
 ```
 
 
