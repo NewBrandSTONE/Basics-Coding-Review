@@ -51,7 +51,8 @@
 
 ```java
 enum ElementType {
-  
+    ElementType.ANNOTATION_TYPE // 只能修饰Annotation
+    
 }
 ```
 
