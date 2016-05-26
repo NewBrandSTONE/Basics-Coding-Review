@@ -111,7 +111,9 @@ public @interface 注解名 {
   int age() default 18; // 设置默认值
 }
 ```
+**注意:**
 
+  ***数据只能是：基本数据类型，String，Class，Annotation，Enum，数组***
 
 
 
