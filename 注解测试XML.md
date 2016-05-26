@@ -157,7 +157,8 @@ public class MyAnnoDemo {
 **注意：MyAnno记得加上Retention(RetentionPolicy.RUNTIME)，否则运行之后就没有注释效果了**
 
 ##6.单元测试
-
+黑盒测试
+>只检查程序功能是否按照<u>*需求规格说明*</u>的规定正常使用，程序是否能适当地接受<u>*输入数据*</u>而昌盛正确的<u>*输出信息*</u>
 
 
 
