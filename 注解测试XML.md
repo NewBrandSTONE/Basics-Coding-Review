@@ -4,3 +4,5 @@
 
     @interface Override{} ---> interface Over extends java.lang.annotation.Annotation{}
 >所有的枚举类，都是java.lang.Enum类的子类。
+
+    enum Gender{} ---> class Gender extends java.lang.Enum{}
