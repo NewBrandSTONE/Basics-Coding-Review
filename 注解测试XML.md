@@ -156,6 +156,9 @@ public class MyAnnoDemo {
 ```
 **注意：MyAnno记得加上Retention(RetentionPolicy.RUNTIME)，否则运行之后就没有注释效果了**
 
+##6.单元测试
+
+
 
 
 
