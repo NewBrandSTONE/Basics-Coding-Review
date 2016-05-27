@@ -280,7 +280,8 @@ Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(f
 NodeList linkmanList = doc.getElementsByTagName("linkman");
 // 使用循环遍历linkmanList中的东西
 for (int i = 0 ; i < linkmanList.getLength(); i++) {
-  
+  // 这里直接强转成Element，因为上面使用的是getElements，实际上是要使用Element.getAttribute的方法
+  Element ele = linkmanList.item(i);
 }
 ```
 
