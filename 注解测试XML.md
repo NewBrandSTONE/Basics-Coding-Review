@@ -270,6 +270,10 @@ Document doc = builder.parse(file);
 ```
 ![](获取Document对象.png)
 
+##12.使用DOM读取XML中的信息
+```java
+
+```
 
 
 
