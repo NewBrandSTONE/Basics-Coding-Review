@@ -10,7 +10,7 @@
 所有的枚举类，都是java.lang.Enum类的子类。
 
 ```java
-    enum Gender{} ---> class Gender extends java.lang.Enum{}
+enum Gender{} ---> class Gender extends java.lang.Enum{}
 ```
 
 >*注解被用来为程序元素（类，方法成员变量等）设置元数据。*
