@@ -248,7 +248,10 @@ Assert.assertEquals(message, expected, actual);
 定义
 >XML，是一种可扩展的标记语言。
 
-
+在编写XML文档时，需要先使用文档声明来声明xml文档。并且必须出现在文档的第一行
+```xml
+<?xml version="1.0"?>
+```
 
 
 
