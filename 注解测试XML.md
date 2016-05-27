@@ -268,6 +268,7 @@ DocumentBuilder builder = fac.newDocumentBuilder();
 // 4.通过DocumentBuilder对象创建Document对象
 Document doc = builder.parse(file);
 ```
+![](获取Document对象.png)
 
 
 
