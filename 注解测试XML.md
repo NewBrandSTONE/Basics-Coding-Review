@@ -254,6 +254,20 @@ Assert.assertEquals(message, expected, actual);
 ```
 
 
+---
+
+##11.获取Document对象
+获取Document对象的步骤：
+```java
+// 1.确定文件的位置
+File file = new File("文件的绝对路径");
+// 2.创建DocumentBuilderFactory工程类的对象（工厂类中往往体现着单例模式）
+DocumentBuilderFactory fac = DocumentBuilderFactory.newInstance();
+// 3.通过工厂类对象创建DocumentBuilder对象
+DocumentBuilder builder = fac.newDocumentBuilder();
+// 4.通过DocumentBuilder对象创建Document对象
+```
+
 
 
 
