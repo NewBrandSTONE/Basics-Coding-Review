@@ -276,6 +276,11 @@ Document doc = builder.parse(file);
 File file = new File("contracts.xml");
 // 获取到Document对象用来解析XML文件
 Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file);
+// 直接读取到文件中的linkman节点
+NodeList linkmanList = doc.getElementsByTagName("linkman");
+// 使用循环遍历linkmanList中的东西
+for (int i = 0 ; i < linkmanList.getLength(); i++) {
+}
 ```
 
 
