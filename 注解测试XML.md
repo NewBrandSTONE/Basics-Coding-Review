@@ -292,7 +292,9 @@ for (int i = 0 ; i < linkmanList.getLength(); i++) {
     Node node = childNodes.item(j);
     // 对每个Node的类型进行判断，如果是ELEMENT_NODE（元素节点），就是我们要找的
     if (node.getNodeType == Node.ELEMENT_NODE) {
-      
+      // 强转一下，因为要获取到节点中的内容
+      Element ele = (Element) node;
+      // 判断这个节点是什么节点
     }
   }
 }
