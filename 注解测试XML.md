@@ -297,7 +297,10 @@ for (int i = 0 ; i < linkmanList.getLength(); i++) {
       // 判断这个节点名称是什么name,email,address,group
       if (ele.getNodeName().equals("name")) {
         System.out.println("联系人的姓名-->" + ele.getTextContent());
+      } else if (ele.getNodeName.equals("email")) {
+        System.out.println("联系人的邮箱-->" + ele.getTextContent());
       }
+      // ... 剩下的就不在过多的演示了
     }
   }
 }
