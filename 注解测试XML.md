@@ -290,7 +290,7 @@ for (int i = 0 ; i < linkmanList.getLength(); i++) {
   for (int j = 0; j < childNodes.getLength(); j++) {
     // 遍历里面的Nodes
     Node node = childNodes.item(j);
-    // 对每个Node的类型进行判断，如果是ELEMENT_NODE（元素节点）
+    // 对每个Node的类型进行判断，如果是ELEMENT_NODE（元素节点），就是我们要找的
     if (node.getNodeType == Node.ELEMENT_NODE) {
     }
   }
