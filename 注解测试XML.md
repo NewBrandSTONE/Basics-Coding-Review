@@ -288,7 +288,11 @@ for (int i = 0 ; i < linkmanList.getLength(); i++) {
   // 使用getChildNodes()方法
   NodeList childNodes = item.getChildNodes();
   for (int j = 0; j < childNodes.getLength(); j++) {
-    
+    // 遍历里面的Nodes
+    Node node = childNodes.item(j);
+    // 对每个Node的类型进行判断，如果是ELEMENT_NODE（元素节点）
+    if (node.getNodeType == Node.ELEMENT_NODE) {
+    }
   }
 }
 ```
