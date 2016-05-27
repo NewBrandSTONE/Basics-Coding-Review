@@ -282,6 +282,8 @@ NodeList linkmanList = doc.getElementsByTagName("linkman");
 for (int i = 0 ; i < linkmanList.getLength(); i++) {
   // 这里直接强转成Element，因为上面使用的是getElements，实际上是要使用Element.getAttribute的方法
   Element ele = linkmanList.item(i);
+  // 输出第一个联系人的id
+  System.out.println("第一个联系人的id-->" + ele.getAttribute("id"));
 }
 ```
 
