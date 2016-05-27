@@ -272,7 +272,10 @@ Document doc = builder.parse(file);
 
 ##12.使用DOM读取XML中的信息
 ```java
-
+// 获取到需要解析的XML文件
+File file = new File("contracts.xml");
+// 获取到Document对象用来解析XML文件
+Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file);
 ```
 
 
