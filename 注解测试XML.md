@@ -205,7 +205,7 @@ public class MyAnnoDemo {
 public static void first() {
   System.out.println("在最开始的时候执行一次");
 }
-//8.在执行的所有测试方法之后需要执行一次
+//8.在执行的所有测试方法之后需要执行一次（方法必须是静态的）
 @AfterClass
 public static void end() {
   System.out.println("在最后的时候执行一次");
