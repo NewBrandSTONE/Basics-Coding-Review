@@ -300,7 +300,7 @@ for (int i = 0 ; i < linkmanList.getLength(); i++) {
       } else if (ele.getNodeName.equals("email")) {
         System.out.println("联系人的邮箱-->" + ele.getTextContent());
       }
-      // ... 剩下的就不在过多的演示了
+      // ... 剩下的address,group就不在过多的演示了
     }
   }
 }
