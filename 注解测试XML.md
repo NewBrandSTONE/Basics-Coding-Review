@@ -266,6 +266,7 @@ DocumentBuilderFactory fac = DocumentBuilderFactory.newInstance();
 // 3.通过工厂类对象创建DocumentBuilder对象
 DocumentBuilder builder = fac.newDocumentBuilder();
 // 4.通过DocumentBuilder对象创建Document对象
+Document doc = builder.parse(file);
 ```
 
 
