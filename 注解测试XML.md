@@ -284,6 +284,9 @@ for (int i = 0 ; i < linkmanList.getLength(); i++) {
   Element ele = linkmanList.item(i);
   // 输出第一个联系人的id
   System.out.println("第一个联系人的id-->" + ele.getAttribute("id"));
+  // 继续遍历该联系人下的name,email,address,group属性
+  // 使用getChildNodes()方法
+  for (int j = 0;
 }
 ```
 
