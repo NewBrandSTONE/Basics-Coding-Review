@@ -12,4 +12,7 @@
 File f = new File("路径");
 // 2.获取DocumentBuilderFactory对象
 DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+// 3.通过工厂类获得DocumentBuilder对象
+DocumentBuilder builder = dbf.newDocumentBuilder();
+// 4.通过DocumentBuilder获取Document对象
 ```
