@@ -7,3 +7,9 @@
 >如果文件过大，那么可能造成内存溢出。
 
 解析步骤
+```java
+// 1.确定XML文件的位置。
+File f = new File("路径");
+// 2.获取DocumentBuilderFactory对象
+DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+```
