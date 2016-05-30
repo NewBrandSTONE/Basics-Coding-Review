@@ -74,10 +74,10 @@ enum ElementType {
 > @Inherited *标注的标签可以被子类继承*
 
 **Java代码中的三种状态**
-![](Java代码的三种状态.png)
+![](/Images/Java代码的三种状态.png)
 
 **Java代码的三种状态详解**
-![](Java代码的三种状态详细分析.png)
+![](/Images/Java代码的三种状态详细分析.png)
 
 ---
 
