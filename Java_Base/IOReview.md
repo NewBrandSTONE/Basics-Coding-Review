@@ -232,32 +232,39 @@ String的解码方式依靠构造方法
 	writer.close();
 ```
 ##属性文件
->Properties类表示了一个持久的属性集。Properties可保存在流中或者从流中加载。属性列表中每个键以及对应值都是一个字符串。
+`Properties`类表示了一个持久的属性集。
+
+`Properties`可保存在流中或者从流中加载。
+
+属性列表中每个键以及对应值都是一个字符串。
+```java
 	public class Properties extends Hashtable<Object, Object>
 	// 这个类是专门用于操作属性文件properties的
-
->为什么要使用文件属性？
+```
+为什么要使用文件属性？
 >1.解除硬编码，源代码是要编译的。
+
 >2.改善程序的结构，有利于日后的维护。
 
->构造方法
+###构造方法
+`Properties();` 创建一个无默认值得空属性列表。
 
-	Properties();// 创建一个无默认值得空属性列表。
-
->常用方法
-
+####常用方法
+```java
 	void load(InputStream inStream);
 	// 从流中读取属性列表（键和元素对）。
 	String getProperty(String key);
 	// 用指定的键在此属性列表中搜索属性。
+```
 
->属性文件的写法
-
+####属性文件的写法
+```xml
 	src=c:/setup.exe
 	dest=c:/1.exe
+```
 
->示例代码
-
+示例代码
+```java
 	// 使用Properties文件
 	Properties p = new Properties();
 	// 从流中去读取属性的配置信息
@@ -269,26 +276,27 @@ String的解码方式依靠构造方法
 	InputStream is = new FileInputStream(src);
 	String dest = p.getProperty("dest");
 	OutputStream out = new FileOutputStream(dest);
-
+```
 ##ObjectOutputStream
+###用途
 >把内存中的对象输出到文件或者把文件中保存的对象输入到内存
 
+###目的
+>为了进程之间的数据交流
 
->目的是为了进程之间的数据交流
 
-
->构造方法
-
+###构造方法
+```java
 	ObjectOutputStream(OutputStream out);
 	// 创建写入指定OutputStream的ObjectOutputStream
-
->重用方法
-
+```
+###重用方法
+```java
 	void writeObject(Object obj);
 	// 将指定的对象写入ObjectOutputStream。
-
->示例代码
-
+```
+###示例代码
+```java
 	// 使用对象的输出流
 	ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("c:/1.txt"));
 	// 写数据
@@ -297,30 +305,29 @@ String的解码方式依靠构造方法
 	out.writeObject(u);
 	// 把内存中的对象写出到硬盘-->序列化
 	out.close();
-
->对象要序列化必须实现序列化接口
-
+```
+###对象要序列化必须实现序列化接口
+```java
 	public class User implements Serializable {
 		String name;
 		int age;
 	}
-
+```
 ##ObjectInputStream
-
+###序列化与反序列化之间的关系
 >把内存中的对象写入硬盘-->序列化
-
 
 >把硬盘中的对象读入内存-->反序列化
 
  
->构造方法
-
+###构造方法
+```java
 	ObjectInputStream(InputStream in);
 	// 创建从指定InputStream读取的ObjectInpuStream对象。
-
+```
 ##内存流
 
->ByteArrayOutputStream:
+###ByteArrayOutputStream:
 
 
 
