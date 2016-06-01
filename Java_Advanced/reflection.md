@@ -44,5 +44,6 @@ Class<String> clz2 = String.class; // clz2表示的是String的字节码
 * 获取到Class实例的三种方式
   * `类型.class`（就是一份字节码）
   * `Class.forName(String className);`根据一个类的全限定名来构建Class对象
+  * 每一个对象都有`getClass()的方法`
 
 
