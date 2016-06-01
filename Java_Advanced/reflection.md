@@ -46,6 +46,6 @@ Class<String> clz2 = String.class; // clz2表示的是String的字节码
   * `Class.forName(String className);`根据一个类的全限定名来构建Class对象
   * 每一个对象都有`getClass()的方法`
 
-
+>***反射很强大，但是非常消耗性能，主要是为了做工具和框架是用的***。
 
 
