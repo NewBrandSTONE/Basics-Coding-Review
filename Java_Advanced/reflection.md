@@ -48,4 +48,17 @@ Class<String> clz2 = String.class; // clz2表示的是String的字节码
 
 >***反射很强大，但是非常消耗性能，主要是为了做工具和框架是用的***。
 
+```java
+// 同一个类在JVM中只有一份字节码;
 
+//第一种方式：数据类型.class
+Class<User> clz1 = User.class;
+
+// 第二种方式:Class.forName(String className);
+Class<?> clz2 = Class.forName("cn.itsource.User");
+
+// 第三种方式:对象.getClass();得到对象的真实类型
+User u = new User();
+Class clz3 = u.getClass();
+
+```
