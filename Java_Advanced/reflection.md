@@ -12,4 +12,8 @@ static Class<?> forName(String class className); // 获取对应类的Class实�
 T newInstance(); // 创建对应类的对象（该类中必须有一个公共无参数的构造器）
 String getName(); //获取类的权限定名
 String getSimpleName(); //获取类的简单名称
+Constructor<?>[] getConstructors(); // 获取当前类中所有的公共构造器
+COnstructor<T> getConstructor(Class<?> ...parameterTypes); // 获取当前类中指定的构造方法
+Method[] getMethods(); // 获取当前类中所有的公共方法（包括从父类中继承过来的方法）
+
 ```
