@@ -37,7 +37,6 @@ Class<String> clz2 = String.class; // clz2表示的是String的字节码
 ```
 
 
-
 * `Class`实例：
 
 >JVM中一份字节码
