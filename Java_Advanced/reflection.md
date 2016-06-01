@@ -9,6 +9,7 @@
 //Class:表示所有的类信息
 // 获取对应类的Class实例
 static Class<?> forName(String class className); // 获取对应类的Class实例
-
 T newInstance(); // 创建对应类的对象（该类中必须有一个公共无参数的构造器）
+String getName(); //获取类的权限定名
+String getSimpleName(); //获取类的简单名称
 ```
