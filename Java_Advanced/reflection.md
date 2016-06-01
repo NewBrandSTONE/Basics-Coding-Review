@@ -31,6 +31,11 @@ Object invoke(Object obj, Object ...args); //调用指定的方法
 >
 >为了明确区分出`Class`实例表示的是谁的字节码，`Class`提供了`泛型`
 
+```java
+Class<Date> clzl = Date.class; //clzl表示的是Date的字节码
+Class<String> clz2 = String.class; // clz2表示的是String的字节码
+```
+
 
 
 * `Class`实例：
