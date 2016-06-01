@@ -6,5 +6,7 @@
 * 反射中常用的API
 
 ```java
-Class:表示所有的类信息
+//Class:表示所有的类信息
+// 获取对应类的Class实例
+static Class<?> forName(String class className) //
 ```
