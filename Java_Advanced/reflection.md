@@ -61,4 +61,5 @@ Class<?> clz2 = Class.forName("cn.itsource.User");
 User u = new User();
 Class clz3 = u.getClass();
 
+//clz1 == clz2 == clz3; 因为表示都是JVM中共同的一份字节码(User.class)
 ```
