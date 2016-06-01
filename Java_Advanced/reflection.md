@@ -16,4 +16,5 @@ Constructor<?>[] getConstructors(); // 获取当前类中所有的公共构造�
 COnstructor<T> getConstructor(Class<?> ...parameterTypes); // 获取当前类中指定的构造方法
 Method[] getMethods(); // 获取当前类中所有的公共方法（包括从父类中继承过来的方法）
 Method getMethod(String name, Class<?> ...parameterTypes); // 获取指定的类方法
+Method getDeclaredMethods(); //获取当前类中所有方法，和访问权限无关
 ```
