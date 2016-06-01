@@ -64,6 +64,13 @@ Class clz3 = u.getClass();
 
 >在八大基本数据类型的包装类和Void类中都有一个常量：TYPE
 
+```java
+  Integer.Type-->int.class
+  Void.Type-->void.class
+  
+  Integer.Type == int.class; // true
+  Integer.Type == Integer.class; // false
+```
 
 
 
