@@ -10,5 +10,5 @@
 // 获取对应类的Class实例
 static Class<?> forName(String class className); // 获取对应类的Class实例
 
-T newInstance(); // 创建对应类的对象
+T newInstance(); // 创建对应类的对象（该类中必须有一个公共无参数的构造器）
 ```
