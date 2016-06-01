@@ -47,3 +47,5 @@ Class<String> clz2 = String.class; // clz2表示的是String的字节码
   * 每一个对象都有`getClass()的方法`
 
 
+
+
