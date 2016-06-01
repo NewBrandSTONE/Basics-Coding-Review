@@ -15,5 +15,5 @@ String getSimpleName(); //获取类的简单名称
 Constructor<?>[] getConstructors(); // 获取当前类中所有的公共构造器
 COnstructor<T> getConstructor(Class<?> ...parameterTypes); // 获取当前类中指定的构造方法
 Method[] getMethods(); // 获取当前类中所有的公共方法（包括从父类中继承过来的方法）
-Method getMethod(String name, Class<?> ...parameterTypes)
+Method getMethod(String name, Class<?> ...parameterTypes); // 获取指定的类方法
 ```
