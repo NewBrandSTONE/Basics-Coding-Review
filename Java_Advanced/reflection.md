@@ -24,4 +24,7 @@ Object invoke(Object obj, Object ...args); //调用指定的方法
 //参数:obj,该方法所属的对象，如果是静态方法则传入null;args,调用方法所需的实际参数
 ```
 
+#Class类和Class的实例
+* Class类：
 
+>用于描述一切类/接口。枚举是一种类，注解是一种接口。
