@@ -19,4 +19,7 @@ Method getMethod(String name, Class<?> ...parameterTypes); // 获取指定的类
 Method[] getDeclaredMethods(); //获取当前类中所有方法，和访问权限无关
 Method getDeclaredMethod(String name, Class<?> ...parameterTypes);
 // 获取指定的类方法，和访问权限无关
+
+Object invoke(Object obj, Object ...args); //调用指定的方法
+//参数:obj,该方法所属的对象，如果是静态方法则传入null;args,调用方法所需的实际参数
 ```
