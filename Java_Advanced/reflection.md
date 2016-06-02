@@ -228,5 +228,7 @@ pubic void testMethods() {
 
 调用方法
 ```java
+// 调用当前Method所表示的方法
+// 参数:obj(被调用方法底层所属对象);args(传递的参数)
 public Object invoke(Object obj,Object.. args);
 ```
