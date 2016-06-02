@@ -164,5 +164,6 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
   * `API`中`AccessibleObject`的介绍
   
     > `AccessibleObject` 类是`File``Method`和`Constructor`对象的基类。在使用Field、Method或者Constructor对来来设置或者获取访问字段、调用方法或者创建和初始化类的实例的时候，会执行***访问检查***。
-
+    >
+    >在ACcessibleObject中提供了一个方法`setAccessible(boolean flag)`方法来设置是否忽略底层的访问检查`flag:true`表示忽略访问检查，`false表示要检查（缺省值）`
 
