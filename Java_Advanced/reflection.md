@@ -167,3 +167,14 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
     >
     >在ACcessibleObject中提供了一个方法`setAccessible(boolean flag)`方法来设置是否忽略底层的访问检查`flag:true`表示忽略访问检查，`false表示要检查（缺省值）`
 
+##获取类中的方法
+
+  * 使用反射获取某一个勒种的方法：
+    * 找到获取方法所在类的字节码对象
+    * 摘到需要被获取的方法
+
+`Class`类中常用方法：
+```java
+// 获取包括自身和继承过来的所有public方法
+public Method[] getMethods();
+```
