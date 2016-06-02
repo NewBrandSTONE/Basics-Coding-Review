@@ -225,3 +225,8 @@ pubic void testMethods() {
   * 找到被调用方法所在的字节码
   * 获取到被调用的方法对象
   * 调用该方法
+
+调用方法
+```java
+public Object invoke(Object obj,Object.. args);
+```
