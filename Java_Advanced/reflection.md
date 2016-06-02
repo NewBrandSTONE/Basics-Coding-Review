@@ -99,7 +99,12 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
            System.out.prinln(iArr.getClass == clz1); // false
     }
   ```
-
+* 获取类中的构造器
+  * 常用方法
+  
+  ```java
+  
+  ```
 
 
 
