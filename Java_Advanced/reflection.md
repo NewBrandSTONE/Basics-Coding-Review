@@ -196,7 +196,7 @@ public Method getDeclaredMethod(String name, Class<?>... parameterTypes);
 // 获取所有方法
 private static void getAllMethod() {
   Class clz = User.class;
-  Method[] ms = clz.getMethods(); // 获取所有方法（注意：包括继承的所有公共方法）
+  Method[] ms = clz.getMethods(); // 获取所有方法(注意：包括继承的所有公共方法)
   for (Method m : ms) {
     System.out.println(m);
   }
