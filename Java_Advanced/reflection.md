@@ -81,6 +81,7 @@ Class clz3 = u.getClass();
 ```java
 // 表示数组的Class实例：
 String[] sArr = {"A", "B", "C"};
+Class clz = String[].class; // 此时clz表示就是一个String类的一位数组类型;
 ```
  
 
