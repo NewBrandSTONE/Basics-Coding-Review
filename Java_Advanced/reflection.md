@@ -191,3 +191,15 @@ public Method getMethod(String methodName, Class<?>... parameterTypes);
 public Method getDeclaredMethod(String name, Class<?>... parameterTypes);
 ```
   * 示例代码
+
+```java
+// 获取所有方法
+private static void getAllMethod() {
+  Class clz = User.class;
+  Method[] ms = clz.getMethods();
+  for (Method m : ms) {
+    System.out.println(m);
+  }
+  ms = clz.getDeclaredMethos();// 获取所有的方法(注意：不包括继承的)
+}
+```
