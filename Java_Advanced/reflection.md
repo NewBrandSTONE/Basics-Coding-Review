@@ -140,6 +140,12 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
   }
   ```
 
+  * 创建对象
+    * 方式一
+
+    ```java
+    // 在反射中，Constructor最主要的作用就是调用构造器，创建构造对象
+    ```
 
 
 
