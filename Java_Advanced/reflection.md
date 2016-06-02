@@ -202,4 +202,7 @@ private static void getAllMethod() {
   }
   ms = clz.getDeclaredMethos();// 获取所有的方法(注意：不包括继承的)
 }
+for (Method m : ms) {
+  System.out.println(m);
+}
 ```
