@@ -151,7 +151,7 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
     // 返回：返回创建的实例，T表示Class所表示的类的类型
     // 如果：一个雷的构造器可以直接访问，同时没有参数，那么可以直接使用Class类中的newInstance方法创建对象.
     public Object newInstance(); // 相当于new 类名();
-    // 注意不能调用私有的构造器
+    // 注意不能调用私有的构造器(可以先将对象的)
     ```
 
 
