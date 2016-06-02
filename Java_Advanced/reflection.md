@@ -63,6 +63,8 @@ Class clz3 = u.getClass();
 * 八大基本数据类型和关键字Void的Class实例
 
 >在八大基本数据类型的包装类和Void类中都有一个常量：TYPE
+>
+>***所有数据类型都有class属性，表示对应的Class实例***
 
 ```java
   Integer.Type-->int.class
@@ -71,6 +73,8 @@ Class clz3 = u.getClass();
   Integer.Type == int.class; // true
   Integer.Type == Integer.class; // false
 ```
+
+
 
 
 
