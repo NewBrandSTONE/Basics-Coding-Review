@@ -74,6 +74,7 @@ Class clz3 = u.getClass();
   Integer.Type == Integer.class; // false
 ```
 
+* 数据的Class实例
 
 
 
