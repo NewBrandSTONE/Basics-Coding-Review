@@ -123,6 +123,22 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
   ```
   * 实例代码
 
+  ```java
+  public class User {
+    private String name;
+    private Integer age;
+    private User() {}
+    public User(String name) {}
+    
+    public static void main(String[] args) {
+      Class<User> clz = User.class;
+      Constructor<User> conn = clz.getConstructor(in.class);
+      System.out.println(conn);
+      // 由于在User类中没有带有int类型参数的构造器，所以会抛出异常
+    }
+  }
+  ```
+
 
 
 
