@@ -83,7 +83,8 @@ Class clz3 = u.getClass();
 String[] sArr = {"A", "B", "C"};
 Class clz = String[].class; // 此时clz表示就是一个String类的一位数组类型;
 ```
- 
+
+
 
 
 
