@@ -205,4 +205,17 @@ private static void getAllMethod() {
 for (Method m : ms) {
   System.out.println(m);
 }
+
+pubic void testMethods() {
+  // 获取 public void sayHi();
+  Class clz = User.class;
+  // 只有通过方法签名才能找到唯一的方法
+  // 方法签名 = 方法签名 + 参数列表(参数类型，参数个数，参数顺序)
+  Method m = clz.getMethod("sayHi", String.class);
+  System.out.println(m);
+  
+  // 调用private void sayGoodBye(String name, int age);
+  m = clz.getDeclaredMethod("sayGoodBye", String.class, int.class);
+  System.out.println(m);
+}
 ```
