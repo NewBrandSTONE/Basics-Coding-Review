@@ -186,4 +186,6 @@ public Method[] getDeclaredMethods();
 public Method getMethod(String methodName, Class<?>... parameterTypes);
 
 // 调用指定的一个本类中的方法（不包括继承的）
+// 参数：同上
+public Method getDeclaredMethod(String name, Class<?>... parameterTypes);
 ```
