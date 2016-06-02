@@ -153,8 +153,13 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
     public Object newInstance(); // 相当于new 类名();
     // 注意不能调用私有的构造器(可以先将对象的)
     ```
-
-
+    * 方式二
+    
+    ```java
+    // 调用Class类中的newInstance()方法来创建
+    Class clz = User.class;
+    User user = clz.newInstance();
+    ```
 
 
 
