@@ -161,6 +161,8 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
     User user = clz.newInstance();
     ```
 
-
+  * `API`中`AccessibleObject`的介绍
+  
+    > `AccessibleObject` 类是`File``Method`和`Constructor`对象的基类
 
 
