@@ -115,6 +115,9 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
   public Constructor<?>[] getDeclaredConstructors(); // 获取当前Class所表示类的所有构造器，和访问权限无关
   public Constructor<T> getConstructor(Class<?>... parameterTypes); // 获取当前Class所表示类中指定的一个public的构造器
   // 参数：parameterTypes 表示：构造器参数的Class类型
+  // 例如:
+  public User(String username);
+  Constructor c = clz.getConstructor(String.class);
   ```
 
 
