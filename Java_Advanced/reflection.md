@@ -177,8 +177,10 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
 ```java
 // 获取包括自身和继承过来的所有public方法
 public Method[] getMethods();
+
 // 获取自身的所有方法（不包括继承，和访问权限无关）
 public Method[] getDeclaredMethods();
+
 // 表示调用指定的一个公共方法（包括继承的）
 // 参数：methodName(被调用方法的名字);parameterTypes(被调用方法的参数类型,如:String.class)
 public Method getMethod(String methodName, Class<?>... parameterTypes);
