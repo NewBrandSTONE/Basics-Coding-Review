@@ -87,7 +87,16 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
   * 示例代码
     ```java
     public class ArrayClassInstanceDemo {
-         
+           String[] arr1 = {};
+           String[] arr2 = {"A", "B"};
+           Class clz1 = String[].class
+           Class clz2 = arr2.getClass();
+           Class clz3 = getClass();
+           System.out.println(cl2 == c3);
+           String[][] arr = {}
+           System.out.println(clz1 == String[][].class); //false
+           int[] iArr = {};
+           System.out.prinln(iArr.getClass == clz1); // false
     }
   ```
 
