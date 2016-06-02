@@ -100,9 +100,10 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
     }
   ```
 * 获取类中的构造器
+
   * 常用方法
  
-```java
+  ```java
  // Constructor<T>类：表示父类中构造器的类型，Constructor的实例就是某一个类中的某一个构造器
  // 获取某一个类中的所有构造器：
  // 1.明确操作的是哪一份字节码对象。
