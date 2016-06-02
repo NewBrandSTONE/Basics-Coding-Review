@@ -60,9 +60,9 @@ Class clz3 = u.getClass();
 //clz1 == clz2 == clz3; 因为表示都是JVM中共同的一份字节码(User.class)
 ```
 
-* 八大基本数据类型和关键字Void的Class实例
+* 八大基本数据类型和关键字`Void`的`Class`实例
 
->在八大基本数据类型的包装类和Void类中都有一个常量：TYPE
+>在八大基本数据类型的包装类和`Void`类中都有一个常量：`TYPE`
 >
 >***所有数据类型都有class属性，表示对应的Class实例***
 
