@@ -181,5 +181,7 @@ public Method[] getMethods();
 public Method[] getDeclaredMethods();
 // 表示调用指定的一个公共方法（包括继承的）
 // 参数：methodName(被调用方法的名字);parameterTypes(被调用方法的参数类型,如:String.class)
-public Method getMethod(String methodName, Class<?>... parameterTypes)
+public Method getMethod(String methodName, Class<?>... parameterTypes);
+
+// 调用指定的一个本类中的方法（不包括继承的）
 ```
