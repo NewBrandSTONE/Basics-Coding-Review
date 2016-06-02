@@ -74,7 +74,7 @@ Class clz3 = u.getClass();
   Integer.Type == Integer.class; // false
 ```
 
-* 数据的Class实例
+* 数据的`Class`实例
   * 特点
  >***所有具有相同元素类型和维数的数组才共享同一份字节码对象（Class对象）***
 
