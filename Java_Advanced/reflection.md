@@ -77,6 +77,11 @@ Class clz3 = u.getClass();
 * 数据的Class实例
 
 >***所有具有相同元素类型和维数的数组才共享同一份字节码对象（Class对象）***
+
+```java
+// 表示数组的Class实例：
+String[] sArr = {"A", "B", "C"};
+```
  
 
 
