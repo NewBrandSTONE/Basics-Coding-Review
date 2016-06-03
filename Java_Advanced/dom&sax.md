@@ -59,5 +59,11 @@ public void testGetName() throws Exception {
   File file = new File("contacts.xml");
   Document doc = builder.parse(file);
   System.out.println(doc);
+  
+  // 2.获取根元素
+  ELement root = doc.getDocumentElement();
+  
+  // 3.获取第二个LinkMan
+  NodeList list = root.getElementsByTagName("linkman");
 }
 ```
