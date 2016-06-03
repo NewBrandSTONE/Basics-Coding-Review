@@ -83,11 +83,11 @@ File file = new File("contacts.xml");
 /**
 6.数据同步
 获取Transformer对象的步骤
-TransformerFactory fac = TransformerFactory.newInstacne();
-Transformer tf = fac.newTransformer();
-transform(Source xmlSource, Result outputTaget);
-xmlSource:指定要同步的数据的位置
-outputTarget:指定同步到的磁盘中的位置
+1.TransformerFactory fac = TransformerFactory.newInstacne();
+2.Transformer tf = fac.newTransformer();
+3.transform(Source xmlSource, Result outputTaget);
+  xmlSource:指定要同步的数据的位置
+  outputTarget:指定同步到的磁盘中的位置
 */
 // 修改第一个联系人的邮箱内容
 public void testUpdate() throws Exception {
