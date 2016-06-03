@@ -403,5 +403,8 @@ public enum ArrayTool {
 ClassLoader loader = Thread.currentThread().getContextClassLoader();
 // 方式二：
 ClassLoader loader2 = 当前类名.class.getClassloader();
+
+// 在调用即可获取到output目录下的资源文件流
+public InputStream getResourceAsStream(String fileName);
 ```
 
