@@ -77,6 +77,8 @@ public void testGetName() throws Exception {
   System.out.prinln(nameText);
 }
 
+File file = new File("contacts.xml");
+
 // 修改第一个联系人的邮箱内容
 public void testUpdate() throws Exception {
   // 1.获取Document对象
