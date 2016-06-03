@@ -275,6 +275,10 @@ public Object invoke(Object obj, Object.. args);
 public static main(String[] args) {
   // 使用反射调用public static int show(int... args)
   Class clz = VarArgsMethodInvokeDemo.class; // 获取本类的字节码
-  
+  Method m = clz.getMethod("show1", int[].class);
+  //m.invoke(null, 1, 2, 3, 4, 5) // 会报错
+  m.invoke(null, new int[]{1, 2, 3, 4, 5}); // 通过
+  m.invoke(null, new Object[]{new int[] {1, 2, 3, 4, 5}}); // 通过
+  m = clz.getMethod("show2", String[].class);
 }
 ```
