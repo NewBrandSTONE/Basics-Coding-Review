@@ -145,16 +145,16 @@ public User(String name) {}
   * 创建对象
     * 方式一
 
-    ```java
-    // 在反射中，Constructor最主要的作用就是调用构造器，创建构造对象
-    // 常用方法
-    public T newInstance(Object... initargs); // 如果调用带参数的构造器，只能使用该方法
-    // 参数：initargs：表示调用构造器的实际参数
-    // 返回：返回创建的实例，T表示Class所表示的类的类型
-    // 如果：一个雷的构造器可以直接访问，同时没有参数，那么可以直接使用Class类中的newInstance方法创建对象.
-    public Object newInstance(); // 相当于new 类名();
-    // 注意不能调用私有的构造器(可以先将对象的)
-    ```
+```java
+// 在反射中，Constructor最主要的作用就是调用构造器，创建构造对象
+// 常用方法
+public T newInstance(Object... initargs); // 如果调用带参数的构造器，只能使用该方法
+// 参数：initargs：表示调用构造器的实际参数
+// 返回：返回创建的实例，T表示Class所表示的类的类型
+// 如果：一个雷的构造器可以直接访问，同时没有参数，那么可以直接使用Class类中的newInstance方法创建对象.
+public Object newInstance(); // 相当于new 类名();
+// 注意不能调用私有的构造器(可以先将对象的)
+```
     * 方式二
     
     ```java
