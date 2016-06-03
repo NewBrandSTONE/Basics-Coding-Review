@@ -307,6 +307,16 @@ public static void show2(String.. . args) {
 ```java
 // 获取当前Class所表示类中的所有public的字段，包括继承的字段
 public Field[] getFileds();
+
 // 获取类中指定的public字段，包括继承的字段
 public Field getField(String fieldName);
+
+// 获取当前类中的所有字段，不包括继承的字段
+public Field[] getDeclaredFileds();
+
+// 获取当前Class所表示类中该fieldName名字的字段，不包括继承的字段
+public Field[] getDeclaredFileds();
+
+// 获取当前Class中的字段，指定的字段，不包括继承的字段
+public Field getDeclaredFiled(String name);
 ```
