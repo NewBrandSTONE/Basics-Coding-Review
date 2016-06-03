@@ -104,22 +104,22 @@ public class ArrayClassInstanceDemo {
   * 常用方法
  
 ```java
- // Constructor<T>类：表示父类中构造器的类型，Constructor的实例就是某一个类中的某一个构造器
- // 获取某一个类中的所有构造器：
- // 1.明确操作的是哪一份字节码对象。
- // 2.获取构造器。
- 
- // Class类获取构造器方法：
- // Constructor类：表示类中构造器的类型，Constructor的实例就是某一个类中中的某一个构造器
-  
-  public Constructor<?>[] getConstructors(); // 该方法只能获取当前Class所表示的类的public修饰的构造器
-  public Constructor<?>[] getDeclaredConstructors(); // 获取当前Class所表示类的所有构造器，和访问权限无关
-  public Constructor<T> getConstructor(Class<?>... parameterTypes); // 获取当前Class所表示类中指定的一个public的构造器
-  // 参数：parameterTypes 表示：构造器参数的Class类型
-  // 例如:
-  public User(String username);
-  Constructor c = clz.getConstructor(String.class);
-  public Constructor<T> getDeclaredConstructor(Class<?>.. parameterTypes); // 获取当前Class所表示类中指定的一个构造器
+// Constructor<T>类：表示父类中构造器的类型，Constructor的实例就是某一个类中的某一个构造器
+// 获取某一个类中的所有构造器：
+// 1.明确操作的是哪一份字节码对象。
+// 2.获取构造器。
+
+// Class类获取构造器方法：
+// Constructor类：表示类中构造器的类型，Constructor的实例就是某一个类中中的某一个构造器
+
+public Constructor<?>[] getConstructors(); // 该方法只能获取当前Class所表示的类的public修饰的构造器
+public Constructor<?>[] getDeclaredConstructors(); // 获取当前Class所表示类的所有构造器，和访问权限无关
+public Constructor<T> getConstructor(Class<?>... parameterTypes); // 获取当前Class所表示类中指定的一个public的构造器
+// 参数：parameterTypes 表示：构造器参数的Class类型
+// 例如:
+public User(String username);
+Constructor c = clz.getConstructor(String.class);
+public Constructor<T> getDeclaredConstructor(Class<?>.. parameterTypes); // 获取当前Class所表示类中指定的一个构造器
 ```
   * 实例代码
 
