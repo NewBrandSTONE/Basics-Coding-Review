@@ -91,6 +91,8 @@ public void testUpdate() throws Exception {
   Element linkman = list.item(0);
   // 4. 获取第一个联系人的<email>元素
   Element email = (Element) linkman.getElementsByTagName("email").item(0);
+  // 5.修改<email>标签中的文本
+  email.setTextContent("asd@qq.com");
 }
 ```
 
