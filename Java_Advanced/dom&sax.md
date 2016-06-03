@@ -110,6 +110,7 @@ public void testUpdate() throws Exception {
   Result outputTarget = new StreamResult(file); // 注意不要忘记参数
   tf.transform(xmlSource, outputTaget);
   
+  // 添加一个联系人信息
   public void testAdd() throws Exception {
     
   }
