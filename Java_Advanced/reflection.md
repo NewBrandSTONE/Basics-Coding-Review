@@ -320,3 +320,6 @@ public Field[] getDeclaredFileds();
 // 获取当前Class中的字段，指定的字段，不包括继承的字段
 public Field getDeclaredFiled(String name);
 ```
+##单例设计模式
+* 概念
+>在项目中，某个类有且只有一个实例,一般的把工具类做成单例的
