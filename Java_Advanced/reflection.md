@@ -254,3 +254,11 @@ public static void main(String[] args) {
   method2.invoke(u, "neld");
 }
 ```
+
+##使用放射调用静态方法
+* 方法
+```java
+public Object invoke(Object obj, Object.. args);
+// 如果底层方法是静态的，那么可以忽略指定的obj参数。将obj参数设置为null即可。
+``` 
+
