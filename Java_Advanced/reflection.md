@@ -103,7 +103,7 @@ public class ArrayClassInstanceDemo {
 
   * 常用方法
  
-  ```java
+```java
  // Constructor<T>类：表示父类中构造器的类型，Constructor的实例就是某一个类中的某一个构造器
  // 获取某一个类中的所有构造器：
  // 1.明确操作的是哪一份字节码对象。
@@ -120,7 +120,7 @@ public class ArrayClassInstanceDemo {
   public User(String username);
   Constructor c = clz.getConstructor(String.class);
   public Constructor<T> getDeclaredConstructor(Class<?>.. parameterTypes); // 获取当前Class所表示类中指定的一个构造器
-  ```
+```
   * 实例代码
 
   ```java
