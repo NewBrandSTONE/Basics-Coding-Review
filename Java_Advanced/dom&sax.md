@@ -85,6 +85,7 @@ public void testUpdate() throws Exception {
   Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file);
   // 2.获取根元素
   Element root = doc.getDocumentElement();
+  // 3.获取第一个linkman元素
   
 }
 ```
