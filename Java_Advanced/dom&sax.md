@@ -109,6 +109,10 @@ public void testUpdate() throws Exception {
   Source xmlSource = new DOMSource(doc); // 注意不要忘记添加参数Document doc
   Result outputTarget = new StreamResult(file); // 注意不要忘记参数
   tf.transform(xmlSource, outputTaget);
+  
+  public void testAdd() throws Exception {
+    
+  }
 }
 ```
 
