@@ -161,7 +161,17 @@ public void testUpdate() throws Exception {
   5.同步数据
   */
   public void testDelete() throws Exception {
-  
+    // 1.获取Document对象
+    Document doc = DocumentBuilderFactory().newInstance().newDocumentBuilder().parse(file);
+    // 2.获取根元素
+    Element root = doc.getDocumentElement();
+    // 3.获取到第三个联系人元素
+    Node linkman = root.getElementByTagName("linkman").item(2);
+    // 4.让根元素删除第三个联系人
+    root.removeChild(linkman);
+    // 5.数据同步
+    Transformer tf = TransformerFactory.newInstance().newTransformer();
+    tf.transform(new DOMSource(doc), new StreamResult(file));
   }
 }
 ```
