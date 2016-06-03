@@ -47,3 +47,10 @@ DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 DocumentBuilder builder = dbf.newDocumentBuilder();
 // 4.通过DocumentBuilder获取Document对象
 ```
+
+ * 示例代码
+
+```java
+// 需求：得到某个具体的文本节点的内容：去除第二个联系人的名字
+
+```
