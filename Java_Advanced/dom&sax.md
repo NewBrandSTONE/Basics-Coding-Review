@@ -89,7 +89,7 @@ public void testUpdate() throws Exception {
   NodeList list = root.getElementsByTagName("linkman");
   Element list = (Element) list.getElementsByTagName("linkman");
   Element linkman = list.item(0);
-  
+  // 4. 获取第一个联系人的<email>元素
 }
 ```
 
