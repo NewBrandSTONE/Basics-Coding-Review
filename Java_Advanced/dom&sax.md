@@ -87,7 +87,8 @@ public void testUpdate() throws Exception {
   Element root = doc.getDocumentElement();
   // 3.获取第一个linkman元素
   NodeList list = root.getElementsByTagName("linkman");
-  Element linkman = (Element) list.getElementsByTagName("linkman");
+  Element list = (Element) list.getElementsByTagName("linkman");
+  Element linkman = list.item(0);
   
 }
 ```
