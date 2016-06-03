@@ -268,3 +268,13 @@ public Object invoke(Object obj, Object.. args);
 >对于***数组的引用类型***，底层会自动解包 ，为了解决该问题，我们使用Object的一个一维数组把实际参数包装起来。
 >
 >***无论是基本数据类型还是引用数据类型，或者是可变参数类型，方正就是一切实际参数都包装在 `new Object[] {}` 中，就没有`自动解包`的问题了***
+
+* 示例代码
+
+```java
+public static main(String[] args) {
+  // 使用反射调用public static int show(int... args)
+  Class clz = VarArgsMethodInvokeDemo.class; // 获取本类的字节码
+  
+}
+```
