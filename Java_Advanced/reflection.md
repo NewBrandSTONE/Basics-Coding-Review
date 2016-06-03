@@ -375,3 +375,15 @@ public void sort(int[] arr) {
 }
 ```
 
+>枚举
+
+```java
+public enum ArrayTool {
+  INSTANCE; // public static final ArrayTool INSTANCE;
+  // 工具方法
+  private ArrayTool(){}
+  public void sort(int[] arr) {
+    System.out.println("数组排序...");
+  }
+}
+```
