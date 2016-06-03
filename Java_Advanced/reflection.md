@@ -85,7 +85,7 @@ Class clz = String[].class; // 此时clz表示就是一个String类的一位数�
 ```
 
   * 示例代码
-    ```java
+```java
     public class ArrayClassInstanceDemo {
            String[] arr1 = {};
            String[] arr2 = {"A", "B"};
