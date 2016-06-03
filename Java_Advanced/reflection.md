@@ -157,11 +157,11 @@ public User(String name) {}
   ```
     * 方式二
     
-```java
-// 调用Class类中的newInstance()方法来创建
-Class clz = User.class;
-User user = clz.newInstance();
-```
+  ```java
+  // 调用Class类中的newInstance()方法来创建
+  Class clz = User.class;
+  User user = clz.newInstance();
+  ```
 
   * `API`中`AccessibleObject`的介绍
   
