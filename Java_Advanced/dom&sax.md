@@ -83,6 +83,9 @@ File file = new File("contacts.xml");
 public void testUpdate() throws Exception {
   // 1.获取Document对象
   Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file);
+  // 2.获取根元素
+  Element root = doc.getDocumentElement();
+  
 }
 ```
 
