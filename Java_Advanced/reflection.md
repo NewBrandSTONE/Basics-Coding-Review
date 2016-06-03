@@ -336,3 +336,19 @@ public Field getDeclaredFiled(String name);
   * 枚举
   * 使用缓存机制来实现单例效果
   * 在Spring中（对象工厂），创建的对象默认就是单例的
+
+> 饿汉式
+
+```java
+public class ArrayTool {
+  private ArrayTool(){}
+  private static ArrayTool instance = new ArrayTool();
+  public static ArrayTool getInstance() {
+    return instance;
+  }
+  // 工具方法
+  public void sort(int arr) {
+    System.out.println("数组排序...");
+  }
+}
+```
