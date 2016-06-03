@@ -286,7 +286,11 @@ public static main(String[] args) {
   m.invoke(null, new Object[]{new String[]{"A", "B", "C"}});
 }
 
+// 可变参数底层就是一个数组
+// 基本类型
 public static void show1(int... args) {
   System.out.println(Arrays.toString(args));
 }
+// 引用类型
+public
 ```
