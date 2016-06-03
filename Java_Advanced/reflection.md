@@ -84,7 +84,7 @@ String[] sArr = {"A", "B", "C"};
 Class clz = String[].class; // 此时clz表示就是一个String类的一位数组类型;
 ```
 
-  * 示例代码
+* 示例代码
 ```java
     public class ArrayClassInstanceDemo {
            String[] arr1 = {};
