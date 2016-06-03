@@ -122,6 +122,7 @@ public User(String username);
 Constructor c = clz.getConstructor(String.class);
 public Constructor<T> getDeclaredConstructor(Class<?>.. parameterTypes); // 获取当前Class所表示类中指定的一个构造器
 ```
+
   * 实例代码
 
   ```java
