@@ -353,3 +353,20 @@ public class ArrayTool {
   }
 }
 ```
+>懒加载(可能有线程安全问题，所以要使用同步方法)
+
+```java
+public class ArrayTool {
+  private static ArrayTool instance = null;
+  
+  public static ArrayTool getInstace() {
+    if (instance == null) {
+      synchronized (ArrayTool.class) {
+        if (instance == null) {
+          instance = new ArrayTool();
+        }
+      }
+    }
+  }
+}
+```
