@@ -343,6 +343,7 @@ public Field getDeclaredFiled(String name);
 public class ArrayTool {
   private ArrayTool(){}
   private static ArrayTool instance = new ArrayTool();
+  // 获取类的一个实例
   public static ArrayTool getInstance() {
     return instance;
   }
