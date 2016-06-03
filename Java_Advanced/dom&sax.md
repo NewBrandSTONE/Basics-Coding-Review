@@ -110,9 +110,27 @@ public void testUpdate() throws Exception {
   Result outputTarget = new StreamResult(file); // 注意不要忘记参数
   tf.transform(xmlSource, outputTaget);
   
+  /**
+  步骤：
+  1.获取Document对象
+  2.获取根元素
+  3.创建新的<linkman>元素
+  4.创建新的<name><email><address><group>
+  5.给上面的四个元素设置文本
+  6.将四个子元素添加到新的<linkman>元素中
+  7.将新的<linkman>放到根元素中
+  8.数据同步
+  */
   // 添加一个联系人信息
   public void testAdd() throws Exception {
-    
+  // 1.获取Document对象
+  // 2.获取根元素
+  // 3.创建新的<linkman>元素
+  // 4.创建新的<name><email><address><group>
+  // 5.给上面的四个元素设置文本
+  // 6.将四个子元素添加到新的<linkman>元素中
+  // 7.将新的<linkman>放到根元素中
+  // 8.数据同步
   }
 }
 ```
