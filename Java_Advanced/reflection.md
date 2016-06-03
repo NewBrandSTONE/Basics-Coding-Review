@@ -245,5 +245,6 @@ public static void main(String[] args) {
   User u = clz.newInstance(); // 保证在User类中有公共无参数的构造器
   // 用变量ret来接收该方法的返回值
   String ret = (String) method3.invoke(u, "neld", 18);
+  
 }
 ```
