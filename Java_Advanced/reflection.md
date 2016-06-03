@@ -283,5 +283,6 @@ public static main(String[] args) {
   // m.invoke(null, "A", "B", "C"); // 不通过
   // m.invoke(null, new String[] {"A", "B", "C"})// 不通过
   // 对于数组类型的引用型参数，底层会自动解包，为了解决该问题，我们使用Object的一维数组把实际参数包装起来
+  m.invoke(null, new Object[]{new String[]{"A", "B", "C"}});
 }
 ```
