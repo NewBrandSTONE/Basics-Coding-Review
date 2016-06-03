@@ -90,6 +90,7 @@ public void testUpdate() throws Exception {
   Element list = (Element) list.getElementsByTagName("linkman");
   Element linkman = list.item(0);
   // 4. 获取第一个联系人的<email>元素
+  Element email = (Element) linkman.getElementsByTagName("email").item(0);
 }
 ```
 
