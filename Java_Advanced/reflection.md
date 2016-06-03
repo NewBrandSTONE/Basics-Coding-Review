@@ -131,7 +131,6 @@ private String name;
 private Integer age;
 private User() {}
 public User(String name) {}
-
   public static void main(String[] args) {
     Class<User> clz = User.class;
     Constructor<User> conn = clz.getConstructor(in.class);
