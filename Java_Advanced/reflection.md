@@ -308,5 +308,5 @@ public static void show2(String.. . args) {
 // 获取当前Class所表示类中的所有public的字段，包括继承的字段
 public Field[] getFileds();
 // 获取类中指定的public字段，包括继承的字段
+public Field getField(String fieldName);
 ```
-public Filed getField(String fieldName);
