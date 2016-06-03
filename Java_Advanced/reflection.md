@@ -246,5 +246,11 @@ public static void main(String[] args) {
   // 用变量ret来接收该方法的返回值
   String ret = (String) method3.invoke(u, "neld", 18);
   
+  // 获取User类的一个指定的私有方法:private void doWork2(String name)
+  Method method2 = clz.getMethod("doWork2", String.class);
+  // 将方法设置为可访问的
+  method2.setAccessible(true);
+  // 调用方法
+  method2.invoke(u, "neld");
 }
 ```
