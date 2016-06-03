@@ -21,9 +21,10 @@ Node appendChild(Node newChild);
 // 删除当前元素中指定的子元素(老爹干掉儿子)
 Node removeChild(Node oldChild);
 
-// Document接口
+// Element接口
 // 根据指定的标签名称获取到指定的标签
 NodeList getElementsByTagName(String name);
+// 
 ```
 
 * 解析步骤
