@@ -285,4 +285,8 @@ public static main(String[] args) {
   // 对于数组类型的引用型参数，底层会自动解包，为了解决该问题，我们使用Object的一维数组把实际参数包装起来
   m.invoke(null, new Object[]{new String[]{"A", "B", "C"}});
 }
+
+public static void show1(int... args) {
+  System.out.println(Arrays.toString(args));
+}
 ```
