@@ -124,6 +124,7 @@ public void testUpdate() throws Exception {
   // 添加一个联系人信息
   public void testAdd() throws Exception {
   // 1.获取Document对象
+  Document doc = DocumentBuilderFactory().newInstance().newDocumentBuilder().parse(file);
   // 2.获取根元素
   // 3.创建新的<linkman>元素
   // 4.创建新的<name><email><address><group>
