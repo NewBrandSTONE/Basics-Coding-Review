@@ -100,6 +100,7 @@ public class ArrayClassInstanceDemo {
        System.out.prinln(iArr.getClass == clz1); // false
 }
 ```
+
 * 获取类中的构造器
 
   * 常用方法
