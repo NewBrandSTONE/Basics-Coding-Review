@@ -53,6 +53,10 @@ DocumentBuilder builder = dbf.newDocumentBuilder();
 ```java
 // 需求：取出第二个联系人的名字
 public void testGetName() throws Exception {
-
+  // 1.获取Document对象
+  DocumentBuilderFactory dfb = DocumentBuilderFactory.newInstance();
+  DucumentBuilder db = dfb.newDocumentBuilder();
+  File file = new File("contacts.xml");
+  Document doc = builder.parse(file);
 }
 ```
