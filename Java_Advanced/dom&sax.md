@@ -93,6 +93,7 @@ public void testUpdate() throws Exception {
   Element email = (Element) linkman.getElementsByTagName("email").item(0);
   // 5.修改<email>标签中的文本
   email.setTextContent("asd@qq.com");
+  // 6.数据同步
 }
 ```
 
