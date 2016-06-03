@@ -292,5 +292,7 @@ public static void show1(int... args) {
   System.out.println(Arrays.toString(args));
 }
 // 引用类型
-public
+public static void show2(String.. . args) {
+  System.out.println(Arrays.toString(args));
+}
 ```
