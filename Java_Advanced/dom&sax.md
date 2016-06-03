@@ -24,11 +24,14 @@ Node removeChild(Node oldChild);
 // Document接口
 // 获取根元素
 Element getDocumentElement();
+// 创建指定名称新元素
+Element createElement(String tagName);
 
 // Element接口
 // 根据指定的标签名称获取到指定的标签
 NodeList getElementsByTagName(String name);
-// 
+// 为当前元素设置属性值
+void setAttribute(String name, String value);
 ```
 
 * 解析步骤
