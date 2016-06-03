@@ -395,4 +395,13 @@ public enum ArrayTool {
 * 加载资源文件
   * 使用相对路径
 
-> 相对于`CLASSPATH`的根路径(output, 输出目录) 
+> 相对于`CLASSPATH`的根路径(output, 输出目录) ，需要获取`ClassLoader`对象
+
+```java
+// 获取ClassLoader对象的两种方式
+// 方式一：
+ClassLoader loader = Thread.currentThread().getContextClassLoader();
+// 方式二：
+ClassLoader loader2 = 当前类名.class.getClassloader();
+```
+
