@@ -79,6 +79,8 @@ public void testGetName() throws Exception {
 
 // 修改第一个联系人的邮箱内容
 public void testUpdate() throws Exception {
+  // 1.获取Document对象
+  Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file);
 }
 ```
 
