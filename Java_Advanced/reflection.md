@@ -244,6 +244,6 @@ public static void main(String[] args) {
   // 3.调用对象方法，这里需要传入被调用方法所属的对象，和方法所需要的实际参数
   User u = clz.newInstance(); // 保证在User类中有公共无参数的构造器
   // 用变量ret来接收该方法的返回值
-  String ret = (String) method3.invoke(u, "neld", 18)
+  String ret = (String) method3.invoke(u, "neld", 18);
 }
 ```
