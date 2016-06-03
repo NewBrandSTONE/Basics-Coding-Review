@@ -76,4 +76,9 @@ public void testGetName() throws Exception {
   String nameText = name.getTextContent();
   System.out.prinln(nameText);
 }
+
+// 修改某个元素中的主体内容
+public void testUpdate() throws Exception {
+}
 ```
+
