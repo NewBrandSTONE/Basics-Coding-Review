@@ -125,21 +125,28 @@ public void testUpdate() throws Exception {
   public void testAdd() throws Exception {
     // 1.获取Document对象
     Document doc = DocumentBuilderFactory().newInstance().newDocumentBuilder().parse(file);
+    
     // 2.获取根元素
     Element root = doc.getDocumentElement();
+    
     // 3.创建新的<linkman>元素
     Element linkman = doc.createELement("linkman");
+    
     // 4.创建新的<name><email><address><group>
     Element address = doc.createElement("address");
+    
     // ....其余标签省略了
     // 5.给上面的四个元素设置文本
     address.setTextContent("James");
+    
     // ...其余设置省略
     // 6.将四个子元素添加到新的<linkman>元素中
     linkman.appendChild(address);
     // ...其他添加省略
+    
     // 7.将新的<linkman>放到根元素中
     root.appendChild(linkman);
+    
     // 8.数据同步
     Transformer tf = TransformerFactory.newInstance().newTransformer();
     tf.transform(new DOMSource(doc), new StreamResult(file));
