@@ -232,3 +232,18 @@ pubic void testMethods() {
 // 参数:obj(被调用方法的对象--一般都是这个类的一个对象);args(传递的参数)
 public Object invoke(Object obj,Object.. args);
 ```
+
+* 示例代码
+
+```java
+public static void main(String[] args) {
+  // 1.获取User类的Class实例
+  Class<User> clz = User.class;
+  // 2.获取User类中指定的方法:public String doWork3(String name, Integer.class);
+  Method method3 = clz.getMethod("doWork3", String.class, Integer.class);
+  // 3.调用对象方法，这里需要传入被调用方法所属的对象，和方法所需要的实际参数
+  User u = clz.newInstance(); // 保证在User类中有公共无参数的构造器
+  // 用变量ret来接收该方法的返回值
+  String ret = (String) method3.invoke(u, "neld", 18)
+}
+```
