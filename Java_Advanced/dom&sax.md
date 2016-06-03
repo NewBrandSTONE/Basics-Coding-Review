@@ -151,6 +151,18 @@ public void testUpdate() throws Exception {
     Transformer tf = TransformerFactory.newInstance().newTransformer();
     tf.transform(new DOMSource(doc), new StreamResult(file));
   }
+  
+  /**
+  删除第三个联系人的信息
+  1.获取Document对象
+  2.获取根元素
+  3.获取到第三个联系人元素
+  4.让根元素删掉第三个联系人
+  5.同步数据
+  */
+  public void testDelete() throws Exception {
+  
+  }
 }
 ```
 
