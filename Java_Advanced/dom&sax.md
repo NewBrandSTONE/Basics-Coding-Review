@@ -32,6 +32,8 @@ Element createElement(String tagName);
 NodeList getElementsByTagName(String name);
 // 为当前元素设置属性值
 void setAttribute(String name, String value);
+// 获取指定标签的属性
+String getAttribute(String tagName);
 ```
 
 * 解析步骤
