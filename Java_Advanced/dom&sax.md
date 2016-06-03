@@ -51,6 +51,8 @@ DocumentBuilder builder = dbf.newDocumentBuilder();
  * 示例代码
 
 ```java
-// 需求：得到某个具体的文本节点的内容：去除第二个联系人的名字
+// 需求：取出第二个联系人的名字
+public void testGetName() throws Exception {
 
+}
 ```
