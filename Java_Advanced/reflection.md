@@ -329,6 +329,7 @@ public Field getDeclaredFiled(String name);
   * 在当前类中实现创建好一个私有的静态对象
   * 向外暴露一个公共的静态的方法来返回该对象
 
+
 * 写法
   * 饿汉式
   * 懒加载式
