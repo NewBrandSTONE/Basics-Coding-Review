@@ -10,6 +10,17 @@
 
 * 常用`API`
 
+```java
+// Node接口
+// 获取当前元素的文本内容
+String getTextContent();
+
+// 为当前元素设置文本内容
+void setTextContent(String text);
+
+// 为当前的元素添加子元素
+Node appendChild(Node newChild);
+```
 
 * 解析步骤
 
