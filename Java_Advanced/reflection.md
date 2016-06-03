@@ -392,4 +392,7 @@ public enum ArrayTool {
 
 >***source folder***目录下的文件会编译到output(默认***bin***)目录中
 
-##加载资源文件
+* 加载资源文件
+  * 使用相对路径
+
+> 相对于`CLASSPATH`的根路径(output, 输出目录) 
