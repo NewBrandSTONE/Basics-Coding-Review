@@ -65,5 +65,15 @@ public void testGetName() throws Exception {
   
   // 3.获取第二个LinkMan
   NodeList list = root.getElementsByTagName("linkman");
+  Element linkman = (Element) list.item(1);
+  
+  // 4.获取第二个联系人的<name>元素
+  NodeList names = linkman.getElementsByTagName("name");
+  node name = names.item(0);
+  System.out.println(name);
+  
+  // 5.获取<name>中的文本
+  String nameText = name.getTextContent();
+  System.out.prinln(nameText);
 }
 ```
