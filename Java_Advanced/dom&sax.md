@@ -94,6 +94,11 @@ public void testUpdate() throws Exception {
   // 5.修改<email>标签中的文本
   email.setTextContent("asd@qq.com");
   // 6.数据同步
+  TransformerFactory fac = TransformerFactory.newInstance();
+  Transformer tf = fac.newTransformer();
+  Source xmlSource = new DOMSource(doc); // 注意不要忘记添加参数Document doc
+  Result outputTarget = new StreamResult(file); // 注意不要忘记参数
+  tf.transform(xmlSource, outputTaget);
 }
 ```
 
