@@ -77,7 +77,7 @@ public void testGetName() throws Exception {
   System.out.prinln(nameText);
 }
 
-// 修改某个元素中的主体内容
+// 修改第一个联系人的邮箱内容
 public void testUpdate() throws Exception {
 }
 ```
