@@ -280,5 +280,8 @@ public static main(String[] args) {
   m.invoke(null, new int[]{1, 2, 3, 4, 5}); // 通过
   m.invoke(null, new Object[]{new int[] {1, 2, 3, 4, 5}}); // 通过
   m = clz.getMethod("show2", String[].class);
+  // m.invoke(null, "A", "B", "C"); // 不通过
+  // m.invoke(null, new String[] {"A", "B", "C"})// 不通过
+  // 对于数组类型的引用型参数，底层会自动解包，为了解决该问题，我们使用Object的一维数组把实际参数包装起来
 }
 ```
