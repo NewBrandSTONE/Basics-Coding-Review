@@ -296,3 +296,15 @@ public static void show2(String.. . args) {
   System.out.println(Arrays.toString(args));
 }
 ```
+
+##使用反射获取字段
+* 思路
+  * 找到字段所在类的字节码
+  * 获取字段
+
+* 常用方法
+
+```java
+// 获取当前Class所表示类中的所有public的字段，包括继承的字段
+public Field[] getFileds();
+```
