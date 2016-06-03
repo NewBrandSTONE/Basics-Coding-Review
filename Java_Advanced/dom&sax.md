@@ -126,7 +126,9 @@ public void testUpdate() throws Exception {
   // 1.获取Document对象
   Document doc = DocumentBuilderFactory().newInstance().newDocumentBuilder().parse(file);
   // 2.获取根元素
+  Element root = doc.getDocumentElement();
   // 3.创建新的<linkman>元素
+  Element linkman = doc.createELement("linkman");
   // 4.创建新的<name><email><address><group>
   // 5.给上面的四个元素设置文本
   // 6.将四个子元素添加到新的<linkman>元素中
