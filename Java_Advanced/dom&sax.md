@@ -14,12 +14,12 @@
 // Node接口
 // 获取当前元素的文本内容
 String getTextContent();
-
 // 为当前元素设置文本内容
 void setTextContent(String text);
-
 // 为当前的元素添加子元素
 Node appendChild(Node newChild);
+// 删除当前元素中指定的子元素(老爹干掉儿子)
+Node removeChild(Node oldChild);
 ```
 
 * 解析步骤
