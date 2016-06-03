@@ -58,5 +58,6 @@ public void testGetName() throws Exception {
   DucumentBuilder db = dfb.newDocumentBuilder();
   File file = new File("contacts.xml");
   Document doc = builder.parse(file);
+  System.out.println(doc);
 }
 ```
