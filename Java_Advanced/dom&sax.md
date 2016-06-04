@@ -217,4 +217,6 @@ attributes.parse(new File("student.xml"), new SAXHandler);
 // 这里的SAXHandler是我们自定义的一个XML解析器
 ```
 
+3. 创建一个SAXHandler雷，并继承自DefaultHandler
+
 
