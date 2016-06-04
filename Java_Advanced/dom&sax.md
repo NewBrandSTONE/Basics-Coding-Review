@@ -248,5 +248,10 @@ public class extends DefaultHandler {
   public List<Contact> getList() {
     return list;
   }
+  
+  // 当解析到文档开始的时候调用该方法
+  public void startDocument() throws Exception {
+    list = new ArrayList<>();
+  }
 }
 ```
