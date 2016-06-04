@@ -202,14 +202,14 @@ public void testUpdate() throws Exception {
 
 > 两个核心类`SAXParser`和`DefaultHandler` 
 
-1. 创建`SAXParser`对象
+1.创建`SAXParser`对象
 
 ```java
 SAXParserFacotry factory = SAXParserFactory.newInstance();
 SAXParser parser = factory.newSAXParser();
 ```
 
-2. 通过SAXParser中的parser方法解析一个指定的XML文件
+2.通过SAXParser中的parser方法解析一个指定的XML文件
 
 ```java
 void parse(File file, DefaultHandle handle);
@@ -217,6 +217,6 @@ attributes.parse(new File("student.xml"), new SAXHandler);
 // 这里的SAXHandler是我们自定义的一个XML解析器
 ```
 
-3. 创建一个SAXHandler雷，并继承自DefaultHandler
+3.创建一个SAXHandler雷，并继承自DefaultHandler
 
 
