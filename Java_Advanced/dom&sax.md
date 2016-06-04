@@ -260,5 +260,20 @@ public class extends DefaultHandler {
   // 当解析到文档结束的时候调用到该方法
   public void endDocument() throws Exception {
   }
+  // 当解析到文本内容的时候调用该方法
+  public void characters(char[] ch, int start, int lenth) throws Exception {
+    if ("name".equals(preTag)) {
+      String name = new String(ch, start, length);
+      con.setName(name);
+    } else if ("email".equals(preTag)) {
+      String email = new String(ch, start, length);
+      con.setEmail(email);
+    } else if ("group".equals(preTag)) {
+      String group = new String(ch, start, length);
+      con.setGroup(group);
+      // 一个联系人的信息解析完成，将其放入到集合中
+      list.add(con);
+    }
+  }
 }
 ```
