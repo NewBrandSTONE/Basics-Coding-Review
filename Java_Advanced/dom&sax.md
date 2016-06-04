@@ -237,5 +237,7 @@ void endDocument();
 * 示例代码
 
 ```java
-
+public class extends DefaultHandler {
+  
+}
 ```
