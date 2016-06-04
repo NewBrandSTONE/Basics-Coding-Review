@@ -51,3 +51,13 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 * 概念
 
 >`DAO(Data Access Object)`是一个数据访问接口，数据访问：与数据库打交道。夹在业务逻辑(Service)与数据库资源中间。
+
+* `DAO`实现的规范
+
+  * `DAO`的命名
+
+```java
+  com.ghyz.ppd.dao         -- 定义DAO的接口
+  com.ghyz.ppd.dao.impl    -- 定义DAO的接口实现类
+  
+```
