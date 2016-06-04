@@ -238,6 +238,15 @@ void endDocument();
 
 ```java
 public class extends DefaultHandler {
+  // 存放联系人的集合
+  private List<Contact> list;
+  // 联系人对象
+  private Contact con;
+  // 记录上一个标签名
+  private Sring preTag;
   
+  public List<Contact> getList() {
+    return list;
+  }
 }
 ```
