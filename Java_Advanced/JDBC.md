@@ -26,7 +26,9 @@
 
 ```java
 步骤：
-    //1.加载驱动
-      Class.forName("com.mysql.jdbc.Driver");
+// 1.加载驱动
+Class.forName("com.mysql.jdbc.Driver");
+// 2.获取连接对象
+static Connection getConnection(String url, String username, String password);
 
 ```
