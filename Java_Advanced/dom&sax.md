@@ -221,4 +221,9 @@ attributes.parse(new File("student.xml"), new SAXHandler);
 
 * DefaultHandler中常用的方法
 
-
+```java
+// 接受文档开始的通知
+void startDocument(); 
+// 接受元素开始的通知
+void startElement(String uri, String localName, String qName, Attributes attributes);
+```
