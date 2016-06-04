@@ -226,4 +226,8 @@ attributes.parse(new File("student.xml"), new SAXHandler);
 void startDocument(); 
 // 接受元素开始的通知
 void startElement(String uri, String localName, String qName, Attributes attributes);
+// 接受元素中字符数据的通知
+void characters(char[] ch, int start, int length);
+// 接受元素结束的通知
+void endElement(String uri, String localName, String qName);
 ```
