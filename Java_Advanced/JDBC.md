@@ -32,3 +32,4 @@ Class.forName("com.mysql.jdbc.Driver");
 Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
 
 ```
+##`JDBC`中常用的`API`
