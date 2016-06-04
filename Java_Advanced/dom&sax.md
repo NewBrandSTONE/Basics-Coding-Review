@@ -253,5 +253,12 @@ public class extends DefaultHandler {
   public void startDocument() throws Exception {
     list = new ArrayList<>();
   }
+  
+  // 当解析到文档结束的时候调用该方法
+  public void endDocument() throws Exception {
+  }
+  // 当解析到文档结束的时候调用到该方法
+  public void endDocument() throws Exception {
+  }
 }
 ```
