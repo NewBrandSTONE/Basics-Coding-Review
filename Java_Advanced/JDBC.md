@@ -43,3 +43,6 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 
 ##`DML`操作
 >对数据库的表进行`增加`、`删除`和`修改操作`
+
+##`DQL`操作
+>对数据库的表进行查询操作
