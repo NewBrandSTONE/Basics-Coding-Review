@@ -198,3 +198,10 @@ public void testUpdate() throws Exception {
 
 >`Android`中常用的`XML`解析`PULL`解析器的运行方式与`SAX`类似，不同的是，在`pull`解析过程中，我们需要自己获取产生的事件然后做响应的操作
 
+* `SAX`解析`XML`的操作步骤：
+
+> 两个核心类`SAXParser`和`DefaultHandler` 
+
+  * 创建`SAXParser`对象
+
+
