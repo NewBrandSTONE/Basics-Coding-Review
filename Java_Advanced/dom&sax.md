@@ -194,3 +194,7 @@ public void testUpdate() throws Exception {
 >
 >5.产生错误事件用来通知主机应用程序解析错误。
 
+* 补充
+
+>`Android`中常用的`XML`解析`PULL`解析器的运行方式与`SAX`类似，不同的是，在`pull`解析过程中，我们需要自己获取产生的事件然后做响应的操作
+
