@@ -40,3 +40,6 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
   * 创建语句对象
   * 执行sql
   * 释放资源(***一定要记得关闭资源***)
+
+##`DML`操作
+>对数据库的表进行`增加`、`删除`和`修改操作`
