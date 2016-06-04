@@ -230,4 +230,6 @@ void startElement(String uri, String localName, String qName, Attributes attribu
 void characters(char[] ch, int start, int length);
 // 接受元素结束的通知
 void endElement(String uri, String localName, String qName);
+// 接受文档结束的通知
+void endDocument();
 ```
