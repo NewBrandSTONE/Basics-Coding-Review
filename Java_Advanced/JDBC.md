@@ -39,4 +39,4 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
   * 获取连接对象
   * 创建语句对象
   * 执行sql
-  * 释放资源
+  * 释放资源(***一定要记得关闭资源***)
