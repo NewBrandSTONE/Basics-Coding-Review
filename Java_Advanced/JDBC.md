@@ -19,3 +19,14 @@
 
 
 ##获取数据库连接
+
+* 获取连接对象的步骤
+
+>记得导入相应的驱动包：`mysql-connecttor-java-5.1.26-bin.jar`
+
+```java
+步骤：
+    //1.加载驱动
+      Class.forName("com.mysql.jdbc.Driver");
+
+```
