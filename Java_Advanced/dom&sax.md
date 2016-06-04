@@ -209,4 +209,12 @@ SAXParserFacotry factory = SAXParserFactory.newInstance();
 SAXParser parser = factory.newSAXParser();
 ```
 
+2. 通过SAXParser中的parser方法解析一个指定的XML文件
+
+```java
+void parse(File file, DefaultHandle handle);
+attributes.parse(new File("student.xml"), new SAXHandler);
+// 这里的SAXHandler是我们自定义的一个XML解析器
+```
+
 
