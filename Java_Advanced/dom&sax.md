@@ -202,7 +202,7 @@ public void testUpdate() throws Exception {
 
 > 两个核心类`SAXParser`和`DefaultHandler` 
 
-* 创建`SAXParser`对象
+1. 创建`SAXParser`对象
 
 ```java
 SAXParserFacotry factory = SAXParserFactory.newInstance();
