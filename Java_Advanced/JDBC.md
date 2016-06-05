@@ -258,6 +258,9 @@ public void testStatement() throws Exception {
 }
 
 @Test
+public void testPreparedStatement() throws Exception {
+  
+}
 ```
 
 
