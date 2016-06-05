@@ -116,7 +116,15 @@ public void save(Student stu) {
     // 获取连接对象
     conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
     // 创建语句对象
-    stmt = 
+    stmt = conn.createStatement();
+    // 执行SQL语句
+    // 使用StringBuilder进行拼接的速度比较快
+    StringBuilder sb = new StringBuilder("INSERT INTO t_student VALUES (NULL,)");
+    sb.append("'").append(stu.getName()).append(",");
+    sb.append(stu.getAge());
+    sb.append(")");
+    System.out.prinln(sb);
+    st.executeUpdate(sb.toString());
   } catch (Exception e) {
     e.printStackTrace();
   }
