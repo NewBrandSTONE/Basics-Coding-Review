@@ -384,6 +384,15 @@ try {
 > 1.在JDBC中，事务是默认提交的，必须下线设置事务为手动提交
 > 
 > Connecton对象.setAutoCommit(false);
+>
+> 2.手动的提交事务.
+>
+> connection对象.commit();
+>
+> 3.若出现异常则必须回滚事务:
+>
+> connection对象.rollback();
+
 
 
 
