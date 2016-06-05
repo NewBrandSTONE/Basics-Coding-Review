@@ -331,6 +331,9 @@ public Student get(Long id) {
   * 安全性更高(防止SQL注入)
 
 ##数据库事物的概述
+* 事物(Transaction,简写为tx)
+
+>指一组逻辑操作单元，使数据从一种状态变换到另一种状态。
 
 
 
