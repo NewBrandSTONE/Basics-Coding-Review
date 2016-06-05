@@ -306,7 +306,13 @@ public Student get(Long id) {
     pstmt = conn.prepareStatement(sql);
     pstmt.setLong(1, id);
     // 执行SQL语句
-    pstmt.excecuteQuery();
+    rs = pstmt.excecuteQuery();
+    while (rs.next()) {
+      Student stu = new Student();
+      stu.setId(rs.getLong("id"));
+      stu.setName(rs.getString("name"));
+      stu.setAge(rs.getAge("age"));
+    }
   } cathch(Exception e) {
     e.printStackTrace();
   } finally {
