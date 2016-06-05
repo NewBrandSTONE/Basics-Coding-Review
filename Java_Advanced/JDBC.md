@@ -89,5 +89,17 @@ public interface IStudentDAO {
   * @param stu 封装需要修改的学生信息
   */
   void update(Student stu);
+  
+  /**
+  * 根据id获取对应学生的信息
+  * @param Long id
+  */
+  Student get(Long id);
+  
+  /**
+  * 查询所有的学生信息
+  * @return
+  */
+  List<Student> list();
 }
 ```
