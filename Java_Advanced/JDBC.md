@@ -438,7 +438,9 @@ public void testGet() throws Exception {
 
 >合理利用连接资源
 
+* 注意
 
+>释放资源`Connection对象.close()`的时候是是把`Connection对象`放回连接池，而不是和数据库断开
 
 
 
