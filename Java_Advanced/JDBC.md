@@ -64,6 +64,6 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
   
   // 接口和实现类的规范
   DAO的接口:IXxxDAO,IXxxDao
-  DAO的接口实现类XxxDAOImpl,XxxDAOImpl
-  
+  DAO的接口实现类XxxDAOImpl,XxxDaoImpl
 ```
+
