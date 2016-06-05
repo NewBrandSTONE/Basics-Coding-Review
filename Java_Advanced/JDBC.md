@@ -301,9 +301,12 @@ public Student get(Long id) {
   ResultSet rs = null;
   try {
     conn = JdbcUtil.getConnection();
-    pstmt = conn.prepareStatement();
-    // 执行的SQL语句
+    // 创建语句对象
     String sql = "SELECT * FROM t_student WHERE id=?";
+    pstmt = conn.prepareStatement(sql);
+    pstmt.setLong(1, id);
+    // 执行SQL语句
+    pstmt.excecuteQuery();
   } cathch(Exception e) {
     e.printStackTrace();
   } finally {
