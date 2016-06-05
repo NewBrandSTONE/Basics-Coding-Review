@@ -259,7 +259,8 @@ public void testStatement() throws Exception {
 
 @Test
 public void testPreparedStatement() throws Exception {
-  
+  Class.forName("com.mysql.jdbc.Driver");
+  Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
 }
 ```
 
