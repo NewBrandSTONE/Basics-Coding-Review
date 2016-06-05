@@ -221,6 +221,7 @@ public List<Student> list() {
       // 将每个学生添加到List集合中
       list.add(stu);
     }
+    return list;
   } catch(Exception e) {
     e.printStackTrace();
   }
