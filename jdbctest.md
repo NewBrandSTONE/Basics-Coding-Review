@@ -50,6 +50,11 @@ public class JDBCUtil {
   
   }
   
+  public static Connection getConnection() throws Exception {
+    DataSource ds = DruidDataSourceFactory.createDataSource(p);
+    return ds.getConnection();
+  }
+  
 }
 ```
 
