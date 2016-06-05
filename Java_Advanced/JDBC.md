@@ -107,5 +107,13 @@ public interface IStudentDAO {
  * StudentDAOImpl
 
 ```java
-
+public void save(Student stu) {
+  Connection conn = null;
+  PrepareStatment pstmt = null;
+  try {
+  
+  } catch (Exception e) {
+    e.printStackTrace();
+  }
+}
 ```
