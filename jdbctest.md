@@ -55,6 +55,15 @@ public interface IClassesDAO {
 }
 ```
 
+* IClassesDAOBasicImpl.java
+
+```java
+public IClassesDAOBasicImpl implements IClassesDAO {
+  void save(Classes c) {
+    
+  } 
+}
+```
 
 
 
