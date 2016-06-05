@@ -42,7 +42,7 @@ public class JDBCUtil {
   static {
     ClassLoader loader = Thread().currentThread().getClassLoader();
     InputStream ins = loader.getResourceAsStream("db.properties");
-    
+    p.load(ins);
   }
   
 }
