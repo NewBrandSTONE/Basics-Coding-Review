@@ -246,6 +246,15 @@ ResultSet executeQuery();
 int executeUpdate();
 ```
 
+* 示例代码
+
+```java
+@Test
+public void testStatement() throws Exception {
+  Class.forName("com.mysql.jdbc.Driver");
+  Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
+}
+```
 
 
 
