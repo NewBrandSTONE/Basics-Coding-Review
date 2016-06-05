@@ -392,6 +392,8 @@ try {
 > 3.若出现异常则必须回滚事务:
 >
 > connection对象.rollback();
+>
+> MySQL中，InnoDB支持外键,MyISAM不支持外键，不支持事务.
 
 
 
