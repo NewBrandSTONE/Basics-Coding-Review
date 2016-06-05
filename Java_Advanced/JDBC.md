@@ -176,7 +176,10 @@ public Student get(Long id) {
   Connection conn = null;
   Statement stmt = null;
   try {
-    
+    // 加载注册驱动
+    Class.forName("com.mysql.jdbc.Driver");
+    // 获取连接对象
+    conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
   } catch(Exception e) {
     e.printStackTrace();
   }
