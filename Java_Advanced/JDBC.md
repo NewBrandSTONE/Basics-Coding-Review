@@ -232,3 +232,19 @@ public List<Student> list() {
 ```
 
 ##代码重构
+
+* JdbcUtil
+
+```java
+public class JdbcUtil {
+  private static Properties p = new Properties();
+  static {
+    try {
+    
+    } catch(Exception e) {
+      e.printStackTrace();
+    }
+  }
+}
+```
+
