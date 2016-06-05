@@ -140,6 +140,9 @@ public void delete(Long id) {
     conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
     // 执行SQL语句
     String sql = "DELETE FROM t_student WHERE id = " + id;
+    // 创建语句对象
+    stmt = conn.createStatement();
+    stmt.executeUpdate(sql);
   }
 }
 ```
