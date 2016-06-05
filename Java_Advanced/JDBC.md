@@ -143,6 +143,8 @@ public void delete(Long id) {
     // 创建语句对象
     stmt = conn.createStatement();
     stmt.executeUpdate(sql);
+  } catch (Exception e) {
+    System.out.printStackTrace();
   }
-}
+} 
 ```
