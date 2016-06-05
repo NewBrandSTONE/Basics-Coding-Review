@@ -294,6 +294,19 @@ public vod save(Student stu) {
     JdbcUtil.close(conn, ps, null);
   }
 }
+
+public Student get(Long id) {
+  Connection conn = null;
+  PreparedStatement pstmt = null;
+  ResultSet rs = null;
+  try {
+  
+  } cathch(Exception e) {
+    e.printStackTrace();
+  } finally {
+    JdbcUtil.close(conn, pstmt, rs);
+  }
+}
 ```
 
 
