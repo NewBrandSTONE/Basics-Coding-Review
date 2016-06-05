@@ -425,7 +425,7 @@ public void testGet() throws Exception {
     Blob blob = rs.getBlob("headImg");
     // 将二进制数据保存到磁盘中
     InputStream in = blob.getBinaryStream();
-    / Java7的新特性，复制文件
+    // Java7的新特性，复制文件
     Files.copy(in, Paths.get("head.png"));
     in.close();
   }
