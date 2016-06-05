@@ -210,8 +210,11 @@ public List<Student> list() {
     conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
     // 创建语句对象
     stmt = conn.createStatement();
+    // 执行sql语句
+    String sql = "SELECT * FROM t_student";
+    rs = st.executeQuery()
   } catch(Exception e) {
     e.printStackTrace();
-  } 
+  }
 }
 ```
