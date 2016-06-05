@@ -192,6 +192,7 @@ public Student get(Long id) {
       stu.setId(id);
       stu.setName(rs.getString("name")
       stu.setAge(rs.getInt("age"));
+      return stu;
     }
   } catch(Exception e) {
     e.printStackTrace();
