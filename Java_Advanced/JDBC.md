@@ -261,10 +261,12 @@ public void testStatement() throws Exception {
 public void testPreparedStatement() throws Exception {
   Class.forName("com.mysql.jdbc.Driver");
   Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
-  String sql = "INSERT INTO t_student(name, age) VALUES(?,?)"
+  String sql = "INSERT INTO t_student(name, age) VALUES(?,?)";
   PreparedStatement pstmt = conn.prepareStatement(sql);
   // 为占位符设置参数
-  ps.setString(1, "")
+  ps.setString(1, "李四");
+  ps.setInt(2, 200);
+  ps.executeUpdate(); // 不要传递参数
 }
 ```
 
