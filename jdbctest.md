@@ -32,6 +32,16 @@ username=root
 password=admin
 ```
 
+* Classes.java
+
+```java
+public class Classes {
+  private Long id;
+  private String classname;
+  private String teacher;
+  private BigDecimal fee;
+}
+```
 
 
 
