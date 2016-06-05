@@ -393,7 +393,7 @@ try {
 >
 > connection对象.rollback();
 >
-> MySQL中，InnoDB支持外键,MyISAM不支持外键，不支持事务.
+> `MySQL`中，`InnoDB`支持外键,`MyISAM`不支持外键，不支持事务.
 
 
 
