@@ -49,6 +49,7 @@ public class Classes {
   private String classname;
   private String teacher;
   private BigDecimal fee;
+  // 省略了构造方法
 }
 ```
 
