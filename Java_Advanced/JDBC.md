@@ -427,7 +427,9 @@ public void testGet() throws Exception {
     InputStream in = blob.getBinaryStream();
     / Java7的新特性，复制文件
     Files.copy(in, Paths.get("head.png"));
+    in.close();
   }
+  JdbcUtil.close(conn, pstmt, rs);
 }
 ```
 
