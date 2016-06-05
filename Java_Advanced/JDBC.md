@@ -320,6 +320,7 @@ public Student get(Long id) {
   } finally {
     JdbcUtil.close(conn, pstmt, rs);
   }
+  return null;
 }
 ```
 
