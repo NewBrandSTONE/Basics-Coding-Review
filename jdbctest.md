@@ -43,7 +43,17 @@ public class Classes {
 }
 ```
 
+* IClassesDAO.java
 
+```java
+public interface IClassesDAO {
+  void save(Classes c);
+  void delete(Long id);
+  void update(Classes c);
+  Classes get(Classes c) throws Exception;
+  List<Classes> list() throws Exception;
+}
+```
 
 
 
