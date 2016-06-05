@@ -325,6 +325,7 @@ public Student get(Long id) {
 ```
 
 ##`Statement`与`preparedStatement`的对比
+* PreparedStatement的优势
 
 
 
