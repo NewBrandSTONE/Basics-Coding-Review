@@ -256,6 +256,8 @@ public void testStatement() throws Exception {
     Statement stmt = conn.createStatement();
     stmt.executeUpdate("INSERT INTO t_student(name, age) VALUES('张三', 19)");
 }
+
+@Test
 ```
 
 
