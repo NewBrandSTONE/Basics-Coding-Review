@@ -68,6 +68,9 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 ```
 
 ##示例代码
+
+>注意，记得关闭`Connection`,`Statement`,`ReusultSet`等类似的资源，下面的代码都省去了关闭资源的步骤
+
 * IStudentDAO
 
 ```java
