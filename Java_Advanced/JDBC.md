@@ -451,6 +451,7 @@ public void testGet() throws Exception {
 * 示例代码
 
 ```java
+// 获取连接池对象
 public static DataSource getDataSource() {
   BasicDataSource ds = new BasicDataSource();
   ds.setDriverClassName("com.mysql.jdbc.Driver");
@@ -458,6 +459,14 @@ public static DataSource getDataSource() {
   ds.setPassword("root");
   ds.setUrl("jdbc:mysql:///mytest");
   retru ds;
+}
+
+// 获取连接对象
+public static Connection getConnection() throws Exception {
+  //使用工厂类创建连接池
+  DataSource ds = BasicDataSourceFactory.createDataSource(p);
+  // 从连接池中获取对象
+  return ds.getConnection();
 }
 ```
 
