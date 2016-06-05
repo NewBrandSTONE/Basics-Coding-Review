@@ -111,7 +111,8 @@ public void save(Student stu) {
   Connection conn = null;
   PrepareStatment pstmt = null;
   try {
-    
+    // 加载驱动
+    Class.forName("com.mysql.jdbc.Driver");
   } catch (Exception e) {
     e.printStackTrace();
   }
