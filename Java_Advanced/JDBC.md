@@ -162,6 +162,7 @@ public void update(Student stu) {
     StringBuilder sb = new StringBuilder("UPDATE t_student SET name = ");
     sb.append("'").append(stu.getName()).append("' WHERE id = ").append(stu.getId());
     System.out.println(sb);
+    stmt.executeUpdate(sb.toString);
   } catch (Exception e) {
     e.printStackTrace();
   }
