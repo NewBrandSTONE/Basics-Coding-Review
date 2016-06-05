@@ -282,6 +282,11 @@ public vod save(Student stu) {
     conn = JdbcUtil.getConnection();
     // 创建语句对象
     String sql = "INSERT INTO t_student VALUES(null, ?, ?)";
+    ps = conn.prepareStatement(sql);
+    // 为占位符设置
+    ps.setString(1, stu.getName());
+    ps.setInt(2, stu.getAge());
+    ps.executeUpdate();
   }
 }
 ```
