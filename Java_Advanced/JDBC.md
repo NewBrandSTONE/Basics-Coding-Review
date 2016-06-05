@@ -326,6 +326,10 @@ public Student get(Long id) {
 
 ##`Statement`与`preparedStatement`的对比
 * PreparedStatement的优势
+  * 语法简单，便于维护
+  * 执行的效率更高(MySQL不支持)
+  * 安全性更高(防止SQL注入)
+
 
 
 
