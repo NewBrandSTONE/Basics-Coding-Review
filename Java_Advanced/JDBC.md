@@ -254,7 +254,7 @@ public void testStatement() throws Exception {
     Class.forName("com.mysql.jdbc.Driver");
     Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
     Statement stmt = conn.createStatement();
-    stmt.executeUpdate(INSERT INTO t_student(name, age) VALUES('张三', 19));
+    stmt.executeUpdate("INSERT INTO t_student(name, age) VALUES('张三', 19)");
 }
 ```
 
