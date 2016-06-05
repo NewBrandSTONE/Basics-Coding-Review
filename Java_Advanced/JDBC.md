@@ -156,6 +156,11 @@ public void update(Student stu) {
     Class.forName("com.mysql.jdbc.Driver");
     // 获取连接对象
     conn = DriverManageer.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
+    // 创建语句对象
+    stmt = conn.createStatement();
+    // 执行SQL语句
+    StringBuilder sb = new StringBuilder("UPDATE t_student SET name = ");
+    sb.append("'").append(stu.getName()).append("' WHERE id = ").append(stu.getId());
   } catch (Exception e) {
     e.printStackTrace();
   }
