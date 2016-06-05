@@ -267,6 +267,8 @@ public void testPreparedStatement() throws Exception {
   ps.setString(1, "李四");
   ps.setInt(2, 200);
   ps.executeUpdate(); // 不要传递参数
+  ps.close();
+  conn.close();
 }
 ```
 
