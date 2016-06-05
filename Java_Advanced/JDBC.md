@@ -367,10 +367,14 @@ public Student get(Long id) {
 
 ```java
 try {
-
+  // 1.将事务设置为手动提交(设置事务的起点)
+  Connection对象.setAutoCommit(false);
+  
+  // 3.提交事务
+  Connection对象.commit();
 } catch (Exception e) {
   e.printStackTrace();
-  // 执行事务回滚操作
+  // 2.执行事务回滚操作
   Connection对象.rollback();
 }
 ```
