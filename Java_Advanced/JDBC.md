@@ -87,7 +87,7 @@ public interface IStudentDAO {
   /**
   * 修改学生信息
   * @param stu 封装需要修改的学生信息
-  * /
+  */
   void update(Student stu);
 }
 ```
