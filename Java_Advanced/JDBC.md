@@ -274,6 +274,11 @@ public void testPreparedStatement() throws Exception {
 
 ##实现`DAO`和`CRUD`的操作
 
+```java
+public vod save(Student stu) {
+  
+}
+```
 
 
 
