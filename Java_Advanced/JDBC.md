@@ -213,6 +213,14 @@ public List<Student> list() {
     // 执行sql语句
     String sql = "SELECT * FROM t_student";
     rs = st.executeQuery()
+    while (rs.next()) {
+      Student stu = new Student();
+      stu.setId(rs.getLong("id"));
+      stu.setName(rs.getString("name"));
+      stu.setAge(rs.getInt("age"));
+      // 将每个学生添加到List集合中
+      list.add(stu);
+    }
   } catch(Exception e) {
     e.printStackTrace();
   }
