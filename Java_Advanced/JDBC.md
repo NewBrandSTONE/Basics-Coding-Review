@@ -251,6 +251,11 @@ public class JdbcUtil {
       e.printStackTrace();
     }
   }
+  
+  // 获取连接对象
+  public static Connection getConnection() throws Exception {
+   return DriverManager.getConnection(p.getProperty("url"), p.getProperty("usernmae"), p.getProperty("password"));
+  }
 }
 ```
 
