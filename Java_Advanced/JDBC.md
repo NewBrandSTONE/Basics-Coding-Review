@@ -236,6 +236,18 @@ public List<Student> list() {
 
 >创建一个预编译语句对象，将带有占位符的`SQL`发送到数据库中进行编译
 
+* 注意事项
+
+>发送参数到数据库中执行sql，***千万不要传递参数***
+
+```java
+boolean execute();
+ResultSet executeQuery();
+int executeUpdate();
+```
+
+
+
 
 
 ##代码重构
