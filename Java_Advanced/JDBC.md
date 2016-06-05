@@ -330,6 +330,7 @@ public Student get(Long id) {
   * 执行的效率更高(MySQL不支持)
   * 安全性更高(防止SQL注入)
 
+##数据库事物的概述
 
 
 
