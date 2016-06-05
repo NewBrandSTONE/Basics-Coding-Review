@@ -231,6 +231,8 @@ public List<Student> list() {
 }
 ```
 
+##预编译语句对象`PreparedStatement`
+
 ##代码重构
 
 * JdbcUtil
