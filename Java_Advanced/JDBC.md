@@ -457,7 +457,7 @@ public static DataSource getDataSource() {
   ds.setUserName("root");
   ds.setPassword("root");
   ds.setUrl("jdbc:mysql:///mytest");
-  retru ds'
+  retru ds;
 }
 ```
 
