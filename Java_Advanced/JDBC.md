@@ -379,6 +379,11 @@ try {
 }
 ```
 
+* 注意事项
+
+> 1.在JDBC中，事务是默认提交的，必须下线设置事务为手动提交
+> 
+> Connecton对象.setAutoCommit(false);
 
 
 
