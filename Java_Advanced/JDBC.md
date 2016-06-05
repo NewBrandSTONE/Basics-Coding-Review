@@ -198,4 +198,15 @@ public Student get(Long id) {
     e.printStackTrace();
   }
 }
+
+public List<Student> list() {
+  Connection conn = null;
+  Statament stmt = null;
+  ResultSert rs = null;
+  try {
+  
+  } catch(Exception e) {
+    e.printStackTrace();
+  } 
+}
 ```
