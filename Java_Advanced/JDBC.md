@@ -406,7 +406,11 @@ public void testInsert() throws Exception {
   Connection conn = JdbcUtil.getConnection();
   String sql = "INSERT INTO t_user(headImg) VALUES (?)";
   PreparedStatement pstmt = conn.prepareStatement(sql);
-  InputStream in = new FileInputStream("E:/asd.png");
+  InputStream in = new FileInputStream("asd.png");
+  pstmt.setBlob(1, in);
+  pstmt.executeUpdate();
+  JdbcUtil.close(conn, pstmt, null);
+  in.close();
 }
 ```
 
