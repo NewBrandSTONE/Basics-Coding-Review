@@ -186,6 +186,13 @@ public Student get(Long id) {
     // 执行SQL语句
     String sql = "SELECT * FROM WHERE id = " + id;
     rs = stmt.executeQuery(sql);
+    // 处理结果集
+    if (rs.next()) {
+      Student stu = new Student();
+      stu.setId(id);
+      stu.setName(rs.getString("name")
+      stu.setAge(rs.getInt("age"));
+    }
   } catch(Exception e) {
     e.printStackTrace();
   }
