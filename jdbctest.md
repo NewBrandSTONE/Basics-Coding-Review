@@ -47,7 +47,7 @@ public class JDBCUtil {
   } catch (Exception e) {
     e.printStackTrace();
   }
-    
+  
   }
   
 }
