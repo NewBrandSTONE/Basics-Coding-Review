@@ -36,7 +36,9 @@ password=admin
 * JDBCUtil.java
 
 ```java
-public class 
+public class JDBCUtil {
+  
+}
 ```
 
 
