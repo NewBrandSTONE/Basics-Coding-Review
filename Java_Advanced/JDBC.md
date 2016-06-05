@@ -161,6 +161,7 @@ public void update(Student stu) {
     // 执行SQL语句
     StringBuilder sb = new StringBuilder("UPDATE t_student SET name = ");
     sb.append("'").append(stu.getName()).append("' WHERE id = ").append(stu.getId());
+    System.out.println(sb);
   } catch (Exception e) {
     e.printStackTrace();
   }
