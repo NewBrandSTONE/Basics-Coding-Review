@@ -291,7 +291,7 @@ public vod save(Student stu) {
     e.printStackTrace();
   } finally {
     // 释放资源
-    JdbcUtil.close(conn, ps, null);
+    JdbcUtil.close(conn, pstmt, null);
   }
 }
 
@@ -300,7 +300,10 @@ public Student get(Long id) {
   PreparedStatement pstmt = null;
   ResultSet rs = null;
   try {
-  
+    conn = JdbcUtil.getConnection();
+    pstmt = conn.prepareStatement();
+    // 执行的SQL语句
+    String sql = "SELECT * FROM t_student WHERE id=?";
   } cathch(Exception e) {
     e.printStackTrace();
   } finally {
