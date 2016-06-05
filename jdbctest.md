@@ -24,6 +24,12 @@
   * pps.util
   * pps.template
 
+* db.properties
+```xml
+driverClassName=com.mysql.jdbc.Driver
+
+```
+
 
 
 
