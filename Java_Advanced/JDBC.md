@@ -175,6 +175,7 @@ public void update(Student stu) {
 public Student get(Long id) {
   Connection conn = null;
   Statement stmt = null;
+  ResultSet rs = null;
   try {
     // 加载注册驱动
     Class.forName("com.mysql.jdbc.Driver");
@@ -182,6 +183,9 @@ public Student get(Long id) {
     conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
     // 创建语句对象
     stmt = conn.createStatmenet();
+    // 执行SQL语句
+    String sql = "SELECT * FROM WHERE id = " + id;
+    rs = stmt.executeQuery(sql);
   } catch(Exception e) {
     e.printStackTrace();
   }
