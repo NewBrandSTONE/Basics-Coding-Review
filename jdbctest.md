@@ -37,6 +37,13 @@ password=admin
 
 ```java
 public class JDBCUtil {
+  private static Properties p = new Properties();
+  
+  static {
+    ClassLoader loader = Thread().currentThread().getClassLoader();
+    InputStream ins = loader.getResourceAsStream("db.properties");
+    
+  }
   
 }
 ```
