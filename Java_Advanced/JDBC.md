@@ -289,6 +289,9 @@ public vod save(Student stu) {
     ps.executeUpdate();
   } catch(Exception e) {
     e.printStackTrace();
+  } finally {
+    // 释放资源
+    JdbcUtil.close(conn, ps, null);
   }
 }
 ```
