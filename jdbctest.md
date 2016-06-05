@@ -32,6 +32,13 @@ username=root
 password=admin
 ```
 
+* JDBCUtil.java
+```java
+public class 
+```
+
+
+
 * Classes.java
 
 ```java
@@ -58,7 +65,7 @@ public interface IClassesDAO {
 * IClassesDAOBasicImpl.java
 
 ```java
-public IClassesDAOBasicImpl implements IClassesDAO {
+public class IClassesDAOBasicImpl implements IClassesDAO {
   void save(Classes c) {
     
   } 
