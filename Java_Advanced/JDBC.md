@@ -276,7 +276,13 @@ public void testPreparedStatement() throws Exception {
 
 ```java
 public vod save(Student stu) {
-  Conn
+  Connection conn = null;
+  PreparedStatement pstmt = null;
+  try {
+    conn = JdbcUtil.getConnection();
+    // 创建语句对象
+    String sql = "INSERT INTO t_student VALUES(null, ?, ?)";
+  }
 }
 ```
 
