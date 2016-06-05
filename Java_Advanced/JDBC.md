@@ -180,6 +180,8 @@ public Student get(Long id) {
     Class.forName("com.mysql.jdbc.Driver");
     // 获取连接对象
     conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
+    // 创建语句对象
+    stmt = conn.createStatmenet();
   } catch(Exception e) {
     e.printStackTrace();
   }
