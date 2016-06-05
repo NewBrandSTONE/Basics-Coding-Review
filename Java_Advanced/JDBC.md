@@ -363,6 +363,19 @@ public Student get(Long id) {
 
 >持久性是指一个事务一旦被提交，它对数据库中数据的改变是永久性的，接下来的其他操作和数据库故障不应该对其有任何影响
 
+* DML的操作默认是自动提交的
+
+```java
+try {
+
+} catch (Exception e) {
+  e.printStackTrace();
+  // 执行事务回滚操作
+  Connection对象.rollback();
+}
+```
+
+
 
 
 
