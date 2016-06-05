@@ -68,3 +68,26 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 ```
 
 ##示例代码
+* IStudentDAO
+
+```java
+public interface IStudentDAO {
+  /**
+  * 保存学生信息
+  * @param stu 需要保存的学生对象
+  */
+  void save(Student stu);
+  
+  /**
+  * 根据id删除对应的学生
+  * @param id 需要删除学生的di
+  */
+  void delete(Long id);
+  
+  /**
+  * 修改学生信息
+  * @param stu 封装需要修改的学生信息
+  * /
+  void update(Student stu);
+}
+```
