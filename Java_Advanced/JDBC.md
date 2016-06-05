@@ -312,6 +312,8 @@ public Student get(Long id) {
       stu.setId(rs.getLong("id"));
       stu.setName(rs.getString("name"));
       stu.setAge(rs.getAge("age"));
+      
+      return stu;
     }
   } cathch(Exception e) {
     e.printStackTrace();
