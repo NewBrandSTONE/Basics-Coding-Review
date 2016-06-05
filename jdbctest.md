@@ -27,7 +27,9 @@
 * db.properties
 ```xml
 driverClassName=com.mysql.jdbc.Driver
-
+url=jdbc:mysql://127.0.0.1:3306/jdbcdemo
+username=root
+password=admin
 ```
 
 
