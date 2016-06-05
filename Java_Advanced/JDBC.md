@@ -413,6 +413,22 @@ public void testInsert() throws Exception {
   JdbcUtil.close(conn, pstmt, null);
   in.close();
 }
+
+@Test
+public void testGet() throws Exception {
+  Connection conn = JdbcUtil.getConnection();
+  String sql = "SELET headImg FROM t_user WHERE id=?"
+  PreparedStatement pstmt = conn.prepareStatement();
+  ps.setLong(1, 2L);
+  ResultSet rs = ps.executeQuery();
+  if (rs.next()) {
+    Blob blob = rs.getBlob("headImg");
+    // 将二进制数据保存到磁盘中
+    InputStream in = blob.getBinaryStream();
+    / Java7的新特性，复制文件
+    Files.copy(in, Paths.get("head.png"));
+  }
+}
 ```
 
 
