@@ -287,6 +287,8 @@ public vod save(Student stu) {
     ps.setString(1, stu.getName());
     ps.setInt(2, stu.getAge());
     ps.executeUpdate();
+  } catch(Exception e) {
+    e.printStackTrace();
   }
 }
 ```
