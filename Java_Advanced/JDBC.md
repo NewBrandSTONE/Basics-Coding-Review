@@ -396,7 +396,18 @@ try {
 > `MySQL`中，`InnoDB`支持外键,`MyISAM`不支持外键，不支持事务.
 
 
+##大数据类型操作
+* 示例代码
 
+`将图片插入到数据库中`
+
+```java
+public void testInsert() throws Exception {
+  Connection conn = JdbcUtil.getConnection();
+  String sql = "INSERT INTO t_user(headImg) VALUES (?)";
+  PreparedStatement pstmt = conn.prepareStatement(sql);
+}
+```
 
 
 
