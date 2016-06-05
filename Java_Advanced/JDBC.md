@@ -109,12 +109,14 @@ public interface IStudentDAO {
 ```java
 public void save(Student stu) {
   Connection conn = null;
-  PrepareStatment pstmt = null;
+  Statement stmt = null;
   try {
     // 加载驱动
     Class.forName("com.mysql.jdbc.Driver");
     // 获取连接对象
     conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytest", "root", "root");
+    // 创建语句对象
+    stmt = 
   } catch (Exception e) {
     e.printStackTrace();
   }
