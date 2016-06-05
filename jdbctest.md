@@ -40,9 +40,14 @@ public class JDBCUtil {
   private static Properties p = new Properties();
   
   static {
+  try {
     ClassLoader loader = Thread().currentThread().getClassLoader();
     InputStream ins = loader.getResourceAsStream("db.properties");
     p.load(ins);
+  } catch (Exception e) {
+    e.printStackTrace();
+  }
+    
   }
   
 }
