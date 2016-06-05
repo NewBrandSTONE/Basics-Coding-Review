@@ -240,7 +240,13 @@ public class JdbcUtil {
   private static Properties p = new Properties();
   static {
     try {
-      
+       // 加载资源文件
+       ClassLoader loader = Thread.currentThread().getContextClassLoader();
+       InputStream ins = loader.getResourceAsStream("db.properties");
+       p.load(in);
+       // 加载注册驱动
+       Class.forName(p.getProperty("driverClassName"));
+     )
     } catch(Exception e) {
       e.printStackTrace();
     }
