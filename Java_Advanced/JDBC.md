@@ -59,5 +59,11 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 ```java
   com.ghyz.ppd.dao         -- 定义DAO的接口
   com.ghyz.ppd.dao.impl    -- 定义DAO的接口实现类
+  com.ghyz.ppd.test        -- 定义测试类
+  com.ghyz.ppd.util        -- 定义实体类
+  
+  // 接口和实现类的规范
+  DAO的接口:IXxxDAO,IXxxDao
+  DAO的接口实现类XxxDAOImpl,XxxDAOImpl
   
 ```
