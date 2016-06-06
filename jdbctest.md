@@ -136,6 +136,7 @@ public class IClassesDAOBasicImpl implements IClassesDAO {
     Connection conn = null;
     PreparedStatement pstmt = null;
     try {
+      conn = JDBCUtil.getConnection();
       String sql = "DELETE FROM t_class WHERE id=?";
       pstmt = conn.prepareStatement(sql);
       pstmt.setLong(id);
@@ -151,7 +152,10 @@ public class IClassesDAOBasicImpl implements IClassesDAO {
     Connection conn = null;
     PreparedStatement pstmt = null;
     try {
-    
+      conn = JDBCUtil.getConnection();
+      String sql = "UPDATE t_class SET classname=?, teacher=?, fee=? WHERE id=?";
+      pstmt = conn.prepareStatement(sql);
+      
     } catch(Excetpion e) {
       e.printStackTrace();
     } finally {
