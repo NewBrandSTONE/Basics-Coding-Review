@@ -118,7 +118,8 @@ public class IClassesDAOBasicImpl implements IClassesDAO {
     Connection conn = null;
     PreparedStatemenet pstmt = null;
     try {
-    
+      conn = JDBCUtil.getConnection();
+      String sql = "INSERT INTO t_class VALUES(NULL, ?, ?, ?, ?)";
     } catch (Exception e) {
       e.printStackTrace();
     } finally {
