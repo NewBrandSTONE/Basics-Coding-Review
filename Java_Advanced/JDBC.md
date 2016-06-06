@@ -500,7 +500,7 @@ public class JdbcUtil {
 }
 ```
 
-* `DML`和`DQL`操作使用`PreparedStatement`代替Statement
+##`DML`和`DQL`操作使用`PreparedStatement`代替Statement
 
 * 示例代码
 
