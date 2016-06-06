@@ -55,6 +55,32 @@ public class JDBCUtil {
     return ds.getConnection();
   }
   
+  public static void close(Connection conn, PreparedStatement pstmt, ResultSet rs) {
+    try {
+      if(rs != null) {
+        rs.close();
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    } finally {
+      try{
+        if (pstmt != null) {
+          pstmt.close();
+        }
+      } catch(Exception e) {
+        e.printStackTrace();
+      } finally {
+        try {
+          if (conn != null) {
+            conn.close();
+          }
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+  
 }
 ```
 
@@ -89,7 +115,15 @@ public interface IClassesDAO {
 ```java
 public class IClassesDAOBasicImpl implements IClassesDAO {
   void save(Classes c) {
+    Connection conn = null;
+    PreparedStatemenet pstmt = null;
+    try {
     
+    } catch (Exception e) {
+      e.printStackTrace();
+    } finally {
+      J
+    }
   } 
 }
 ```
