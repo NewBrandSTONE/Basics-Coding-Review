@@ -518,7 +518,6 @@ ResultSet rs = pstmt.executeQuery();
 String sql = "INSERT INTO t_student(id, name) VALUES(null,?)";
 PreparedStatement pstmt = conn.prepareStatement(sql);
 pstmt.setString(1, "ghyz");
-
 pstmt.executeUpdate();
 ```
 
