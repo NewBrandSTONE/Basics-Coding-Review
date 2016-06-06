@@ -119,8 +119,11 @@ public class IClassesDAOBasicImpl implements IClassesDAO {
     PreparedStatemenet pstmt = null;
     try {
       conn = JDBCUtil.getConnection();
-      String sql = "INSERT INTO t_class VALUES(NULL, ?, ?, ?, ?)";
+      String sql = "INSERT INTO t_class VALUES(NULL, ?, ?, ?)";
       pstmt = conn.prepareStatement();
+      pstmt.setString(1, c.getClassName());
+      pstmt.setString(2, c.getTeacher());
+      pstmt.setBigDecimal(3, c.getf)
       pstmt.executeUpdate();
     } catch (Exception e) {
       e.printStackTrace();
@@ -133,7 +136,7 @@ public class IClassesDAOBasicImpl implements IClassesDAO {
     Connection conn = null;
     PreparedStatement pstmt = null;
     try {
-      
+      String sql = "DELETE FROM t_class WHERE id=?";
     } catch(Exception e) {
       e.printStackTrace();
     } finally {
