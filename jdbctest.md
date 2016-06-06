@@ -146,6 +146,18 @@ public class IClassesDAOBasicImpl implements IClassesDAO {
       JDBCUtil.close(null, pstmt, conn);
     }
   }
+  
+  void update(Classes c) {
+    Connection conn = null;
+    PreparedStatement pstmt = null;
+    try {
+    
+    } catch(Excetpion e) {
+      e.printStackTrace();
+    } finally {
+      JDBCUtil.close(null, pstmt, conn);
+    }
+  }
 }
 ```
 
