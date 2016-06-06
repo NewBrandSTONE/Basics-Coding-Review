@@ -122,7 +122,7 @@ public class IClassesDAOBasicImpl implements IClassesDAO {
     } catch (Exception e) {
       e.printStackTrace();
     } finally {
-      J
+      JDBCUtil.close(null, pstmt, conn);
     }
   } 
 }
