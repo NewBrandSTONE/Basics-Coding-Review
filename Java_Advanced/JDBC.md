@@ -502,4 +502,13 @@ public class JdbcUtil {
 
 * `DML`和`DQL`操作使用`PreparedStatement`代替Statement
 
+* 示例代码
+
+```java
+String sql = "SELECT * FROM t_student";
+PreparedStatement pstmt = conn.prepareStatement(sql);
+ResultSet rs = pstmt.executeQuery();
+```
+
+
 
