@@ -120,6 +120,8 @@ public class IClassesDAOBasicImpl implements IClassesDAO {
     try {
       conn = JDBCUtil.getConnection();
       String sql = "INSERT INTO t_class VALUES(NULL, ?, ?, ?, ?)";
+      pstmt = conn.prepareStatement();
+      pstmt.executeUpdate();
     } catch (Exception e) {
       e.printStackTrace();
     } finally {
