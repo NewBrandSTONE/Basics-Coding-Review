@@ -123,7 +123,7 @@ public class IClassesDAOBasicImpl implements IClassesDAO {
       pstmt = conn.prepareStatement();
       pstmt.setString(1, c.getClassName());
       pstmt.setString(2, c.getTeacher());
-      pstmt.setBigDecimal(3, c.getf)
+      pstmt.setBigDecimal(3, c.getFee());
       pstmt.executeUpdate();
     } catch (Exception e) {
       e.printStackTrace();
