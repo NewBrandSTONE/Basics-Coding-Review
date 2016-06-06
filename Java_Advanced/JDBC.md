@@ -504,11 +504,25 @@ public class JdbcUtil {
 
 * 示例代码
 
+>`DQL`查询语句
+
 ```java
 String sql = "SELECT * FROM t_student";
 PreparedStatement pstmt = conn.prepareStatement(sql);
 ResultSet rs = pstmt.executeQuery();
 ```
+
+>`DML`修改语句
+
+```java
+String sql = "INSERT INTO t_student(id, name) VALUES(null,?)";
+PreparedStatement pstmt = conn.prepareStatement(sql);
+pstmt.setString(1, "ghyz");
+
+pstmt.executeUpdate();
+```
+
+
 
 
 
