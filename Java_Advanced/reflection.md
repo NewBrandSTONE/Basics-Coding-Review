@@ -412,6 +412,6 @@ public InputStream getResourceAsStream(String fileName);
 ```
 
 ##注意
->在使用`newInstace()`的时候，需要被实例化对象的类，具有无参的公共的构造方法
+>在使用`newInstace()`的时候，需要被实例化对象的类，具有无参的公共的构造方法。
 
 
