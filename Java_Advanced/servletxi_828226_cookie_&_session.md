@@ -54,7 +54,9 @@
 
 >使用`注解`配置`Servlet`示例代码
 ```java
-@WebServlet(value="/anno", loadOnStartup=0, initParams={@WebInitParam(name="encoding", value="UTF-8")})
+@WebServlet(value="/anno", 
+loadOnStartup=0, 
+initParams={@WebInitParam(name="encoding", value="UTF-8")})
 public class AnnoServlet extends HttpServlet {
   // TODO...
 }
