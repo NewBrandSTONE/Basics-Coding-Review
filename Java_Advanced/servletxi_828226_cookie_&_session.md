@@ -1,6 +1,6 @@
 # Servlet细节&Cookie&Session
 ##Servlet的细节问题
-* 一个`Servlet`可以有多个映射`<url-pattern>`。
+* 一个`Servlet`可以有多个映射`<url-pattern>`
 
 ```xml
 <servlet>
