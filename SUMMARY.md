@@ -7,5 +7,5 @@
 * [JDBC](Java_Advanced/JDBC.md)
 * [Reflection](Java_Advanced/reflection.md)
 * [JDBCTest](jdbctest.md)
-* Servlet细节&Cookie&Session
+* [Servlet细节&Cookie&Session](servletxi_828226_cookie_&_session.md)
 
