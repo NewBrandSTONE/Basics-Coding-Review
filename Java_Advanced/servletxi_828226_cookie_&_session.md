@@ -4,7 +4,15 @@
 
 ```xml
 <servlet>
+  <servlet-name>MappingServlet</servlet-name>
+  <servlet-class>com.ghyz.mapping.MappingServlet</servlet-class>
 </servlet>
+<servlet-mapping>
+  <servlet-name>MappingServlet</servlet-name>
+  <url-pattern>/mapping</url-pattern>
+  <url-pattern>/mapping</url-pattern>
+  <url-pattern>/mapping</url-pattern>
+</servlet-mapping>
 ```
 
 * `Servlet`的`<url-pattern>`可以使用通配符`*`进行配置
