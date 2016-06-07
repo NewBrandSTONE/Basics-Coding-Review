@@ -85,4 +85,5 @@ public class AnnoServlet extends HttpServlet {
   * `session`
 
 ##`Cookie`
+* 客户端技术，将共享数据保存在客户端中（浏览器）
 
