@@ -101,6 +101,9 @@ for (Cookie c : cookies) {
     String value = c.getValue();
   }
 }
+// 4.修改Cookie中的共享数据
+// 方式一：获取到要修改的Cookie对象，调用setValue(String newValue);
+// 方式二：
 ```
 
 
