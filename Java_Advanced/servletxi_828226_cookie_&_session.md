@@ -61,4 +61,6 @@ public class AnnoServlet extends HttpServlet {
 ```
 
 ##`Servlet`线程安全问题
+* `Servlet`在整个应用中只有一个实例
+>问题的根本原因：因为有多个线程并发访问（修改）当前的`Servlet`中的资源，又因为`Servlet`是单例的，所以所有的成员，都会去访问同一个对象
 
