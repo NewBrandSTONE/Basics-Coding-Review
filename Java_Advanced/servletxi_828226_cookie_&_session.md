@@ -103,7 +103,8 @@ for (Cookie c : cookies) {
 }
 // 4.修改Cookie中的共享数据
 // 方式一：获取到要修改的Cookie对象，调用setValue(String newValue);
-// 方式二：
+// 方式二：重新创建一个名字和要修改的Cookie一样的Cookie对象即可,修改之后需要将Cookie重新发送给浏览器
+// 5.Cookie的生命周期(默认是在关闭浏览器就销毁了)
 ```
 
 
