@@ -81,3 +81,6 @@ public class AnnoServlet extends HttpServlet {
   * 使用参数传递机制
 >在请求路径后面跟上响应参数***如/param/list?username=ghyz***这种方式可以解决数据共享的问题，但是，参数显示在了地址栏中，***不安全(不推荐)***
 
+  * `cookie`
+  * `session`
+
