@@ -21,7 +21,7 @@
   * `*.xxx`任何字符，加上指定的后缀名即可访问当前的`Servlet`
 
 
-* `Servlet`的`<servlet-name>`不能为`default`，如果为`default`那么当前项目中的静态资源将无法被访问到。
+* `Servlet`的`<servlet-name>`不能为`default`，如果为`default`那么当前项目中的静态资源将无法被访问
 
 
 * 当`Servlet`中初始化操作非常复杂的时候，那么这种操作就非常好使，给第一个访问用户的体验就很差
