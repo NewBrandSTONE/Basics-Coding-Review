@@ -105,6 +105,10 @@ for (Cookie c : cookies) {
 // 方式一：获取到要修改的Cookie对象，调用setValue(String newValue);
 // 方式二：重新创建一个名字和要修改的Cookie一样的Cookie对象即可,修改之后需要将Cookie重新发送给浏览器
 // 5.Cookie的生命周期(默认是在关闭浏览器就销毁)
+void setMaxAge(int expiry)
+// expiry > 0:设置生存的时间为expiry妙
+// expiry = 0:立即删除当前的Cookie
+// expiry < 0:缺省值，在关闭浏览器就销毁
 ```
 
 
