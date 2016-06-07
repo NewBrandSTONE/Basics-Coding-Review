@@ -22,6 +22,7 @@
 
 
 * `Servlet`的`<servlet-name>`不能为`default`如果为`default`那么当前项目中的静态资源将无法被访问
+  * 因为在`Tomcat`中有一个默认的`Servlet`配置其`<servlet-name>`就是`default`专门用来访问项目中的静态资源。
 
 
 * 当`Servlet`中初始化操作非常复杂的时候，那么这种操作就非常好使，给第一个访问用户的体验就很差
