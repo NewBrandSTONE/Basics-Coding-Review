@@ -42,6 +42,7 @@
 >从`Servlet3.0`开始`Servlet`就支持使用注解进行配置，可以使用注解来***替代部分***的`web.xml`文件
 
 * 使用`注解`的准备工作(`web.xml`的配置)
-  *
+  * `metadata-complete="true"`:指定服务器忽略`Servlet`上面的注解
+  * `metadata-complete="false"`:指定服务器编译`Servlet`上的注解***(缺省值)***
 
 
