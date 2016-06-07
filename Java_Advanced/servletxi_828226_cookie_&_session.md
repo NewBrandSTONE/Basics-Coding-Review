@@ -10,8 +10,8 @@
 <servlet-mapping>
   <servlet-name>MappingServlet</servlet-name>
   <url-pattern>/mapping</url-pattern>
-  <url-pattern>/mapping</url-pattern>
-  <url-pattern>/mapping</url-pattern>
+  <url-pattern>/mapping2</url-pattern>
+  <url-pattern>/mapping3</url-pattern>
 </servlet-mapping>
 ```
 
