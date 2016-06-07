@@ -84,3 +84,10 @@ public class AnnoServlet extends HttpServlet {
   * `cookie`
   * `session`
 
+* 示例流程
+
+```sequence
+用户->LoginServlet:登录
+Note right of LoginServlet
+```
+
