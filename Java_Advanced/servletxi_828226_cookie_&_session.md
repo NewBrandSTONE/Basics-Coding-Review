@@ -85,5 +85,22 @@ public class AnnoServlet extends HttpServlet {
   * `session`
 
 ##`Cookie`
-* 客户端技术，将共享数据保存在客户端中（浏览器）
+>`Cookie`客户端技术，将共享数据保存在客户端中（浏览器）
+
+* `Cookie`的细节
+
+```java
+// 1.创建Cookie对象，并设置共享数据
+Cookie c = new Cookie(String name, String value);
+// 2.将Cookie响应给浏览器
+response.addCookie(c);
+// 3.获取Cookie中的共享数据
+Cookie[] cookies = request.getCookies();
+for (Cookie c : cookies) {
+  if ("username".equals(c.getName())) {
+    String value = c.getValue();
+  }
+}
+```
+
 
