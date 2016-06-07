@@ -58,7 +58,5 @@
 public class AnnoServlet extends HttpServlet {
   // TODO...
 }
-
-
 ```
 
