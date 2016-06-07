@@ -1,6 +1,12 @@
 # Servlet细节&Cookie&Session
 ##Servlet的细节问题
 * 一个`Servlet`可以有多个映射`<url-pattern>`。
+
+```xml
+<servlet>
+</servlet>
+```
+
 * `Servlet`的`<url-pattern>`可以使用通配符`*`进行配置
   * `/*`表示可以使用任意字符访问当前的`Servlet`
   * `/system/*`可以使用以`/system`为前缀，后面是任意字符即可访问当前的`Servlet`
