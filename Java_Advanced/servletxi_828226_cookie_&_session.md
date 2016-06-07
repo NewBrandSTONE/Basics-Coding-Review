@@ -11,7 +11,7 @@
   * 解决方案：应该将耗时的初始化操作放在第一次访问执行之前
 
 ```xml
-<ervlet>
+<servlet>
   <servlet-name>MappingServlet</servlet-name>
   <servlet-class>com.ghyz.mapping.MappingServlet</servlet-class>
   <!-- 设置Servlet在Tomcat中启动的时候执行初始化，数字越小越先执行 -->
