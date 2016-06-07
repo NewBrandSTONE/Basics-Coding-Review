@@ -64,3 +64,8 @@ public class AnnoServlet extends HttpServlet {
 * `Servlet`在整个应用中只有一个实例
 >问题的根本原因：因为有多个线程并发访问（修改）当前的`Servlet`中的资源，又因为`Servlet`是单例的，所以所有的成员，都会去访问同一个对象
 
+* 解决方法
+  * 可以让当前的`Servlet`去实现一个接口`SingleThreadModel`，表示当前的`Servlet`只能被同一个线程访问***该方法不推荐，已经被淘汰了***
+  * `Servlet`中使用局部变量代替成员变量
+
+
