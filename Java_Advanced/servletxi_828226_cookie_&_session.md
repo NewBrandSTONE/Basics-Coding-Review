@@ -84,7 +84,5 @@ public class AnnoServlet extends HttpServlet {
   * `cookie`
   * `session`
 
-* 示例流程
-
-
+##`Cookie`
 
