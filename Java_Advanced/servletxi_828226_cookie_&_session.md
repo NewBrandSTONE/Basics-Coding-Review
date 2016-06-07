@@ -52,4 +52,11 @@
   * 如果当前配置是针对某一个`Servlet`的话，可以使用`注解`
   * 如果是通用的配置，应该使用`web.xml`例如给多个`Servlet`共享数据
 
+>使用`注解`配置`Servlet`示例代码
+```java
+@WebServlet(value="/anno")
+public class AnnoServlet extends HttpServlet {
+  // TODO...
+}
+```
 
