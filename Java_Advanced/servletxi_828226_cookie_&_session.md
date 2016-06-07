@@ -45,6 +45,7 @@
   * `metadata-complete="true"`:指定服务器忽略`Servlet`上面的注解
   * `metadata-complete="false"`:指定服务器编译`Servlet`上的注解***(缺省值)***
 
+
 * 选择`注解`还是`web.xml`配置`Servlet`?
   * `web.xml`维护难度大
   * `注解`：将硬编码拉回到程序中，不好维护
