@@ -72,4 +72,5 @@ public class AnnoServlet extends HttpServlet {
   * 可以让当前的`Servlet`去实现一个接口`SingleThreadModel`，表示当前的`Servlet`只能被同一个线程访问***该方法不推荐，已经被淘汰了***
   * `Servlet`中使用局部变量代替成员变量
 
-
+##`Http协议`无状态带来的问题
+>`HTTP`是无状态协议，也就是没有记忆力，每个请求之间无法共享数据。这样就无法知道会话什么时候开始，什么时候结束，也无法确定发出请求的用户身份。
