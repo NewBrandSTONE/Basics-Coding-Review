@@ -131,6 +131,9 @@ URLDecoder.decode("对应的编码","UTF-8");
 // 在Servlet中创建的Cookie对象，会默认的将Servlet的相对路径设置给Cookie
 // 如：/cookie/login-->相对路径/cookie/
 // 此时访问/session/list的时候，浏览器不会将Cookie中的数据发送给服务器
+// 解决方案
+// 通常可以将Cookie的路径设置为/，表示访问当前项目中的所有资源，都会将共享数据发送给服务器
+c.setPath("/");
 ```
 
 
