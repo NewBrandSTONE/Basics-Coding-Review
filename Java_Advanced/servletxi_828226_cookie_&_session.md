@@ -79,10 +79,11 @@ public class AnnoServlet extends HttpServlet {
 
 * 解决方案：解决`HTTP`无协议状态的问题
   * 使用参数传递机制
->在请求路径后面跟上响应参数***如/param/list?username=ghyz***这种方式可以解决数据共享的问题，但是，参数显示在了地址栏中，***不安全(不推荐)***
-
   * `cookie`
   * `session`
+>在请求路径后面跟上响应参数***如/param/list?username=ghyz***这种方式可以解决数据共享的问题，但是，参数显示在了地址栏中，***不安全(不推荐)***
+
+
 
 ##`Cookie`
 >`Cookie`客户端技术，将共享数据保存在客户端中（浏览器）
