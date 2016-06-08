@@ -117,6 +117,15 @@ void setMaxAge(int expiry)
 // expiry > 0:设置生存的时间为expiry妙
 // expiry = 0:立即删除当前的Cookie
 // expiry < 0:缺省值，在关闭浏览器就销毁
+// 6.删除Cookie
+  c.setMaxAge(0);
+// 7.Cookie中的name和value不支持中文
+// 解决方案
+// 将文中的字符先重新编码(编码成非中文的)
+// 编码
+URLEncoder.encode("大黄", "UTF-8");
+// 解码
+URLDecoder.decode("对应的编码","UTF-8");
 ```
 
 
