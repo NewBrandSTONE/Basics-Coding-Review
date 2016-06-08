@@ -157,5 +157,15 @@ c.setDomain("baidu.com");
 >
 >`session`实际就是一个会话`cookie`
 
-* 使用
+* 使用方法
+
+```java
+// 1.如何获得Session
+HttpSession session = request.getSession();
+// 2.如何操作
+session.setAttribute(key, value);
+session.getAttribute(key);
+session.removeAttribute(key);
+session.getAttributeNames();
+```
 
