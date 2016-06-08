@@ -89,6 +89,12 @@ public class AnnoServlet extends HttpServlet {
 ##`Cookie`
 >`Cookie`客户端技术，将共享数据保存在客户端中（浏览器）
 
+* 原理
+
+>让***浏览器***记住键值对，是向响应头中添加一下头即可`set-Cookie:name=tom`
+>浏览器记住之后，向服务器发送键值对，是在请求头中添加下面的信息`Cookie:name=tom`
+
+
 * `Cookie`的细节
 
 ```java
