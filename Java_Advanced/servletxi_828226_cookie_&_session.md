@@ -134,6 +134,12 @@ URLDecoder.decode("对应的编码","UTF-8");
 // 解决方案
 // 通常可以将Cookie的路径设置为/，表示访问当前项目中的所有资源，都会将共享数据发送给服务器
 c.setPath("/");
+
+// 域范围
+// 如果使用的二级域名。可以使用下面的方式进行共享
+// void setDomain(String path)
+c.setPath("/");
+c.setDomain("baidu.com");
 ```
 
 
