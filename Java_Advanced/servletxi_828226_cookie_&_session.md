@@ -126,6 +126,10 @@ void setMaxAge(int expiry)
 URLEncoder.encode("大黄", "UTF-8");
 // 解码
 URLDecoder.decode("对应的编码","UTF-8");
+
+// 8.cookie的路径和cookie的域范围
+// 在Servlet中创建的Cookie对象，会默认的将Servlet的相对路径设置给Cookie
+// 此时访问/session/list的时候，浏览器不会将Cookie中的数据发送给服务器
 ```
 
 
