@@ -169,3 +169,12 @@ session.removeAttribute(key);
 session.getAttributeNames();
 ```
 
+* 原理
+
+>浏览器第一次访问服务器，服务器会在内存中开辟一个空间(`session`)
+>
+>把`session`对应的`id`发送给浏览器
+>
+>那么下次浏览器再去访问服务器，会把`sessionId`交给服务器，服务器通过`sessionId`找到刚才开辟的空间
+
+
