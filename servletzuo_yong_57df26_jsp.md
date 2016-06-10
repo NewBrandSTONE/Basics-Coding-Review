@@ -12,11 +12,11 @@
 * 请求转发（`forward`）
   * 语法
 
-```java
-  request对象.getRequestDispatcher(String path).forward(request, response);
-  // 参数
-  // path表明目标资源名称(需要跳转到哪里)
-```
+>  request对象.getRequestDispatcher(String path).forward(request, response);
+>  
+>  // 参数
+>  
+>  // path表明目标资源名称(需要跳转到哪里)
 
   * 特点
 
