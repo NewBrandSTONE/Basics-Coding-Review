@@ -53,6 +53,7 @@
   * 如果是通用的配置，应该使用`web.xml`例如给多个`Servlet`共享数据
 
 >使用`注解`配置`Servlet`示例代码
+
 ```java
 @WebServlet(value="/anno", 
 loadOnStartup=0, 
