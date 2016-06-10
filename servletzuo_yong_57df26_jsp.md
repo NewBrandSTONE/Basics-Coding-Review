@@ -67,5 +67,12 @@ application | ServletContext | Tomcat关闭applicaiton对象才销毁
 >
 >在整个`Web`的生命中期中，只有一个对象，表示的就是当前应用
 
+* 如何获取该对象
+```java
+// 在Servlet中
+ServletContext ctx = super.getServletContext();
+// GenericServlet实现了Servlet和ServletConfig接口，
+```
+
 
 
