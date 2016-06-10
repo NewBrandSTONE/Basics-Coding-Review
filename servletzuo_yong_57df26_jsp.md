@@ -69,9 +69,13 @@ application | ServletContext | Tomcat关闭applicaiton对象才销毁
 
 * 如何获取该对象
 ```java
-// 在Servlet中
+// 1.在Servlet中
 ServletContext ctx = super.getServletContext();
-// GenericServlet实现了Servlet和ServletConfig接口，
+// GenericServlet实现了Servlet和ServletConfig接口，而getServletContext
+
+// 2.通过请求对象获取
+ServletContext ctx2 = req.getServletContext();
+ServletContext ctx3 = req.getSession.getServletContext();
 ```
 
 
