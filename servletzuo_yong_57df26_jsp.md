@@ -67,3 +67,5 @@ application | ServletContext | Tomcat关闭applicaiton对象才销毁
 >
 >在整个`Web`的生命中期中，只有一个对象，表示的就是当前应用
 
+
+
