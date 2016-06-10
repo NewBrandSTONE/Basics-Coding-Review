@@ -26,6 +26,11 @@
 
 
 * `URL`重定向(`redirect`)
+  * 语法
+>response对象.sendRedirect(String path);
+>
+>// 参数
+>path表示目标资源名称
 
 
 
