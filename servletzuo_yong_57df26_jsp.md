@@ -62,6 +62,7 @@ application | ServletContext | Tomcat关闭applicaiton对象才销毁
 
 ##ServletContext接口和常用方法
 
+* 概念
 >`ServletContext`接口，表示的应用，`Tomcat`启动的时候回创建一个对象，`Tomcat`关闭的时候对象销毁
 >
 >在整个`Web`的生命中期中，只有一个对象，表示的就是当前应用
