@@ -25,5 +25,7 @@
     * 可以访问`WEB-INF`中的资源
 
 
+* `URL`重定向(`redirect`)
+
 
 
