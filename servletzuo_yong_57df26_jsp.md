@@ -138,6 +138,12 @@ Enumeration getInitParameterNames();
 
 ##`JSP`三大指令
 
+标准指令：设定`JSP`网页的个整体配置信息
+
+* 特点
+  * 不向客户端产生任何输出
+  * 指令在`JSP`整个文件范围内有效
+
 
 
 
