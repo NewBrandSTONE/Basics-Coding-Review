@@ -86,6 +86,10 @@ String getContextPath();
 // 根据指定的相对路径获取到绝对路径
 String getRealPath(String path);
 ```
+
+* 问题
+  * 如果在`Servlet`中，出现了硬编码，应该将硬编码配置到`web.xml`中，然后使用`ServletConfig`中的`getinitParameter(String name)`获取
+
  
 
 
