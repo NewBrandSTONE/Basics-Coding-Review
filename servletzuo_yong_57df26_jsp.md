@@ -112,6 +112,16 @@ Enumeration getInitParameterNames();
   * `ServletContext`中的`getInitParmeter(String name)`获取`web.xml`中的全局初始化参数作用域中的`getAttribute(String name)`获取对应作用于中的共享数据
 
 
+##JSP
+
+* 功能
+  * 与`Servlet`一样，都是用来实现动态页面输出
+
+* `Servlet`的缺陷
+  * 输出页面的代码非常恶心
+  * 在`Servlet`中，没有体现`责任分离`的原则
+
+
 
 
  
