@@ -164,7 +164,13 @@ Enumeration getInitParameterNames();
 >
 >`buffer`:指示`JSP`用的出书流的缓冲大小，默认是`8KB`
 >
->`errorPage`:指当前页面出错以后转向的页面，需要在`web.xml`中配置<error-page>
+>`errorPage`:指当前页面出错以后转向的页面，需要在`web.xml`中配置
+
+```xml
+<error-page>
+  <excepiton-type></exception-type>
+</error-page>
+```
 
 
 
