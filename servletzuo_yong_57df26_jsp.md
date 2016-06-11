@@ -168,7 +168,8 @@ Enumeration getInitParameterNames();
 
 ```xml
 <error-page>
-  <excepiton-type></exception-type>
+  <excepiton-type>java.lang.Exception</exception-type>
+  <location>/error.jsp</location>
 </error-page>
 ```
 
