@@ -103,8 +103,14 @@ String getRealPath(String path);
 // 根据指定的名称获取全局初始化参数
 String getInitParameter(String name);
 // 获取所有全局初始化参数的名称
-Enumeration getInitParameterNames()
+Enumeration getInitParameterNames();
 ```
+
+* 获取初始化参数的区别
+  * `HttpServletRequest`中的`getParameter(String name)`获取用户提交的数据
+  * `ServletConfig`中的`getInitParameter(String name)获取`Servlet`中的初始化参数
+  * `ServletContext`
+
 
 
 
