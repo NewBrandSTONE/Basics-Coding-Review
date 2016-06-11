@@ -163,6 +163,8 @@ Enumeration getInitParameterNames();
 >`session`:指示`JSP`页面是否创建`HttpSession`对象，默认值是`true`
 >
 >`buffer`:指示`JSP`用的出书流的缓冲大小，默认是`8KB`
+>
+>`errorPage`:指当前页面出错以后转向的页面
 
 
 
