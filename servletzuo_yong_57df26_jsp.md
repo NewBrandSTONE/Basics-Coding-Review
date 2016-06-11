@@ -99,6 +99,13 @@ String getRealPath(String path);
 </context-param>
 ```
 
+```java
+// 根据指定的名称获取全局初始化参数
+String getInitParameter(String name);
+// 获取所有全局初始化参数的名称
+Enumeration getInitParameterNames()
+```
+
 
 
  
