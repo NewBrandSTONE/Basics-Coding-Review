@@ -150,6 +150,21 @@ Enumeration getInitParameterNames();
 <%@ 指令名称 属性名=属性值 属性名=属性值 %>
 ```
 
+###`page`
+
+* 作用
+
+>定义`JSP`页面的各种属性
+
+* 属性
+
+>`import`:导入`JSP`中的`Java`脚本使用到的类或者包，一个`import`可以导入多个包，需要用逗号分隔。
+>
+>`session`:指示`JSP`页面是否创建`HttpSession`对象，默认值是`true`
+
+
+
+
 
 
 
