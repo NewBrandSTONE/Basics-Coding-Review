@@ -78,5 +78,15 @@ ServletContext ctx2 = req.getServletContext();
 ServletContext ctx3 = req.getSession.getServletContext();
 ```
 
+* `ServletContext`的常用方法
+
+```java
+// 获取上下文路径
+String getContextPath();
+// 根据指定的相对路径获取到绝对路径
+String getRealPath(String path);
+```
+ 
+
 
 
