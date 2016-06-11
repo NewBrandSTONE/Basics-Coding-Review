@@ -172,6 +172,7 @@ Enumeration getInitParameterNames();
   <location>/error.jsp</location>
 </error-page>
 ```
+>`isErrorPage`:指示当前页面是否产生`Exception`对象
 
 
 
