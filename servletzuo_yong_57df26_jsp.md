@@ -136,6 +136,7 @@ Enumeration getInitParameterNames();
 * `JSP`动态页面输出
   * `Java`代码（辅） + `Html`代码(主) --> 动态页面
 
+##`JSP`语法
 
 
 
