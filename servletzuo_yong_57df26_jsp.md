@@ -161,6 +161,8 @@ Enumeration getInitParameterNames();
 >`import`:导入`JSP`中的`Java`脚本使用到的类或者包，一个`import`可以导入多个包，需要用逗号分隔。
 >
 >`session`:指示`JSP`页面是否创建`HttpSession`对象，默认值是`true`
+>
+>`buffer`:指示`JSP`用的出书流的缓冲大小，默认是`8KB`
 
 
 
