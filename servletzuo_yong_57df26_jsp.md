@@ -109,7 +109,7 @@ Enumeration getInitParameterNames();
 * 获取初始化参数的区别
   * `HttpServletRequest`中的`getParameter(String name)`获取用户提交的数据
   * `ServletConfig`中的`getInitParameter(String name)获取`Servlet`中的初始化参数
-  * `ServletContext`
+  * `ServletContext`中的`getInitParmeter(String name)`获取`web.xml`中的全局初始化参数作用域中的`getAttribute(String name)`获取对应作用于中的共享数据
 
 
 
