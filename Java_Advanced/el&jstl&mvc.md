@@ -199,7 +199,7 @@ last | boolean | 现在指到成员是否为最后一个
   request.setAttribute("date", new Date());
 %>
 
-<fmt:formateDate value="${date}" pattern="yyyy/MM/dd HH:mm:ss>
+<fmt:formateDate value="${date}" pattern="yyyy/MM/dd HH:mm:ss />
 ```
 
 
