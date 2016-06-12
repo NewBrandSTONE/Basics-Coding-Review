@@ -33,6 +33,6 @@
 --| -- | --
 JSP | ***pageContext*** | ***PageContext处理当前页面***
 作用域 | pageScope | 同页面作用域属性名称和值有关的Map类
-      | ***requestScope*** | ***同请求作用域属性的名称和值有关的Map类***
-      | ***sessionScope*** | ***同会话作用域属性的名称和值有关的Map类***
-      | applicationScope | 同应用程序作用域属性的名称和值有关的Map类
+作用域 | ***requestScope*** | ***同请求作用域属性的名称和值有关的Map类***
+作用域 | ***sessionScope*** | ***同会话作用域属性的名称和值有关的Map类***
+作用域 | applicationScope | 同应用程序作用域属性的名称和值有关的Map类
