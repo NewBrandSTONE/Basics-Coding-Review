@@ -166,6 +166,10 @@ standard.jar
 
 属性 | 类型 | 意义
 --| -- | --
+index | number | 现在指到成员的索引
+count | number | 总共指到成员的总和
+first | boolean | 现在指到的成员是否为第一个
+last | boolean | 现在指到成员是否为最后一个
 
 
 
