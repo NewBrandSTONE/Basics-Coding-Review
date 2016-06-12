@@ -180,6 +180,9 @@ last | boolean | 现在指到成员是否为最后一个
   list.add("Will");
   list.add("Tim")
 %>
+
+<c:forEach items="${list}" var="item" varStatus="vs">
+</c:forEach>
 ```
 
 
