@@ -68,7 +68,8 @@ ${pageContext.getRequest().getContextPath}
 
 * 使用步骤
   * 导入`jstl.jar`和`standard.jar`
+  * 引入标签库
 
-
+>`<%@taglib uri="http://java.sun.com/jsp/jstl/cor" prefix="c"%>`
 
 
