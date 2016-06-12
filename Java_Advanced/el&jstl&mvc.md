@@ -150,6 +150,10 @@ standard.jar
 <c:forEach items="collection" var="varName">
     Body content
 </c:forEach>
+
+<!--
+  需求：在页面中输出一串数字 1,2,3,4,5,6,7,8,9,10
+-->
 ```
 
 
