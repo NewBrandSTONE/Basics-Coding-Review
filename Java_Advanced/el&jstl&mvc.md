@@ -98,6 +98,9 @@ standard.jar
 <c:if test="checkCondiction" var="varName" scope="page|request|session| application />
 ```
 
+* 多条件判断:`(choose-when-other)`相当于`Java`中的`if-elseif-elseif-else`
+
+
 
 
 
