@@ -190,6 +190,11 @@ last | boolean | 现在指到成员是否为最后一个
 </c:forEach>
 ```
 
+* 日期格式化标签
+
+```jsp
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+```
 
 
 
