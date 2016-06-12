@@ -142,9 +142,14 @@ standard.jar
   
   * 使用方法
 
-```xml
-items:要迭代的集合，通常是保存在作用域中，所以需要使用EL表达式取值
-var:迭代出的每个元素存储的变量，每个迭代出来的元素都保存在pageScope中
+```jsp
+<!--
+  items:要迭代的集合，通常是保存在作用域中，所以需要使用EL表达式取值
+  var:迭代出的每个元素存储的变量，每个迭代出来的元素都保存在pageScope中
+-->
+<c:forEach items="collection" var="varName">
+    Body content
+</c:forEach>
 ```
 
 
