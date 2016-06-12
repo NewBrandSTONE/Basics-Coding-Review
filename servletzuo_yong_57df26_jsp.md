@@ -78,7 +78,9 @@ ServletContext ctx = super.getServletContext();
 // GenericServlet实现了Servlet和ServletConfig接口，而getServletContext是GenericServlet的一个方法
 
 // 2.通过请求对象获取
+// Servlet3.0之后
 ServletContext ctx2 = req.getServletContext();
+// Servlet3.0之前
 ServletContext ctx3 = req.getSession.getServletContext();
 ```
 
