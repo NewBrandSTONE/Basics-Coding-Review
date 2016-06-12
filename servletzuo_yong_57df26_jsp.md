@@ -58,7 +58,7 @@
 名称 | 类型 | 描述
 -|-|-
 pageContext(page) | PageContext | 表示当前JSP页面的范围
-request | HttpServletRequest | 表示当前请求的范围，知识共享一个请求中的数据。
+request | HttpServletRequest | 表示当前请求的范围，只是共享一个请求中的数据。
 session | HttpSession | 表示当前回话的范围，只要浏览器不关闭，session就是同一个对象
 application | ServletContext | Tomcat关闭applicaiton对象才销毁
 
