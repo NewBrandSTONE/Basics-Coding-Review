@@ -101,8 +101,15 @@ standard.jar
 * 示例代码
 
 ```jsp
+<%
+  Integer age = 18;
+  request.setAttribute("age", age);
+%>
 
-
+<!--
+  var : 存储条件表达式的结果，在pageScope作用域中
+  scope : 指定将结果存储到哪个作用域中
+-->
 ```
 
 * 多条件判断:`(choose-when-other)`相当于`Java`中的`if-elseif-elseif-else`
