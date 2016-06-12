@@ -271,11 +271,12 @@ application | ServletContext | 表示当前应用
 >在翻译阶段就已经合并在一起了，只有一个`Java`文件
 
 在JSP中使用动态包含
-><jsp:include page="被包含的页面">
-
+```jsp
+<jsp:include page="被包含的页面">
+```
 
 * 特点
-  
+>在运行阶段  
 
 
 
