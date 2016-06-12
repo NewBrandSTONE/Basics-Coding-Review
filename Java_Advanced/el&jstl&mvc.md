@@ -31,5 +31,7 @@
 
 类别 | 标识符 | 描述
 --| -- | --
+JSP | pageContext | PageContext处理当前页面
 作用域 | pageScope | 同页面作用域属性名称和值有关的Map类
+      | requestScope | 同请求作用域属性的名称和值有关的Map类
 
