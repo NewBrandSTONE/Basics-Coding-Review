@@ -171,6 +171,18 @@ count | number | 总共指到成员的总和
 first | boolean | 现在指到的成员是否为第一个
 last | boolean | 现在指到成员是否为最后一个
 
+* 示例代码
+
+```jsp
+<%
+  List<String> list = new ArrayList<String>();
+  list.add("O.z");
+  list.add("Will");
+  list.add("Tim")
+%>
+```
+
+
 
 
 
