@@ -158,6 +158,7 @@ standard.jar
   step : 步长，默认为1
 -->
 <c:forEach var="varName" [begin="begin"] [end="end"] [step="step"]>
+  ${varName}
 </c:forEach>
 ```
 
