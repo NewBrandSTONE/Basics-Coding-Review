@@ -36,3 +36,13 @@ JSP | ***pageContext*** | ***PageContext处理当前页面***
 作用域 | ***requestScope*** | ***同请求作用域属性的名称和值有关的Map类***
 作用域 | ***sessionScope*** | ***同会话作用域属性的名称和值有关的Map类***
 作用域 | applicationScope | 同应用程序作用域属性的名称和值有关的Map类
+
+* 在`EL`中访问`JavaBean`属性方式
+  * 使用`.`来访问
+  * 使用`[]`来访问
+
+```jsp
+${对象.属性名}--->对象.getXxx,注意必须提供getter方法
+
+```
+
