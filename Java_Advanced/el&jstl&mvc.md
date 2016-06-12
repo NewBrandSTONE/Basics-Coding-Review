@@ -194,6 +194,10 @@ last | boolean | 现在指到成员是否为最后一个
 
 ```jsp
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<%
+  request.setAttribute("date", new Date());
+%>
 ```
 
 
