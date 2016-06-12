@@ -177,6 +177,8 @@ Enumeration getInitParameterNames();
 >`contenType`:指定当前页面的`MIME`类型，作用与`Servlet`中的`response.setContentType`一致
 >
 >`pageEncoding`:通知引擎读取`JSP`的时候采用的编码
+>
+>`isELIgnored`:是否忽略`EL`表达式
 
 
 
