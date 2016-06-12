@@ -235,7 +235,7 @@ Enumeration getInitParameterNames();
 ```
 
 
-###`JSP`就打内置对象和四大作用域
+###`JSP`九大内置对象和四大作用域
 
 * `JSP`内置对象
   * `JSP`中事先创建好的对象，可以直接拿来使用
