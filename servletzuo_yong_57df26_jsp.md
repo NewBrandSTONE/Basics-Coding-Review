@@ -3,7 +3,7 @@
 
 * `DeleteServlet`删除列表中某一项后要返回到`ListServlet`中
 
-##Web组件之间的跳转
+##`Web组件`之间的跳转
 
 * 三种方式
   * 请求转发(`forward`)
