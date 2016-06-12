@@ -178,7 +178,7 @@ Enumeration getInitParameterNames();
 >
 >`pageEncoding`:通知引擎读取`JSP`的时候采用的编码
 >
->`isELIgnored`:是否忽略`EL`表达式
+>`isELIgnored`:是否忽略`EL`表达式,默认是`false`
 
 
 
