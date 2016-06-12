@@ -57,7 +57,7 @@ ${对象.属性名}--->对象.getXxx,注意必须提供getter方法
 ```jsp
 // 方式一
 ${pageContext.request.contenPath}
-// 方式二
+// 方式二Servlet3.0以后，EL表达式支持直接访问
 ${pageContext.getRequest().getContextPath}
 ```
 
