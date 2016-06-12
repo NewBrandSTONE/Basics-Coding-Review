@@ -82,6 +82,12 @@ jstl.jar
 standard.jar
 ```
 
+### `JSTL`的逻辑判断标签
+* 但条件的判断
+  * `<c:if>`不包含内容
+>`<c:if test="checkCondiction" var="varName" scope="page|request|session| application />`
+  *
+
 
 
 
