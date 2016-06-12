@@ -200,6 +200,21 @@ Enumeration getInitParameterNames();
 
 >采用动作元素：`<jsp:include page="" />` 路径如果以`"/"`(当前应用)就是绝对路径。
 
+###`taglib`
+
+* 作用
+
+>引入外部的标签
+
+* 语法
+
+>`<%@taglib uri="标签名称空间" prefix="前缀"%>`
+
+```xml
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+```
+
+
 
 
 
