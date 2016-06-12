@@ -105,6 +105,15 @@ standard.jar
   Integer age = 18;
   request.setAttribute("age", age);
 %>
+
+<c:choose>
+  <c:when test="${age>=18}">
+    成年人
+  </c:when>
+  <c:otherwise>
+    未成年人
+  </c:otherwise>
+</c:choose>
 ```
 
 
