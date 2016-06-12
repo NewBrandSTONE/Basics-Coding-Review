@@ -89,7 +89,7 @@ standard.jar
 
 `<c:if test="checkCondiction" var="varName" scope="page|request|session| application />`
   
-  * `<c: if>`包含内容
+   * `<c: if>`包含内容
 
 ```jsp
 <c:if test="checkCondiction" var="varName" scope="page|request|session|application">
