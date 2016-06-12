@@ -95,6 +95,7 @@ String getRealPath(String path);
 
 * 问题
   * 如果在`Servlet`中，出现了硬编码，应该将硬编码配置到`web.xml`中，然后使用`ServletConfig`中的`getinitParameter(String name)`获取，但是如果在多个`Servlet`中有相同的配置，那就要在多个`Servlet`中写相同的配置，不便于维护
+
   * 解决方案
 
 ```xml
