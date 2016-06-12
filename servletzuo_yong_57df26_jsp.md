@@ -274,6 +274,7 @@ application | ServletContext | 表示当前应用
 >`<jsp:include page="被包含的页面">`
 
 * 特点
+
 >在运行阶段合并在一起，有两个`Java`文件
 
 
