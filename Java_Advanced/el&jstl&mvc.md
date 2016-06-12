@@ -72,4 +72,17 @@ ${pageContext.getRequest().getContextPath}
 
 >`<%@taglib uri="http://java.sun.com/jsp/jstl/cor" prefix="c"%>`
 
+* `JavaWeb`开发需要的最少的`jar包`
+
+```xml
+el-api.jar
+jsp-api.jar
+servlet-api.jar
+jstl.jar
+standard.jar
+```
+
+
+
+
 
