@@ -47,3 +47,16 @@ ${对象.属性名}--->对象.getXxx,注意必须提供getter方法
 比如：${u.userName} 等价于 ${u["username"]}
 ```
 
+* `EL`表达式的细节
+  * 获取上下文路径
+
+>表单中的`action`属性组成部分：`上下文路径` + `资源名称`如果我们在页面写死的话，上下文路径改动之后，所有的表单都要修改
+
+`EL`表达式获取上下文路径的方式
+```jsp
+// 方式一
+${pageContext.request.contenPath}
+// 方式二
+${pageContext.getRequest().getContextPath}
+```
+
