@@ -184,6 +184,10 @@ last | boolean | 现在指到成员是否为最后一个
 <c:forEach items="${list}" var="item" varStatus="vs">
   ${vs.count} --> ${pageScope.item}<br />
 </c:forEach>
+
+<c:forEach begin="1" end="10" var="num" step="2">
+  ${num}
+</c:forEach>
 ```
 
 
