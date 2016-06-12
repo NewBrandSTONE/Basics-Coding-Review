@@ -141,6 +141,10 @@ Enumeration getInitParameterNames();
 * `JSP`动态页面输出
   * `Java`代码（辅） + `Html`代码(主) --> 动态页面
 
+##`JSP`底层原理分析
+
+
+
 ##`JSP`三大指令
 
 标准指令：设定`JSP`网页的个整体配置信息
