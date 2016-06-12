@@ -262,6 +262,14 @@ session | HttpSession | 当前会话对象,在JSP中必须设置`session="true"`
 application | ServletContext | 表示当前应用
 
 
+##`JSP`中静态包含和动态包含的区别
+
+在JSP中使用静态包含
+>`<%@include file="被包含的页面">`
+* 
+
+
+
 
 
 
