@@ -64,6 +64,7 @@ ${pageContext.getRequest().getContextPath}
 
 ##`JSTL`
 
+使用`JSTL`来解决`JSP`中的`Java`代码
 
 
 
