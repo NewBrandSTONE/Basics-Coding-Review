@@ -157,6 +157,8 @@ standard.jar
   end : 结束的数字
   step : 步长，默认为1
 -->
+<c:forEach var="varName" [begin="begin"] [end="end"] [step="step"]>
+</c:forEach>
 ```
 
 
