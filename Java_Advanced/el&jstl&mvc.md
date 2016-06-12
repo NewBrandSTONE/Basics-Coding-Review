@@ -110,6 +110,10 @@ standard.jar
   var : 存储条件表达式的结果，在pageScope作用域中
   scope : 指定将结果存储到哪个作用域中
 -->
+
+<c:if test="${age>=18}" var="ret" scope="application">
+  成年人-->${applicationScope.ret}
+</c:if>
 ```
 
 * 多条件判断:`(choose-when-other)`相当于`Java`中的`if-elseif-elseif-else`
