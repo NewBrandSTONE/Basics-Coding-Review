@@ -151,6 +151,8 @@ Enumeration getInitParameterNames();
 
 * `HttpJspBase`继承了`HttpServlet`并且实现了`HttpJspPage`
 
+* 最终在页面上输出的还是使用`Servlet`代码来实现的
+
 `
 
 
