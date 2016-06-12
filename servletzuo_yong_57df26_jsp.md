@@ -147,7 +147,10 @@ Enumeration getInitParameterNames();
   * 只要是后缀名为jsp/jspx的资源都会访问到该`servlet`
   * 该`Servlet`的职责就是负责将`JSP`文件翻译成`Servlet
 
-* 查看编译后`JSP`文件，发现有`.class/.java的文件`
+* 查看编译后`JSP`文件，发现有`.class/.java`的文件
+
+* `HttpJspBase`继承了`HttpServlet`并且实现了`HttpJspPage`
+
 `
 
 
