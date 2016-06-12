@@ -252,6 +252,16 @@ config | ServletConfig | 表示JSP的配置对象
 out | JspWriter | 表示输出流对象
 page | Object | 表示当前页面对象
 
+* `JSP`四大作用域对象
+
+名称 | 类型 | 描述
+--|--|--
+pageContext | PageContext | 表示当前的JSP页面对象
+request | HttpServletRequest | 当前的请求对象
+session | HttpSession | 当前会话对象,在JSP中必须设置`session="true"`
+application | ServletContext | 表示当前应用
+
+
 
 
 
