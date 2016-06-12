@@ -19,4 +19,10 @@
   session.setAttribute("msg", "sessionValue");
   application.setAttribute("msg", "applicationValue");
 %>
+
+  // 获取不同作用域中，同属性名的属性值
+  pageContext:${pageScope.msg}
+  request:${requestScope.msg}
+  session:${sessionScope.msg}
+  application:${applicationScope.msg}
 ```
