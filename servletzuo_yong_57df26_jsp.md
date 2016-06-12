@@ -240,6 +240,10 @@ Enumeration getInitParameterNames();
 * `JSP`内置对象
   * `JSP`中事先创建好的对象，可以直接拿来使用
 
+名称 | 类型 | 描述
+--|--|--
+request | HttpServletRequest | 当前的请求对象
+
 
 
 
