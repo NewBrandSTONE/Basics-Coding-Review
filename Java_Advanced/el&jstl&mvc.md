@@ -43,6 +43,8 @@ JSP | ***pageContext*** | ***PageContext处理当前页面***
 
 ```jsp
 ${对象.属性名}--->对象.getXxx,注意必须提供getter方法
+若操作的是Map:${对象.key}
+比如：${u.userName} 等价于 ${u["username"]}
 
 ```
 
