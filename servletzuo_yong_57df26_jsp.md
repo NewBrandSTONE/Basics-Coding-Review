@@ -9,6 +9,7 @@
   * `URL`重定向(`redirect`)
   * 请求包含(`include`)
 
+
 * 请求转发（`forward`）
   * 语法
 >  request对象.getRequestDispatcher(String path).forward(request, response);
