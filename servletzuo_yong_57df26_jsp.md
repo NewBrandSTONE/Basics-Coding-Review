@@ -243,6 +243,14 @@ Enumeration getInitParameterNames();
 名称 | 类型 | 描述
 --|--|--
 request | HttpServletRequest | 当前的请求对象
+response | HttpServletResponse | 当前的响应对象
+pageContext | PageContext | 表示当前的JSP页面对象
+session | HttpSession | 当前会话对象，在JSP中必须设置`session="true"`
+exception | Throwable | 表示异常对象，必须在JSP中设置`isErrorPage="true"`
+application | ServletContext | 表示当前应用
+config | ServletConfig | 表示JSP的配置对象
+out | JspWriter | 表示输出流对象
+page | Object | 表示当前页面对象
 
 
 
