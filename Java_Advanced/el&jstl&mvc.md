@@ -107,7 +107,7 @@ standard.jar
 %>
 
 <!--
-  var : 存储条件表达式的结果，在pageScope作用域中
+  var : 存储条件表达式的结果，在applicationScope作用域中
   scope : 指定将结果存储到哪个作用域中
 -->
 
