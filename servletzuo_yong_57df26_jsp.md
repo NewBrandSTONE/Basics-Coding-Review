@@ -266,7 +266,8 @@ application | ServletContext | 表示当前应用
 
 在JSP中使用静态包含
 >`<%@include file="被包含的页面">`
-* 
+
+* 特点
 
 
 
