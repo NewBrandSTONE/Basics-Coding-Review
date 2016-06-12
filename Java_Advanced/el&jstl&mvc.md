@@ -87,13 +87,15 @@ standard.jar
 
   * `<c:if>`不包含内容
   * `<c: if>`包含内容
- 
-`<c:if test="checkCondiction" var="varName" scope="page|request|session| application />`
   
 ```jsp
+// 包含内容
 <c:if test="checkCondiction" var="varName" scope="page|request|session|application">
     body content
 </c :if>
+
+// 不包含内容
+<c:if test="checkCondiction" var="varName" scope="page|request|session| application />
 ```
 
 
