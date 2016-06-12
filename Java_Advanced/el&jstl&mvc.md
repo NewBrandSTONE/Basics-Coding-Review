@@ -26,3 +26,10 @@
   session:${sessionScope.msg}
   application:${applicationScope.msg}
 ```
+
+* `EL`隐藏对象
+
+类别 | 标识符 | 描述
+--| -- | --
+作用域 | pageScope | 同页面作用域属性名称和值有关的Map类
+
