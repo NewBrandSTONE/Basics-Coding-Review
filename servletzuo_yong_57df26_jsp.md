@@ -173,7 +173,10 @@ Enumeration getInitParameterNames();
 </error-page>
 ```
 >`isErrorPage`:指示当前页面是否产生`Exception`对象
-
+>
+>`contenType`:指定当前页面的`MIME`类型，作用与`Servlet`中的`response.setContentType`一致
+>
+>`pageEncoding`:通知引擎读取`JSP`的时候采用的编码
 
 
 
