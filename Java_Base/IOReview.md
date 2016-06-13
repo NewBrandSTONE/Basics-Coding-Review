@@ -120,18 +120,18 @@
 ```
 字符流
 ```java
-	private static void byCharStream() throws Exception {
-		Reader reader = new FileReader("c:/1.java");
-		Writer writer = new FileWriter("c:/2.java");
-		char[] cbuf = new char[1024];
-		int len;
-		while ((len = reader.read(buf)) != -1) {
-			writer.write(cbuf, 0, len);
-		}
-		// 关闭资源
-		reader.close();
-		writer.close();
-	}
+private static void byCharStream() throws Exception {
+    Reader reader = new FileReader("c:/1.java");
+    Writer writer = new FileWriter("c:/2.java");
+    char[] cbuf = new char[1024];
+    int len;
+    while ((len = reader.read(buf)) != -1) {
+        writer.write(cbuf, 0, len);
+    }
+    // 关闭资源
+    reader.close();
+    writer.close();
+}
 ```
 ##字符的编码和解码
 编码与解码之间的转换关系
@@ -141,17 +141,17 @@
 
 String的编码方法
 ```java
-	byte[] getBytes();
-	// 使用平台的默认字符集将次String编码为byte序列，并将结果存储到一个新的byte数组中。
-	byte[] getBytes(String charsetName)
-	// 使用指定的字符集将次String编码为byte序列，并将结果存储到一个新的byte数组中。
+byte[] getBytes();
+// 使用平台的默认字符集将次String编码为byte序列，并将结果存储到一个新的byte数组中。
+byte[] getBytes(String charsetName)
+// 使用指定的字符集将次String编码为byte序列，并将结果存储到一个新的byte数组中。
 ```
 String的解码方式依靠构造方法
 ```java
-	String(byte[] bytes);
-	// 通过平台的默认字符集将指定的byte的数组，构造成一个新的String。
-	String(byte[] bytes, String charsetName)
-	// 通过使用指定的charset解码指定的byte数据，构造一个新的String。
+String(byte[] bytes);
+// 通过平台的默认字符集将指定的byte的数组，构造成一个新的String。
+String(byte[] bytes, String charsetName)
+// 通过使用指定的charset解码指定的byte数据，构造一个新的String。
 ```
 ##转换流
 1.OutputStreamReader--是字符流通向字节流的桥梁；
