@@ -308,10 +308,10 @@ String的解码方式依靠构造方法
 ```
 ###对象要序列化必须实现序列化接口
 ```java
-	public class User implements Serializable {
-		String name;
-		int age;
-	}
+public class User implements Serializable {
+    String name;
+    int age;
+}
 ```
 ##ObjectInputStream
 ###序列化与反序列化之间的关系
