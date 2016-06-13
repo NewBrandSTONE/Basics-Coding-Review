@@ -322,8 +322,8 @@ String的解码方式依靠构造方法
  
 ###构造方法
 ```java
-	ObjectInputStream(InputStream in);
-	// 创建从指定InputStream读取的ObjectInpuStream对象。
+ObjectInputStream(InputStream in);
+// 创建从指定InputStream读取的ObjectInpuStream对象。
 ```
 ##内存流
 
