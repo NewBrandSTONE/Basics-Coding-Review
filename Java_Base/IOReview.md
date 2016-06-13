@@ -158,33 +158,33 @@ String的解码方式依靠构造方法
 
 2.InputStreamWriter--是字节流通向字符流的桥梁。
 ```java		
-	//准备好输出
-	OutputStream out = new FileOutputStream("c:/2.txt");
-	//把输出字节流转变成输出字符流
-	Writer writer = new OutputStreamWriter(out, "utf-8");
-	writer.write("嘿嘿嘿");
-	writer.close();
-				
-	InputStream is = new FileInputStream("c:/2.txt");
-	Reader reader = new InputStreamReader(is, "utf-8");
-	int read =reader.read();
-	System.out.println((char) read);
-	read.close();
+//准备好输出
+OutputStream out = new FileOutputStream("c:/2.txt");
+//把输出字节流转变成输出字符流
+Writer writer = new OutputStreamWriter(out, "utf-8");
+writer.write("嘿嘿嘿");
+writer.close();
+
+InputStream is = new FileInputStream("c:/2.txt");
+Reader reader = new InputStreamReader(is, "utf-8");
+int read =reader.read();
+System.out.println((char) read);
+read.close();
 ```
 ##字节缓存流
 用得最多的包装流就是缓存流，默认内部维护了一个8KB的缓存区(能够有效的减少IO次数，从而提高IO的操作效率)。
 ```java
-	BufferedInputStream is = new BufferedInputStream(new FileInputStream("c:/setup.exe"));
-	BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream("c:/1.ext"));
-	int len;
-	byte[] buf = new byte[1024];
-	// 先读取数据，在写数据
-	while ((len = is.read(buf)) != -1) {
-		out.write(buf, 0, len);
-	}
-	// 关闭资源
-	is.close();
-	out.close();
+BufferedInputStream is = new BufferedInputStream(new FileInputStream("c:/setup.exe"));
+BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream("c:/1.ext"));
+int len;
+byte[] buf = new byte[1024];
+// 先读取数据，在写数据
+while ((len = is.read(buf)) != -1) {
+    out.write(buf, 0, len);
+}
+// 关闭资源
+is.close();
+out.close();
 ```
 ##字符缓冲流
 `public class BufferedReader extends Reader`
