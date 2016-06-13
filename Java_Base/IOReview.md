@@ -93,30 +93,30 @@
 ```
 示例代码
 ```java
-	// 写字符数据
-	Writer writer = new FileWriter("c:/1.txt");
-	// 写操作
-	writer.write("我是大魔王");
-	// 字符流的写是写入底层的缓冲区，要把数据写到文件上还需要刷新缓冲区
-	// 刷新缓冲区
-	writer.flush();// 没有刷新缓冲区，数据是不会写入文件的
+// 写字符数据
+Writer writer = new FileWriter("c:/1.txt");
+// 写操作
+writer.write("我是大魔王");
+// 字符流的写是写入底层的缓冲区，要把数据写到文件上还需要刷新缓冲区
+// 刷新缓冲区
+writer.flush();// 没有刷新缓冲区，数据是不会写入文件的
 ```
 ##拷贝文本文件
 字节流
 ```java
-	private static void byByteStream() throws Exception {
-		InputStream is = new FileInputStream("c:/1.java");
-		OutputStream out = new FileOutputStream("c:/2.java");
-		int len;
-		byte[] buf = new byte[1024];
-		while ((len = is.read(buf)) != -1) {
-			// 边读边写
-			out.wirte(buf, 0, len);
-		}
-		// 关闭资源
-		is.close();
-		out.close();
-	}
+private static void byByteStream() throws Exception {
+    InputStream is = new FileInputStream("c:/1.java");
+    OutputStream out = new FileOutputStream("c:/2.java");
+    int len;
+    byte[] buf = new byte[1024];
+    while ((len = is.read(buf)) != -1) {
+        // 边读边写
+        out.wirte(buf, 0, len);
+    }
+    // 关闭资源
+    is.close();
+    out.close();
+}
 ```
 字符流
 ```java
