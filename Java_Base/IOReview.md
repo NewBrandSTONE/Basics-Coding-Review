@@ -212,24 +212,24 @@ String的解码方式依靠构造方法
 ###构造方法
 `BufferedWriter(Writer out)`
 ```java
-	// 常用方法
-	void newLine();// 写入一个行分隔符
+// 常用方法
+void newLine();// 写入一个行分隔符
 ```
 
 示例代码
 ```java
-	// 字符缓冲流
-	BufferedReader reader = new BufferedReader(new FileReader("c:/1.java"));
-	BufferedWriter writer = new BufferedWriter(new FileWriter("c:/2.java"));
-	String data;
-	// 直接读取一行数据
-	while ((data = reader.readLine()) != null) {
-		writer.write(data);
-		// 写一个换行符
-		writer.newLine();
-	}
-	reader.close();
-	writer.close();
+// 字符缓冲流
+BufferedReader reader = new BufferedReader(new FileReader("c:/1.java"));
+BufferedWriter writer = new BufferedWriter(new FileWriter("c:/2.java"));
+String data;
+// 直接读取一行数据
+while ((data = reader.readLine()) != null) {
+    writer.write(data);
+    // 写一个换行符
+    writer.newLine();
+}
+reader.close();
+writer.close();
 ```
 ##属性文件
 `Properties`类表示了一个持久的属性集。
@@ -238,8 +238,8 @@ String的解码方式依靠构造方法
 
 属性列表中每个键以及对应值都是一个字符串。
 ```java
-	public class Properties extends Hashtable<Object, Object>
-	// 这个类是专门用于操作属性文件properties的
+public class Properties extends Hashtable<Object, Object>
+// 这个类是专门用于操作属性文件properties的
 ```
 为什么要使用文件属性？
 >1.解除硬编码，源代码是要编译的。
@@ -259,23 +259,23 @@ String的解码方式依靠构造方法
 
 ####属性文件的写法
 ```xml
-	src=c:/setup.exe
-	dest=c:/1.exe
+src=c:/setup.exe
+dest=c:/1.exe
 ```
 
 示例代码
 ```java
-	// 使用Properties文件
-	Properties p = new Properties();
-	// 从流中去读取属性的配置信息
-	InputStream in = new FileInputStream("file.properties");
-	p.load(in);
-	
-	// 获取属性的值
-	String src = p.getProperty("src");
-	InputStream is = new FileInputStream(src);
-	String dest = p.getProperty("dest");
-	OutputStream out = new FileOutputStream(dest);
+// 使用Properties文件
+Properties p = new Properties();
+// 从流中去读取属性的配置信息
+InputStream in = new FileInputStream("file.properties");
+p.load(in);
+
+// 获取属性的值
+String src = p.getProperty("src");
+InputStream is = new FileInputStream(src);
+String dest = p.getProperty("dest");
+OutputStream out = new FileOutputStream(dest);
 ```
 ##ObjectOutputStream
 ###用途
@@ -287,24 +287,24 @@ String的解码方式依靠构造方法
 
 ###构造方法
 ```java
-	ObjectOutputStream(OutputStream out);
-	// 创建写入指定OutputStream的ObjectOutputStream
+ObjectOutputStream(OutputStream out);
+// 创建写入指定OutputStream的ObjectOutputStream
 ```
 ###重用方法
 ```java
-	void writeObject(Object obj);
-	// 将指定的对象写入ObjectOutputStream。
+void writeObject(Object obj);
+// 将指定的对象写入ObjectOutputStream。
 ```
 ###示例代码
 ```java
-	// 使用对象的输出流
-	ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("c:/1.txt"));
-	// 写数据
-	// 写出的内容不是给人看的，是给机器看的
-	User u = new User("罗杰斯", 108);
-	out.writeObject(u);
-	// 把内存中的对象写出到硬盘-->序列化
-	out.close();
+// 使用对象的输出流
+ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("c:/1.txt"));
+// 写数据
+// 写出的内容不是给人看的，是给机器看的
+User u = new User("罗杰斯", 108);
+out.writeObject(u);
+// 把内存中的对象写出到硬盘-->序列化
+out.close();
 ```
 ###对象要序列化必须实现序列化接口
 ```java
