@@ -202,8 +202,8 @@ String的解码方式依靠构造方法
 
 创建一个使用默认大小输入缓冲区的缓冲字符输入流
 ```java
-	//常用方法
-	String readLine();// 读取一个文本行。
+//常用方法
+String readLine();// 读取一个文本行。
 ```
 `public class BufferedWriter extends Writer`
 
