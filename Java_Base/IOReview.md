@@ -4,10 +4,10 @@
 构造方法
 
 ```java
-	File(String pathName);
-	// 通过将给定路径名字字符串转为抽象路径来创建一个新的File实例。
-	File(File parent, String child);
-	// 根据parent抽象路径名和child路径名字符串创建一个新的File实例。
+File(String pathName);
+// 通过将给定路径名字字符串转为抽象路径来创建一个新的File实例。
+File(File parent, String child);
+// 根据parent抽象路径名和child路径名字符串创建一个新的File实例。
 ```
 
 ##File类的高级获取
@@ -15,81 +15,81 @@
 常用方法
 
 ```java
-	String list();
-	// 返回一个字符串数组，这些字符串指定抽象路径名和文件
-	File listFiles();
-	// 返回一个抽象路径名数组，这些路径名表示抽象路径名中的文件
+String list();
+// 返回一个字符串数组，这些字符串指定抽象路径名和文件
+File listFiles();
+// 返回一个抽象路径名数组，这些路径名表示抽象路径名中的文件
 ```
 
 分析过程
 
 ```java
-	private static void searchFiles(File file) {
-		if (file.isDirectory()) {
-			File[] files = file.listFiles();
-			if (files != null) {
-				for (File f : files) {
-					if (f.isFile) {
-						sysout(f);
-					} else {
-						// 重复上面的逻辑
-						searchFiles(f);
-					}
-				}
-			}
-		}
-	}
+private static void searchFiles(File file) {
+    if (file.isDirectory()) {
+        File[] files = file.listFiles();
+        if (files != null) {
+            for (File f : files) {
+                if (f.isFile) {
+                    sysout(f);
+                } else {
+                    // 重复上面的逻辑
+                    searchFiles(f);
+                }
+            }
+        }
+    }
+}
 ```
 ##FileReader
 专门读取字符数据的
 ```java
-	public class FileReader extends InputStreamReader
+public class FileReader extends InputStreamReader
 ```
 构造方法
 ```java
-	FileReader(String fileName)
-	// 在给定从中去读数据的文件名的情况下创建一个新的FileReader
+FileReader(String fileName)
+// 在给定从中去读数据的文件名的情况下创建一个新的FileReader
 ```
 
 常用方法
 ```java
-	int read(); // 读取单个字符。
-	// 读取的字符数，如果已到达流的末尾，则返回 -1
-	int read(char[] cbuf); // 将字符读入数组。
-	// 读取的字符数，如果已到达流的末尾，则返回 -1
+int read(); // 读取单个字符。
+// 读取的字符数，如果已到达流的末尾，则返回 -1
+int read(char[] cbuf); // 将字符读入数组。
+// 读取的字符数，如果已到达流的末尾，则返回 -1
 ```
 示例代码
 ```java
-	Reader reader = new FileReader("c:/1.txt");
-	char[] buf = new char[5];
-	// 读取数据到缓冲数组中
-	int len;
-	while ((len = reader.read(buf)) != -1) {
-		sysout(new String(buf, 0, len));
-	}
+Reader reader = new FileReader("c:/1.txt");
+char[] buf = new char[5];
+// 读取数据到缓冲数组中
+int len;
+while ((len = reader.read(buf)) != -1) {
+    sysout(new String(buf, 0, len));
+}
 ```
 ##FileWriter
 专门往文件中写字符数据的
 ```java
-	public class FileWriter extends OutputStreamWriter
+public class FileWriter extends OutputStreamWriter
 ```
 构造方法
 ```java
-	FileWriter(String fileName); // 根据给定的文件名构造一个FileWriter对象。
-	FileWriter(String fileName, boolean append);// 根据给定的文件名以及指示是否附加写入数据的boolean值来构造FileWriter对象。
+FileWriter(String fileName); // 根据给定的文件名构造一个FileWriter对象。
+FileWriter(String fileName, boolean append);// 根据给定的文件名以及指示是否附加写入数据的boolean值来构造FileWriter对象。
 ```
 
 常用方法
 ```java
-	void write(String str); //写入字符串。
-	abstract void write(char[] cbuf, int off, int len) // 写入字符数组的某一部分
+void write(String str); //写入字符串。
+abstract void write(char[] cbuf, int off, int len) // 写入字符数组的某一部分
 ```
 分析过程
 ```java
-	// 写数据
-	writer.write("我是大魔王");
-	writer.flush();
-	// 字符流底层都是有缓冲区的，当我们调用写的方法的时候，是把数据写入底层的缓冲区
+// 写数据
+writer.write("我是大魔王");
+writer.flush();
+// 字符流底层都是有缓冲区的，当我们调用写的方法的时候，是把数据写入底层的缓冲区
 ```
 示例代码
 ```java
