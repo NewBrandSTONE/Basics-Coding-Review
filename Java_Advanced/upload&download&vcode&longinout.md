@@ -66,6 +66,7 @@ public class LoginServlet extends HttpServlet {
       // 将错误信息放到请求作用域中
       req.setAttribute("errorMsg", "用户名密码错误");
       req.getRequestDispatcher("/login.jsp").forward(req, resp);
+      
     }
   }
 }
