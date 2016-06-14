@@ -52,7 +52,10 @@ public class LoginServlet extends HttpServlet {
   
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws Exception {
-    
+    // 设置请求参数编码只对post方法有用,一般的表单都是post一般的url请求都是get
+    req.setCharacterEncoding("utf-8");
+    // 定义网络文件的类型和网页的编码，决定浏览器将以什么形式、什么编码读取这个文件
+    resp.setContentType("text/html;charset=utf-8");
   }
 }
 ```
