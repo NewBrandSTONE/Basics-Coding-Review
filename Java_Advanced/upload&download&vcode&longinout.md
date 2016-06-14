@@ -82,7 +82,7 @@ public class LoginServlet extends HttpServlet {
       // 跳转到登录后的页面
       // 登录成功以后将用户信息放入到session中
       req.getSession().setAttribute("USER_IN_SESSION", user);
-      resp.sendRedirect(req.getContextPath() + "/product")l
+      resp.sendRedirect(req.getContextPath() + "/product");
     }
   }
 }
