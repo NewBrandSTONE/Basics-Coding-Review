@@ -76,7 +76,13 @@ public class LoginServlet extends HttpServlet {
         // 返回登录界面
         req.setAttribute("errorMsg", "验证码不能为空或者验证码错误或者验证码无效");
         resp.getRequestDispatcher("/login.jsp").forward(req, resp);
+        return;
       }
+      //-----
+      // 跳转到登录后的页面
+      // 登录成功以后将用户信息放入到session中
+      req.getSession().setAttribute("USER_IN_SESSION", user);
+      resp.sendRedirect(req.getContextPath() + "/product")l
     }
   }
 }
