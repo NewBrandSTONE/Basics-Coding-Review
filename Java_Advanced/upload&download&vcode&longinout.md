@@ -49,6 +49,11 @@ public class LoginServlet extends HttpServlet {
   public void init() throws ServletException {
     dao = new UserDAOImpl();
   }
+  
+  @Override
+  protected void service(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+    
+  }
 }
 ```
 
