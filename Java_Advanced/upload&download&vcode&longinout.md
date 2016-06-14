@@ -56,6 +56,17 @@ public class LoginServlet extends HttpServlet {
     req.setCharacterEncoding("utf-8");
     // 定义网络文件的类型和网页的编码，决定浏览器将以什么形式、什么编码读取这个文件
     resp.setContentType("text/html;charset=utf-8");
+    // 验证用户名密码
+    String username = req.getParameter("username");
+    String password = req.getParameter("password");
+    // 调用业务方法处理请求
+    User user = dao.checkLogin(username, password);
+    if (user == null) {
+      // 返回重新登录的页面
+      // 将错误信息放到请求作用域中
+      req.setAttribute("errorMsg", "用户名密码错误");
+      req.getRequestDispatcher("/login.jsp").forward(req, resp);
+    }
   }
 }
 ```
