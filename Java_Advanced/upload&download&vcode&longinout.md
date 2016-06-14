@@ -71,6 +71,12 @@ public class LoginServlet extends HttpServlet {
       String userRandomCode = req.getParameter("userRandomCode");
       // 获取生成的二维码
       Object randomCode = req.getSession().getAttribute("RANDOMCODE_IN_SESSSION");
+      // 对比用户输入的验证码和生成的验证码是否匹配
+      if (!StringUtil.hasLength(userRandomCode) || !userRandomCode.equals(randomCode)) {
+        // 返回登录界面
+        req.setAttribute("errorMsg", "验证码不能为空或者验证码错误或者验证码无效");
+        resp.getRequestDispatcher("/login.jsp").forward(req, resp);
+      }
     }
   }
 }
