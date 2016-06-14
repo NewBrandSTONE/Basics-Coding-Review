@@ -40,7 +40,16 @@
 * `LoginServlet.java`
 
 ```java
+@WebServlet("/login")
+public class LoginServlet extends HttpServlet {
 
+  private IUserDAO dao;
+  
+  @Override
+  public void init() throws ServletException {
+    dao = new UserDAOImpl();
+  }
+}
 ```
 
 
