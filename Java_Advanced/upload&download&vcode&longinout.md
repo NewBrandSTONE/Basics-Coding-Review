@@ -66,7 +66,11 @@ public class LoginServlet extends HttpServlet {
       // 将错误信息放到请求作用域中
       req.setAttribute("errorMsg", "用户名密码错误");
       req.getRequestDispatcher("/login.jsp").forward(req, resp);
-      
+      //------验证码的验证
+      // 获取用户填写的验证码
+      String userRandomCode = req.getParameter("userRandomCode");
+      // 获取生成的二维码
+      Object randomCode = req.getSession().getAttribute("RANDOMCODE_IN_SESSSION");
     }
   }
 }
