@@ -102,8 +102,8 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
 ### `Filter`开发和使用
 
 * `Filter`的开发步骤
-  * 创建一个类，实现`Servlet`接口
-  * 配置`Servlet`(告诉`Tomcat`来管理`Servlet`)
+  * 创建一个类，实现`Filter`接口
+  * 配置`Filter`(告诉`Tomcat`来管理`Filter`)
 
 ```xml
 <servlet>
