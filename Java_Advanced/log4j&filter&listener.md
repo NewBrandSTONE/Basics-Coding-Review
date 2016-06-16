@@ -15,6 +15,17 @@
 
 >`Log4J`建议只使用四个级别，优先级从高到低分别是`ERROR`、`WARN`、`INFO`、`DEBUG`
 
+* 示例代码
+
+```java
+private static Logger logger = Logger.getLogger(ProductServlet.class)
+
+protected void delete(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+  logger.debug("This is debug message.");
+  logger.error("This is error message.");
+}
+```
+
 
 
 
