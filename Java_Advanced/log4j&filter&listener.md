@@ -178,15 +178,59 @@ public class CharacterEncodeingFilter implements Filter {
 ```java
 public class LoginCheckFilter implements Filter {
   private String[] uris;
-  private String loginPage;
-  
-  @Override
-  public void init(FilterConfig filterConfig) throws ServletException {
-    // 获取不需要验证的资源名称
-    String notCheck = filterConfig.getInitParameter("NOTCHECK");
-    uris = notCheck.split(",");
-    loginPage = filterConfig.getInitParameter("loginPage");
-  }
+	private String contextPath;
+
+	/**
+	 * Default constructor.
+	 */
+	public LoginCheckFilter() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see Filter#destroy()
+	 */
+	public void destroy() {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
+	 */
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+			throws IOException, ServletException {
+		HttpServletRequest req = (HttpServletRequest) request;
+		HttpServletResponse resp = (HttpServletResponse) response;
+
+		// String uri = req.getRequestURI().substring(1);
+		String uri = req.getRequestURI();
+
+		if (Arrays.asList(uris).contains(uri)) {
+			chain.doFilter(req, resp);
+		} else {
+			Object user = req.getSession().getAttribute("USER_IN_SESSION");
+			if (user == null) {
+				// 说明没有登录
+				resp.sendRedirect(req.getContextPath() + "/login.jsp");
+				return;
+			}
+			chain.doFilter(req, resp);
+		}
+	}
+
+	/**
+	 * @see Filter#init(FilterConfig)
+	 */
+	public void init(FilterConfig fConfig) throws ServletException {
+		// 获取不需要验证的资源名称
+		// login.jsp,login,randomCode
+		String notCheck = fConfig.getInitParameter("NOTCHECK");
+		contextPath = fConfig.getInitParameter("contextPath");
+		uris = notCheck.split(",");
+		for (int i = 0; i < uris.length; i++) {
+			uris[i] = contextPath + "/" + uris[i];
+		}
+	}
 }
 ```
 
