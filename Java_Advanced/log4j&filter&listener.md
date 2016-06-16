@@ -84,7 +84,7 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
 
 >实现`Web`容器对某资源的访问前截获进行相关处理，还可以在某资源向`Web`容器返回响应前进行截获处理
 
-* 操作步骤
+* 过滤器能够实现的功能
   * 以常规的方式调用资源（访问`servlet`或`JSP`页面）
   * 利用修改过的请求信息调用资源
   * 利用资源，但在发送响应到浏览器之前对其进行修改
