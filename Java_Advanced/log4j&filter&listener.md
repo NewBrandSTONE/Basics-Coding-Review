@@ -179,6 +179,13 @@ public class CharacterEncodeingFilter implements Filter {
 public class LoginCheckFilter implements Filter {
   private String[] uris;
   private String loginPage;
+  
+  @Override
+  public void init(FilterConfig filterConfig) throws ServletException {
+    // 获取不需要验证的资源名称
+    String notCheck = filterConfig.getInitParameter("NOTCHECK");
+    uris = notCheck.split(",");
+  }
 }
 ```
 
