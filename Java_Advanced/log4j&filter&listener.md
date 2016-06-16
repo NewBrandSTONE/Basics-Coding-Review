@@ -106,10 +106,10 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
   * 配置`Filter`(告诉`Tomcat`来管理`Filter`)
 
 ```xml
-<servlet>
-  <servlet-name>简单名称</servlet-name>
-  <servlet-class></servlet-class>
-</servlet>
+<filter>
+  <filter-name>简单名称</filter-name>
+  <filter-class></filter-class>
+</filter>
 ```
 
 
