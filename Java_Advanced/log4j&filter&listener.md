@@ -117,7 +117,9 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
 </filter-mapping>
 ```
 
-###`Filter`的细节处理
+### `Filter`的细节处理
+* 可以使用注解来配置`Filter`
+
 
 
 
