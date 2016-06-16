@@ -175,6 +175,8 @@ public class CharacterEncodeingFilter implements Filter {
 
 * 示例代码
 
+>`LoginCheckFilter`
+
 ```java
 public class LoginCheckFilter implements Filter {
   private String[] uris;
