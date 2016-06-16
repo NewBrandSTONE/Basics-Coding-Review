@@ -161,6 +161,8 @@ public class CharacterEncodeingFilter implements Filter {
     // 通常在程序中需要给编码一个默认值，在绝大多数情况下，我们不对其进行配置
     if (request.getCharacterEncoding() == null || force && StringUtils.hasLength(encoding)) {
       request.setCharacterEncoding(encoding);
+    } else {
+      // 设置默认码
     }
   }
 }
