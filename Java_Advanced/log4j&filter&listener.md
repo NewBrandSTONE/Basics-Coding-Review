@@ -23,6 +23,7 @@ private static Logger logger = Logger.getLogger(ProductServlet.class)
 protected void delete(HttpServletRequest req, HttpServletResponse resp) throws Exception {
   logger.debug("This is debug message.");
   logger.error("This is error message.");
+  logger.info("This is info message.");
 }
 ```
 
