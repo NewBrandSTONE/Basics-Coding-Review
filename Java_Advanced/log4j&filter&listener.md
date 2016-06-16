@@ -147,5 +147,10 @@ ServletContext getServletContext() // 获取当前应用对象
 public class CharacterEncodeingFilter implements Filter {
   private String encoding;
   private boolean force;
+  
+  public void init(FilterConfig filterConfig) throws ServletException {
+  
+  }
+  
 }
 ```
