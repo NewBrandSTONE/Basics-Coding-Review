@@ -145,6 +145,7 @@ ServletContext getServletContext() // 获取当前应用对象
 * 示例代码
 ```java
 public class CharacterEncodeingFilter implements Filter {
+  // 编码
   private String encoding;
   // 判断是否要强制使用web.xml中的编码配置
   private boolean force;
