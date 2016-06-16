@@ -163,6 +163,7 @@ public class CharacterEncodeingFilter implements Filter {
       request.setCharacterEncoding(encoding);
     } else {
       // 设置默认码
+      request.setCharacterEncoding("UTF-8");
     }
   }
 }
