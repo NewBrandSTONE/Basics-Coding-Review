@@ -107,7 +107,7 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
 
 ```xml
 <filter>
-  <filter-name>简单名称</filter-name>
+  <filter-name>HelloFilter</filter-name>
   <filter-class></filter-class>
 </filter>
 <filter-mapping>
