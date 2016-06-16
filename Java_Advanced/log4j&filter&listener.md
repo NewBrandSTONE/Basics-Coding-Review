@@ -93,6 +93,7 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
 
 * 应用场景
   * 可以对客户提交的数据进行重新编码`req.setCharacterEndocing("UTF-8");`
+  * 使用浏览器不缓存页面的过滤器
 
 
 
