@@ -143,6 +143,7 @@ ServletContext getServletContext() // 获取当前应用对象
 ###请求编码过滤器
 
 * 示例代码
+
 ```java
 public class CharacterEncodeingFilter implements Filter {
   // 编码
