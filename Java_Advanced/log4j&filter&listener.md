@@ -99,5 +99,10 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
   * 请求分发器(类似`structs2`)
   * 页面伪静态化处理(.jsp结尾的变成.html结尾)
 
+### `Filter`开发和使用
+
+* `Servlet`的开发步骤
+
+
 
 
