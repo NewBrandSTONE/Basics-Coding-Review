@@ -165,6 +165,7 @@ public class CharacterEncodeingFilter implements Filter {
       // 设置默认码
       request.setCharacterEncoding("UTF-8");
     }
+    chain.doFilter(request, response);
   }
 }
 ```
