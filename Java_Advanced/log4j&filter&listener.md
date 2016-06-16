@@ -150,6 +150,7 @@ public class CharacterEncodeingFilter implements Filter {
   
   public void init(FilterConfig filterConfig) throws ServletException {
     encoding = filterConfig.getInitParameter("encoding");
+    force = Boolean.valueOf(filterConfig.getInitParameter("force"));
   }
   
 }
