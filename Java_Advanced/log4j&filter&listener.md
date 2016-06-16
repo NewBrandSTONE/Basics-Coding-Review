@@ -236,3 +236,48 @@ public class LoginCheckFilter implements Filter {
 }
 ```
 
+>`web.xml`
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	metadata-complete="false" version="3.0">
+
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>com._520.pps.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>force</param-name>
+			<param-value>false</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>LoginCheckFilter</filter-name>
+		<filter-class>com._520.pps.web.filter.LoginCheckFilter</filter-class>
+		<init-param>
+			<param-name>NOTCHECK</param-name>
+			<param-value>login.jsp,login,randomCode</param-value>
+		</init-param>
+		<init-param>
+			<param-name>contextPath</param-name>
+			<param-value>/log4j-filter-listener</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginCheckFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>
+```
+
