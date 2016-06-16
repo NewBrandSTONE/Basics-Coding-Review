@@ -145,6 +145,7 @@ ServletContext getServletContext() // 获取当前应用对象
 * 示例代码
 
 ```java
+// 对请求参数的编码进行设置
 public class CharacterEncodeingFilter implements Filter {
   // 编码
   private String encoding;
