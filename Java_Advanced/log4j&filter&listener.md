@@ -155,6 +155,5 @@ public class CharacterEncodeingFilter implements Filter {
     encoding = filterConfig.getInitParameter("encoding");
     force = Boolean.valueOf(filterConfig.getInitParameter("force"));
   }
-  
 }
 ```
