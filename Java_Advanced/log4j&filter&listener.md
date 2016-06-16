@@ -11,6 +11,7 @@
   * 在资源文件下面创建一个`log4j.properties`
   * 使用`Java`代码实现日志的输出
 
+
 * 日志的级别
 
 >`Log4J`建议只使用四个级别，优先级从高到低分别是`ERROR`、`WARN`、`INFO`、`DEBUG`
