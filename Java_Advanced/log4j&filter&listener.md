@@ -123,11 +123,11 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
 
 * `FilterChain`和`FilterConfig`
 
-```xml
-String getFilterName() :获取<filter-name>中的内容
-String getInitParameter(String name) :获取Filter中的初始化参数,解决硬编码
+```java
+String getFilterName() // 获取<filter-name>中的内容
+String getInitParameter(String name) // 获取Filter中的初始化参数,解决硬编码
 Enumeration getInitParameterNames() 
-ServletContext getServletContext() :获取当前应用对象
+ServletContext getServletContext() // 获取当前应用对象
 ```
 
 
