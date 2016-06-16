@@ -185,6 +185,7 @@ public class LoginCheckFilter implements Filter {
     // 获取不需要验证的资源名称
     String notCheck = filterConfig.getInitParameter("NOTCHECK");
     uris = notCheck.split(",");
+    loginPage = filterConfig.getInitParameter("loginPage");
   }
 }
 ```
