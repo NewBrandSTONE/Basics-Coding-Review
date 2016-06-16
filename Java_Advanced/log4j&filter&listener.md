@@ -121,6 +121,16 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
 * 可以使用注解来配置`Filter`
 >但是使用注解来配置过滤器，就无法控制哪个过滤器先执行
 
+* `FilterChain`和`FilterConfig`
+
+```xml
+String getFilterName() :获取<filter-name>中的内容
+String getInitParameter(String name) :获取Filter中的初始化参数,解决硬编码
+Enumeration getInitParameterNames() 
+ServletContext getServletContext() :获取当前应用对象
+```
+
+
 
 
 
