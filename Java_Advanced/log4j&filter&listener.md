@@ -27,6 +27,9 @@ protected void delete(HttpServletRequest req, HttpServletResponse resp) throws E
 }
 ```
 
+* log4j.properties(必须要确保文件被放到classes目录下)
+
+
 
 
 
