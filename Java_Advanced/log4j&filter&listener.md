@@ -110,6 +110,11 @@ log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] 
   <filter-name>简单名称</filter-name>
   <filter-class></filter-class>
 </filter>
+<filter-mapping>
+  <filter-name>HelloFilter</filter-name>
+  <!-- 资源名称，指定要对那些资源进行过滤 -->
+  <url-pattern>/hello</url-pattern>
+</filter-mapping>
 ```
 
 
