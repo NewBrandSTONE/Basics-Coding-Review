@@ -155,5 +155,13 @@ public class CharacterEncodeingFilter implements Filter {
     encoding = filterConfig.getInitParameter("encoding");
     force = Boolean.valueOf(filterConfig.getInitParameter("force"));
   }
+  
+  protected void doFilter(ServletRequest request, ServletResponse response) throws IOException, ServletException {
+    // 设置请求参数的编码方式
+    // 通常在程序中需要给编码一个默认值，在绝大多数情况下，我们不对其进行配置
+    if (request.getCharacterEncoding() == null || force && StringUtils.hasLength(encoding)) {
+      request.setCharacterEncoding(encoding);
+    }
+  }
 }
 ```
