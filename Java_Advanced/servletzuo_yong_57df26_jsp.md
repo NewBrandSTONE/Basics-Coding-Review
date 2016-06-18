@@ -71,6 +71,7 @@ session | HttpSession | 表示当前回话的范围，只要浏览器不关闭�
 application | ServletContext | Tomcat关闭applicaiton对象才销毁
 
 ##ServletContext接口和常用方法
+---
 
 * 概念
 
