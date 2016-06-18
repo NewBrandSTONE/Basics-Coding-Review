@@ -60,7 +60,7 @@ response.sendRedirect(String path);
   * 若需要跨域访问，只能使用`URL重定向`
   * ***请求转发可能造成表单的重复提交问题***
 
-##数据共享
+##Servlet与JSP的数据共享作用域
 ---
 
 名称 | 类型 | 描述
