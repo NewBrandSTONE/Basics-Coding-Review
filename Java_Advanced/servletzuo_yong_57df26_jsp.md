@@ -32,10 +32,12 @@ request.getRequestDispatcher(String path).forward(request, response);
 
 * `URL`重定向(`redirect`)
   * 语法
->response对象.sendRedirect(String path);
->
->// 参数
->path表示目标资源名称
+
+```java
+response.sendRedirect(String path);
+// 参数
+// path表示目标资源名称
+```
 
   * 特点
     * 浏览器地址栏路径发生变化，变成`Servlet2`的资源名称
