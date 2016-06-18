@@ -1,4 +1,5 @@
 # Reflection
+---
 * 什么是`反射`
 
 >在运行区间，动态地去获取类中的信息（类的信息，方法信息，构造器信息，字段信息）
@@ -24,7 +25,8 @@ Object invoke(Object obj, Object ...args); //调用指定的方法
 //参数:obj,该方法所属的对象，如果是静态方法则传入null;args,调用方法所需的实际参数
 ```
 
-#`Class`类和`Class`的实例
+#Class类和Class的实例
+---
 * `Class`类：
 
 >用于描述一切`类`和`接口`。`枚举`是一种`类`，`注解`是一种`接口`。
@@ -76,6 +78,8 @@ Class clz3 = u.getClass();
 
 * 数据的`Class`实例
   * 特点
+
+
  >***所有具有相同元素类型和维数的数组才共享同一份字节码对象（Class对象）***
 
 ```java
@@ -170,7 +174,7 @@ public User(String name) {}
     >在ACcessibleObject中提供了一个方法`setAccessible(boolean flag)`方法来设置是否忽略底层的访问检查`flag:true`表示忽略访问检查，`false表示要检查（缺省值）`
 
 ##获取类中的方法
-
+---
   * 使用反射获取某一个勒种的方法：
     * 找到获取方法所在类的字节码对象
     * 摘到需要被获取的方法
@@ -224,6 +228,7 @@ pubic void testMethods() {
 ```
 
 ##使用反射调用方法
+---
 * 使用反射调用方法：
   * 找到被调用方法所在的字节码
   * 获取到被调用的方法对象
@@ -259,6 +264,7 @@ public static void main(String[] args) {
 ```
 
 ##使用放射调用静态方法
+---
 * 方法
 ```java
 public Object invoke(Object obj, Object.. args);
@@ -266,6 +272,7 @@ public Object invoke(Object obj, Object.. args);
 ``` 
 
 ##使用反射调用可变参数
+---
 * 方法
 
 >对于***数组的引用类型***，底层会自动解包 ，为了解决该问题，我们使用Object的一个一维数组把实际参数包装起来。
@@ -301,6 +308,7 @@ public static void show2(String.. . args) {
 ```
 
 ##使用反射获取字段
+---
 * 思路
   * 找到字段所在类的字节码
   * 获取字段
@@ -324,6 +332,7 @@ public Field[] getDeclaredFileds();
 public Field getDeclaredFiled(String name);
 ```
 ##单例设计模式
+---
 * 概念
 >在项目中，某个类有且只有一个实例,一般的把工具类做成单例的
 
@@ -392,7 +401,7 @@ public enum ArrayTool {
 ```
 
 ##Eclipse项目下classpath文件分析
-
+---
 >***source folder***目录下的文件会编译到output(默认***bin***)目录中
 
 * 加载资源文件
@@ -412,6 +421,7 @@ public InputStream getResourceAsStream(String fileName);
 ```
 
 ##注意
+---
 >在使用`newInstace()`的时候，需要被实例化对象的类，具有无参的公共的构造方法。
 
 
