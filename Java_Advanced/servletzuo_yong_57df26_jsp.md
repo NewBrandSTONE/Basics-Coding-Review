@@ -21,11 +21,6 @@ request.getRequestDispatcher(String path).forward(request, response);
 // path表明目标资源名称(需要跳转到哪里)
 ```
 
->  request对象.getRequestDispatcher(String path).forward(request, response);
->  
->  // 参数  
->  // path表明目标资源名称(需要跳转到哪里)
-
   * 特点
     * 浏览器地址栏路径没变，依然是`Servlet1`的资源名称
     * 只发送了一个请求
