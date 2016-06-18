@@ -1,5 +1,7 @@
 # Servlet细节&Cookie&Session
+---
 ##Servlet的细节问题
+----
 * 一个`Servlet`可以有多个映射`<url-pattern>`
 
 ```xml
@@ -38,7 +40,8 @@
 </servlet>
 ```
 
-##`Servlet3.0`的新特性--`注解`配置
+##Servlet3.0的新特性--`注解`配置
+---
 >从`Servlet3.0`开始`Servlet`就支持使用注解进行配置，可以使用注解来***替代部分***的`web.xml`文件
 
 * 使用`注解`的准备工作(`web.xml`的配置)
@@ -63,7 +66,8 @@ public class AnnoServlet extends HttpServlet {
 }
 ```
 
-##`Servlet`线程安全问题
+##Servlet线程安全问题
+---
 * `Servlet`在整个应用中只有一个实例
 
 >问题的根本原因：因为有多个线程并发访问（修改）当前的`Servlet`中的资源，又因为`Servlet`是单例的，所以所有的成员，都会去访问同一个对象
@@ -73,7 +77,8 @@ public class AnnoServlet extends HttpServlet {
   * 可以让当前的`Servlet`去实现一个接口`SingleThreadModel`，表示当前的`Servlet`只能被同一个线程访问***该方法不推荐，已经被淘汰了***
   * `Servlet`中使用局部变量代替成员变量
 
-##`Http协议`无状态带来的问题
+##Http协议无状态带来的问题
+---
 >`HTTP`是无状态协议，也就是没有记忆力，每个请求之间无法共享数据。这样就无法知道会话什么时候开始，什么时候结束，也无法确定发出请求的用户身份。
 >
 >`web`中的回话：在浏览器打开的时候，在这之钱应该要进行多次一问一答的交互，关闭浏览器的时候结束
@@ -87,7 +92,8 @@ public class AnnoServlet extends HttpServlet {
 
 
 
-##`Cookie`
+##Cookie
+---
 >`Cookie`客户端技术，将共享数据保存在客户端中（浏览器）
 
 * 原理
@@ -151,7 +157,8 @@ c.setDomain("baidu.com");
 // 每个应用在浏览其中只能保存20个Cookie信息，其他的可以保存50个
 ```
 
-##`Session`
+##Session
+---
 * 什么是`session`
 
 >服务器端的会话技术，将共享数据保存到服务端，同时在可断保存一个id，以后就根据id查找到服务器端的共享数据
