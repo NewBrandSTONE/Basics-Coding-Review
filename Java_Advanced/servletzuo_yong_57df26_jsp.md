@@ -180,7 +180,6 @@ Enumeration getInitParameterNames();
 ```
 
 ###page
----
 * 作用
 
 >定义`JSP`页面的各种属性
@@ -210,7 +209,6 @@ Enumeration getInitParameterNames();
 >`isELIgnored`:是否忽略`EL`表达式,默认是`false`
 
 ###include
----
 静态包含，在开发的时候，如果能使用静态的则使用静态的，而不使用动态的
 
 * 作用
@@ -230,7 +228,6 @@ Enumeration getInitParameterNames();
 >采用动作元素：`<jsp:include page="" />` 路径如果以`"/"`(当前应用)就是绝对路径。
 
 ###taglib
----
 
 * 作用
 
