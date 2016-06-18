@@ -61,6 +61,7 @@ response.sendRedirect(String path);
   * ***请求转发可能造成表单的重复提交问题***
 
 ##数据共享
+---
 
 名称 | 类型 | 描述
 -|-|-
