@@ -180,8 +180,8 @@ public void testUpdate() throws Exception {
 }
 ```
 
-##`SAX`解析
-
+##SAX解析
+---
 * 特点
 
 > `SAX`逐行扫描文档，一边扫描一边解析；相比于`DOM`解析，`SAX`可以在解析文档的任意时刻停止；但是`SAX`解析的操作比较复杂
