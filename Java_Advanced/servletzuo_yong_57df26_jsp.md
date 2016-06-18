@@ -14,6 +14,10 @@
 
 * 请求转发（`forward`）
   * 语法
+ 
+```java
+// request.getRequestDispatcher(String path).forward(request, response);
+```
 
 >  request对象.getRequestDispatcher(String path).forward(request, response);
 >  
