@@ -14,6 +14,7 @@
 
 * 请求转发（`forward`）
   * 语法
+
 >  request对象.getRequestDispatcher(String path).forward(request, response);
 >  
 >  // 参数  
