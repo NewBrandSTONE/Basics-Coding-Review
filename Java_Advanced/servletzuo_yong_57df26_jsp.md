@@ -128,7 +128,7 @@ Enumeration getInitParameterNames();
 
 
 ##JSP
-
+---
 * 功能
   * 与`Servlet`一样，都是用来实现动态页面输出
 
@@ -150,8 +150,8 @@ Enumeration getInitParameterNames();
 * `JSP`动态页面输出
   * `Java`代码（辅） + `Html`代码(主) --> 动态页面
 
-##`JSP`底层原理分析
-
+##JSP底层原理分析
+---
 * 在`web.xml`中配置有`<servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>`
   * 只要是后缀名为jsp/jspx的资源都会访问到该`servlet`
   * 该`Servlet`的职责就是负责将`JSP`文件翻译成`Servlet
@@ -162,10 +162,10 @@ Enumeration getInitParameterNames();
 
 * 最终在页面上输出的还是使用`Servlet`代码来实现的
 
-`
 
 
-##`JSP`三大指令
+##JSP三大指令
+---
 
 标准指令：设定`JSP`网页的个整体配置信息
 
@@ -179,8 +179,8 @@ Enumeration getInitParameterNames();
 <%@ 指令名称 属性名=属性值 属性名=属性值 %>
 ```
 
-###`page`
-
+###page
+---
 * 作用
 
 >定义`JSP`页面的各种属性
@@ -209,8 +209,8 @@ Enumeration getInitParameterNames();
 >
 >`isELIgnored`:是否忽略`EL`表达式,默认是`false`
 
-###`include`
-
+###include
+---
 静态包含，在开发的时候，如果能使用静态的则使用静态的，而不使用动态的
 
 * 作用
@@ -229,7 +229,8 @@ Enumeration getInitParameterNames();
 
 >采用动作元素：`<jsp:include page="" />` 路径如果以`"/"`(当前应用)就是绝对路径。
 
-###`taglib`
+###taglib
+---
 
 * 作用
 
