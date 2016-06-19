@@ -172,21 +172,28 @@ private static void byCharStream() throws Exception {
 >解码：字节-->字符
 他们之间的转换靠的是编码表
 
-String的编码方法
+* String的编码方法
+
+
 ```java
 byte[] getBytes();
 // 使用平台的默认字符集将次String编码为byte序列，并将结果存储到一个新的byte数组中。
 byte[] getBytes(String charsetName)
 // 使用指定的字符集将次String编码为byte序列，并将结果存储到一个新的byte数组中。
 ```
-String的解码方式依靠构造方法
+
+* String的解码方式依靠构造方法
+
+
 ```java
 String(byte[] bytes);
 // 通过平台的默认字符集将指定的byte的数组，构造成一个新的String。
 String(byte[] bytes, String charsetName)
 // 通过使用指定的charset解码指定的byte数据，构造一个新的String。
 ```
+
 ##转换流
+---
 1.OutputStreamReader--是字符流通向字节流的桥梁；
 
 2.InputStreamWriter--是字节流通向字符流的桥梁。
