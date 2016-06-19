@@ -267,7 +267,8 @@ public class BufferedWriter extends Writer
 void newLine();// 写入一个行分隔符
 ```
 
-示例代码
+* 示例代码
+
 ```java
 // 字符缓冲流
 BufferedReader reader = new BufferedReader(new FileReader("c:/1.java"));
@@ -283,6 +284,7 @@ reader.close();
 writer.close();
 ```
 ##属性文件
+---
 `Properties`类表示了一个持久的属性集。
 
 `Properties`可保存在流中或者从流中加载。
