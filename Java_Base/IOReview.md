@@ -287,7 +287,7 @@ writer.close();
 
 `Properties`可保存在流中或者从流中加载。
 
-属性列表中每个键以及对应值都是一个字符串。
+* 属性列表中每个键以及对应值都是一个字符串。
 ```java
 public class Properties extends Hashtable<Object, Object>
 // 这个类是专门用于操作属性文件properties的
