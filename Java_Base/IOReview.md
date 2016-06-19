@@ -308,13 +308,14 @@ public class Properties extends Hashtable<Object, Object>
 	// 用指定的键在此属性列表中搜索属性。
 ```
 
-####属性文件的写法
+* 属性文件的写法
+
 ```xml
 src=c:/setup.exe
 dest=c:/1.exe
 ```
 
-示例代码
+* 示例代码
 ```java
 // 使用Properties文件
 Properties p = new Properties();
