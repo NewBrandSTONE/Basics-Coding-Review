@@ -194,9 +194,11 @@ String(byte[] bytes, String charsetName)
 
 ##转换流
 ---
-1.OutputStreamReader--是字符流通向字节流的桥梁；
+* OutputStreamReader--是字符流通向字节流的桥梁；
 
-2.InputStreamWriter--是字节流通向字符流的桥梁。
+* InputStreamWriter--是字节流通向字符流的桥梁。
+
+
 ```java		
 //准备好输出
 OutputStream out = new FileOutputStream("c:/2.txt");
@@ -212,7 +214,11 @@ System.out.println((char) read);
 read.close();
 ```
 ##字节缓存流
-用得最多的包装流就是缓存流，默认内部维护了一个8KB的缓存区(能够有效的减少IO次数，从而提高IO的操作效率)。
+---
+
+>用得最多的包装流就是缓存流，默认内部维护了一个8KB的缓存区(能够有效的减少IO次数，从而提高IO的操作效率)。
+
+
 ```java
 BufferedInputStream is = new BufferedInputStream(new FileInputStream("c:/setup.exe"));
 BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream("c:/1.ext"));
@@ -227,6 +233,7 @@ is.close();
 out.close();
 ```
 ##字符缓冲流
+---
 `public class BufferedReader extends Reader`
  
 `reader.readLine();`可以直接读取一行数据
@@ -237,17 +244,21 @@ out.close();
 
 
 ###构造方法
-
+---
 `BufferedReader(Reader in)`
 
-创建一个使用默认大小输入缓冲区的缓冲字符输入流
+* 创建一个使用默认大小输入缓冲区的缓冲字符输入流
+
+
 ```java
 //常用方法
 String readLine();// 读取一个文本行。
+public class BufferedWriter extends Writer
+//可以直接写换行，writer.newLine();
 ```
-`public class BufferedWriter extends Writer`
+``
 
-可以直接写换行，`writer.newLine();`
+
 
 ###构造方法
 `BufferedWriter(Writer out)`
