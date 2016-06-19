@@ -364,8 +364,9 @@ out.writeObject(u);
 // 把内存中的对象写出到硬盘-->序列化
 out.close();
 ```
-###对象要序列化必须实现序列化接口
----
+
+* 对象要序列化必须实现序列化接口
+
 ```java
 public class User implements Serializable {
     String name;
