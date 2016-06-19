@@ -127,7 +127,11 @@ writer.write("我是大魔王");
 writer.flush();// 没有刷新缓冲区，数据是不会写入文件的
 ```
 ##拷贝文本文件
-字节流
+---
+
+* 字节流
+
+
 ```java
 private static void byByteStream() throws Exception {
     InputStream is = new FileInputStream("c:/1.java");
@@ -143,7 +147,10 @@ private static void byByteStream() throws Exception {
     out.close();
 }
 ```
-字符流
+
+* 字符流
+
+
 ```java
 private static void byCharStream() throws Exception {
     Reader reader = new FileReader("c:/1.java");
@@ -159,6 +166,7 @@ private static void byCharStream() throws Exception {
 }
 ```
 ##字符的编码和解码
+---
 编码与解码之间的转换关系
 >编码：字符-->字节
 >解码：字节-->字符
