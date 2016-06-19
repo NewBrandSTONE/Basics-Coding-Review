@@ -256,9 +256,6 @@ String readLine();// 读取一个文本行。
 public class BufferedWriter extends Writer
 //可以直接写换行，writer.newLine();
 ```
-``
-
-
 
 * 构造方法
 
