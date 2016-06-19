@@ -302,7 +302,6 @@ public class Properties extends Hashtable<Object, Object>
 
 * 构造方法
 
-
 `Properties();` 创建一个无默认值得空属性列表。
 
 * 常用方法
