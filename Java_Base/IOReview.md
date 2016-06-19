@@ -1,7 +1,8 @@
 # IO 复习
 ##File
+---
 
-构造方法
+* 构造方法
 
 ```java
 File(String pathName);
@@ -11,8 +12,9 @@ File(File parent, String child);
 ```
 
 ##File类的高级获取
+---
 
-常用方法
+* 常用方法
 
 ```java
 String list();
@@ -21,7 +23,7 @@ File listFiles();
 // 返回一个抽象路径名数组，这些路径名表示抽象路径名中的文件
 ```
 
-分析过程
+* 分析过程
 
 ```java
 private static void searchFiles(File file) {
@@ -41,24 +43,33 @@ private static void searchFiles(File file) {
 }
 ```
 ##FileReader
-专门读取字符数据的
+---
+
+* 专门读取字符数据的
+
 ```java
 public class FileReader extends InputStreamReader
 ```
-构造方法
+
+* 构造方法
+
 ```java
 FileReader(String fileName)
 // 在给定从中去读数据的文件名的情况下创建一个新的FileReader
 ```
 
-常用方法
+* 常用方法
+
 ```java
 int read(); // 读取单个字符。
 // 读取的字符数，如果已到达流的末尾，则返回 -1
 int read(char[] cbuf); // 将字符读入数组。
 // 读取的字符数，如果已到达流的末尾，则返回 -1
 ```
-示例代码
+
+* 示例代码
+
+
 ```java
 Reader reader = new FileReader("c:/1.txt");
 char[] buf = new char[5];
@@ -69,29 +80,43 @@ while ((len = reader.read(buf)) != -1) {
 }
 ```
 ##FileWriter
-专门往文件中写字符数据的
+---
+* 专门往文件中写字符数据的
+
+
 ```java
 public class FileWriter extends OutputStreamWriter
 ```
-构造方法
+
+* 构造方法
+
+
 ```java
 FileWriter(String fileName); // 根据给定的文件名构造一个FileWriter对象。
 FileWriter(String fileName, boolean append);// 根据给定的文件名以及指示是否附加写入数据的boolean值来构造FileWriter对象。
 ```
 
-常用方法
+* 常用方法
+
+
 ```java
 void write(String str); //写入字符串。
 abstract void write(char[] cbuf, int off, int len) // 写入字符数组的某一部分
 ```
-分析过程
+
+* 分析过程
+
+
 ```java
 // 写数据
 writer.write("我是大魔王");
 writer.flush();
 // 字符流底层都是有缓冲区的，当我们调用写的方法的时候，是把数据写入底层的缓冲区
 ```
-示例代码
+
+* 示例代码
+
+
 ```java
 // 写字符数据
 Writer writer = new FileWriter("c:/1.txt");
