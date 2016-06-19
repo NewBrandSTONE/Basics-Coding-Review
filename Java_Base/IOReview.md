@@ -329,24 +329,31 @@ String dest = p.getProperty("dest");
 OutputStream out = new FileOutputStream(dest);
 ```
 ##ObjectOutputStream
-###用途
+* 用途
+
 >把内存中的对象输出到文件或者把文件中保存的对象输入到内存
 
-###目的
+* 目的
+
 >为了进程之间的数据交流
 
 
-###构造方法
+* 构造方法
+
 ```java
 ObjectOutputStream(OutputStream out);
 // 创建写入指定OutputStream的ObjectOutputStream
 ```
-###重用方法
+
+* 重用方法
+
 ```java
 void writeObject(Object obj);
 // 将指定的对象写入ObjectOutputStream。
 ```
-###示例代码
+
+* 示例代码
+
 ```java
 // 使用对象的输出流
 ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("c:/1.txt"));
@@ -358,6 +365,7 @@ out.writeObject(u);
 out.close();
 ```
 ###对象要序列化必须实现序列化接口
+---
 ```java
 public class User implements Serializable {
     String name;
@@ -365,18 +373,22 @@ public class User implements Serializable {
 }
 ```
 ##ObjectInputStream
+---
 ###序列化与反序列化之间的关系
+---
 >把内存中的对象写入硬盘-->序列化
 
 >把硬盘中的对象读入内存-->反序列化
 
  
 ###构造方法
+---
 ```java
 ObjectInputStream(InputStream in);
 // 创建从指定InputStream读取的ObjectInpuStream对象。
 ```
 ##内存流
+---
 
 ###ByteArrayOutputStream:
 
