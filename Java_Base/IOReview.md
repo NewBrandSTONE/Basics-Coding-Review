@@ -260,7 +260,7 @@ public class BufferedWriter extends Writer
 
 
 
-###构造方法
+* 构造方法
 `BufferedWriter(Writer out)`
 ```java
 // 常用方法
