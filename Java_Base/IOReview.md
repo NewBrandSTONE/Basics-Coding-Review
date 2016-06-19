@@ -296,7 +296,6 @@ public class Properties extends Hashtable<Object, Object>
 
 * 为什么要使用文件属性？
 
-
 >1.解除硬编码，源代码是要编译的。
 
 >2.改善程序的结构，有利于日后的维护。
