@@ -304,10 +304,10 @@ public class Properties extends Hashtable<Object, Object>
 
 
 ```java
-	void load(InputStream inStream);
-	// 从流中读取属性列表（键和元素对）。
-	String getProperty(String key);
-	// 用指定的键在此属性列表中搜索属性。
+void load(InputStream inStream);
+// 从流中读取属性列表（键和元素对）。
+String getProperty(String key);
+// 用指定的键在此属性列表中搜索属性。
 ```
 
 * 属性文件的写法
