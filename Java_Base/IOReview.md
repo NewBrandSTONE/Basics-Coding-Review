@@ -293,6 +293,7 @@ writer.close();
 public class Properties extends Hashtable<Object, Object>
 // 这个类是专门用于操作属性文件properties的
 ```
+
 * 为什么要使用文件属性？
 
 
