@@ -88,4 +88,13 @@ public class LoginServlet extends HttpServlet {
 }
 ```
 
+* LogoutServlet.java
+
+```java
+ protected void service(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+   
+ }
+```
+
+
 
