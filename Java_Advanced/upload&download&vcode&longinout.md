@@ -237,6 +237,16 @@ factory.setRepository(new File("c:/temp"));
 >
 > response.setHeader("Content-Disposistion", "attachment;filename=建议保存名称")
 
+* 下载文件乱码问题
+
+```java
+// IE
+response.setHeader("Content-Disposition","attachment;filename=" + new String(filename.getByes("UTF-8"),"ISO8859-1"));
+// 非IE
+response.setHeader("Content-Disposition","attachement;filename="+URLEncoder.encode(filename,"utf-8"));
+```
+
+
 
 
 
