@@ -305,6 +305,11 @@ void contextInitalized(ServletContextEvent sce);
 void attributeAdded(ServletRequestAttributeEvent srae);
 void attributeRemoved(ServletRequestAttributeEvent srae);
 void attributeReplaced(ServletRequestAttributeEvent srae);
+
+// HttpSessionAttributeListener
+void attributeAdded(HttpSessionBindingEvent se);
+void attributeRemoved(HttpSessionBindingEvent se);
+void attributeRepalced(HttpSessionBindingEvent se);
 ```
 
 
