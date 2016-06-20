@@ -261,7 +261,11 @@ public class DownloadServlet extends HttpServlet {
     String download = req.getServletContext().getRealPath("/WEB-INF/download");
     String path = download + "\\" + filename;
     // 设置输出的MIME类型
-    
+    resp.setContentType("application/x-msdownload");
+    // 获取字节输出流
+    ServletOutputStream out = resp.getOutputStream();
+    // 在非IE中设置文件名的方式
+    String userAgent = req.getHeader("User-Agent");
   }
 }
 ```
