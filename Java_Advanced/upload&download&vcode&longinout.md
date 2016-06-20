@@ -269,6 +269,9 @@ public class DownloadServlet extends HttpServlet {
     if (userAgent.contains("MSIE")) {
       // IE
       filename = URLEncoder.encode(filename, "UTF-8");
+    } else {
+      // 非IE
+      filename = new String(filename.getBytes("UTF-8"), "ISO-8859-1");
     }
   }
 }
