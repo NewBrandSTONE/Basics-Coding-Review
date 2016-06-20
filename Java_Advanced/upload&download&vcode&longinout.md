@@ -275,6 +275,7 @@ public class DownloadServlet extends HttpServlet {
     }
     // 设置响应头信息
     resp.setHeader("Content-Disposition", "attachment; filename=" + filename);
+    Files.copy(Paths.get(path), out);
   }
 }
 ```
