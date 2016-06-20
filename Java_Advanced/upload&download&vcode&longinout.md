@@ -226,6 +226,8 @@ factory.setSizeThreshold(50 * 1024);
 factory.setRepository(new File("c:/temp"));
 ```
 
+##文件下载
+---
 
 
 
