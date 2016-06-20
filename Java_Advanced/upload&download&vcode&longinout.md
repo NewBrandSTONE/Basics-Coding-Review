@@ -248,6 +248,11 @@ response.setHeader("Content-Disposition","attachment;filename=" + new String(fil
 response.setHeader("Content-Disposition","attachement;filename="+URLEncoder.encode(filename,"utf-8"));
 ```
 
+* 示例代码
+
+
+
+
 
 
 
