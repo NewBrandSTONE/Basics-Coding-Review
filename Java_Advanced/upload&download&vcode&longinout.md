@@ -106,7 +106,7 @@ public class LoginServlet extends HttpServlet {
 * 准备工作
   * 创建一个包含上传控件的表单
     * 表单的提交方式必须是`post`，因为`get`方式的只允许`1kb`的数据
-    * 文件上传的`enctype`必须是`multipart/form-data`，不对表中的数据编码，按照二进制形式传输
+    * 文件上传的`enctype`必须是`multipart/form-data`，不对表中的数据编码，按照二进制形式传输，此时表单的数据就不能通过`request.getParameter(String name)`来获取
 
 
 
