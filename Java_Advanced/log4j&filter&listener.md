@@ -277,3 +277,15 @@ public class LoginCheckFilter implements Filter {
 </web-app>
 ```
 
+##Listener(监听器)
+---
+* 在JavaWeb中的监听器
+
+```java
+// 作用域对象的监听
+//request--ServletRequestListener
+void requestDestroyed(ServletRequestEvent sre);
+void requestinitialized(ServletRequestEvent sre);
+```
+
+
