@@ -203,7 +203,10 @@ String realPath = req.getServletContext().getRealPath("/upload/files");
 
 > 文件上传的功能通常需要约束文件的大小，目的是防止用户随意上传文件。
 
-
+```java
+// 约束一个上传文件的大小
+upload.setFileSizeMax(fileSizeMax);
+```
 
 
 
