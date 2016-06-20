@@ -294,6 +294,8 @@ void sessionDestroyed(HttpSessionEvent se);
 // application--ServletContextListener
 void contextDestroyed(ServletContextEvent sce);
 void contextInitalized(ServletContextEvent sce);
+
+// 当服务器启动的时候执行该方法
 ```
 
 
