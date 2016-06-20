@@ -167,6 +167,7 @@ for (FileItem fileItem : items) {
     System.out.println(fileItem.getName());
     try {
       // 将文件写到服务端的磁盘
+      fileItem.write(f);
     }
   }
 }
