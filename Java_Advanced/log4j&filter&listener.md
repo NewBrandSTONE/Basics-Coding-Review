@@ -279,7 +279,7 @@ public class LoginCheckFilter implements Filter {
 
 ##Listener(监听器)
 ---
-* 在JavaWeb中的监听器
+* 在JavaWeb中的监听器(对作用域对象的监听)
 
 ```java
 // 作用域对象的监听
@@ -298,7 +298,7 @@ void contextInitalized(ServletContextEvent sce);
 // 当服务器启动的时候执行该方法
 ```
 
-* 在作用域中属性监听器
+* 在作用域中属性监听器(对作用域对象属性变化的监听)
 
 ```java
 // ServletRequestAttributeListener
