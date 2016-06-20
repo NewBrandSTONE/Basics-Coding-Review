@@ -230,6 +230,8 @@ factory.setRepository(new File("c:/temp"));
 ---
 
 * 设置响应报头`contentType: application/x-msdownload`
+
+> 如果不设置响应报头，有的浏览器IE6，可能会直接将需要下载的内容按照二进制的文件输出出来
  
 * Content-Disposition:attachment
 
