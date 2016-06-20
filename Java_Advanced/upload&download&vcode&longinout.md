@@ -230,6 +230,13 @@ factory.setRepository(new File("c:/temp"));
 ---
 
 * 设置响应报头`contentType: application/x-msdownload`
+ 
+* Content-Disposition:attachment
+
+> 由用户选择将相应的实体内容保存到一个文件中
+>
+> response.setHeader("Content-Disposistion", "attachment;filename=建议保存名称")
+
 
 
 
