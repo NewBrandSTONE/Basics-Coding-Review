@@ -213,6 +213,9 @@ upload.setFileSizeMax(fileSizeMax);
 upload.setSizeMax(siezeMax);
 ```
 
+* 临时目录
+
+
 
 
 
