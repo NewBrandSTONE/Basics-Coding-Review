@@ -109,6 +109,7 @@ public class LoginServlet extends HttpServlet {
     * 文件上传的`enctype`必须是`multipart/form-data`，不对表中的数据编码，按照二进制形式传输，此时表单的数据就不能通过`request.getParameter(String name)`来获取
     * 表单上必须有一个上传控件
 
+
 * 上传表单示例
 
 ```jsp
