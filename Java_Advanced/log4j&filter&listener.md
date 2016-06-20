@@ -298,4 +298,14 @@ void contextInitalized(ServletContextEvent sce);
 // 当服务器启动的时候执行该方法
 ```
 
+* 在作用域中属性监听器
+
+```java
+// ServletRequestAttributeListener
+void attributeAdded(ServletRequestAttributeEvent srae);
+void attributeRemoved(ServletRequestAttributeEvent srae);
+void attributeReplaced(ServletRequestAttributeEvent srae);
+```
+
+
 
