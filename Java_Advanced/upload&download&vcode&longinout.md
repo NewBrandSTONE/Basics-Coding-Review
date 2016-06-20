@@ -120,6 +120,10 @@ public class LoginServlet extends HttpServlet {
 </form>
 ```
 
+* 如何实现文件上传
+  * 导包`commons-fileupload.jar`和`commons-io.jar`
+
+
 
 
 
