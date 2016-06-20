@@ -196,7 +196,7 @@ File f = new File("C:/", fileName + "," + extension);
 
 ```java
 // 使用相对路径
-ServletContext.getRealPath(String path);
+String realPath = req.getServletContext().getRealPath("/upload/files");
 ```
 
 
