@@ -273,6 +273,8 @@ public class DownloadServlet extends HttpServlet {
       // 非IE
       filename = new String(filename.getBytes("UTF-8"), "ISO-8859-1");
     }
+    // 设置响应头信息
+    resp.setHeader("Content-Disposition", "attachment; filename=" + filename);
   }
 }
 ```
