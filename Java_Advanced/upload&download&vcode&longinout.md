@@ -114,6 +114,7 @@ public class LoginServlet extends HttpServlet {
 ```jsp
 <form action="/upload" method="post" enctype="multipart/form-data">
   姓名：<input name="name" />
+  <!-- 上传控件 -->
   头像：<input type="file" name="headImg" />
   <input type="submit" value="提交">
 </form>
