@@ -92,7 +92,9 @@ public class LoginServlet extends HttpServlet {
 
 ```java
  protected void service(HttpServletRequest req, HttpServletResponse resp) throws Exception {
-   
+   // 销毁session对象
+   req.getSession().invalidate();
+   resp.sendRedirect(req.getContextPath() + "/login.jsp");
  }
 ```
 
