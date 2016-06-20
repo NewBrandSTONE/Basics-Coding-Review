@@ -206,6 +206,9 @@ String realPath = req.getServletContext().getRealPath("/upload/files");
 ```java
 // 约束一个上传文件的大小
 upload.setFileSizeMax(fileSizeMax);
+
+// 约束一次完整请求中上传文件的总大小
+upload.setSizeMax(siezeMax);
 ```
 
 
