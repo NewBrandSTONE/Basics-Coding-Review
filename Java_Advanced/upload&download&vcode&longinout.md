@@ -144,6 +144,8 @@ FileItemFactory factory = new DiskFileItemFactory();
 ServletFileUpload upload = new ServletFileUpload(factory);
 // 解析请求，将页面中的表单控件解析成FileItem
 // FileItem:对应着表单中的一个控件<input name="name" />
+List<FileItem> items = upload.parseRequest(req); 
+// 解析请求，将页面中的表单控件解析成FileItem
 List<FileItem> items = upload.parseRequest(req);
 ```
 
