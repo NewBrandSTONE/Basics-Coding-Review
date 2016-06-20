@@ -169,6 +169,8 @@ for (FileItem fileItem : items) {
     try {
       // 将文件写到服务端的磁盘
       fileItem.write(f);
+    } catch(Exception e) {
+      e.printStackTrace();
     }
   }
 }
