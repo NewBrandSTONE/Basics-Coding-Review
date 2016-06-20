@@ -199,6 +199,10 @@ File f = new File("C:/", fileName + "," + extension);
 String realPath = req.getServletContext().getRealPath("/upload/files");
 ```
 
+###缓存大小和临时目录
+
+> 文件上传的功能通常需要约束文件的大小，目的是防止用户随意上传文件。
+
 
 
 
