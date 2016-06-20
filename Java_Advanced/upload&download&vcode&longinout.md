@@ -253,7 +253,7 @@ response.setHeader("Content-Disposition","attachement;filename="+URLEncoder.enco
 ```java
 @WebServlet("/download")
 public class DownloadServlet extends HttpServlet {
-  
+  private static final long serialVersionUID = 1L;
 }
 ```
 
