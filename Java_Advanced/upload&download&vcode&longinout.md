@@ -229,6 +229,9 @@ factory.setRepository(new File("c:/temp"));
 ##文件下载
 ---
 
+* 设置响应报头`contentType: application/x-msdownload`
+
+
 
 
 
