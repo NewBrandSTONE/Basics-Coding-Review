@@ -217,7 +217,12 @@ upload.setSizeMax(siezeMax);
 
 > 将比较大的文件存储到一个临时目录中，小文件任然可以读取到内存中
 
-
+```java
+// 创建一个FileItem工厂类
+DiskFileItemFactory factory = new DiskFileItemFactory();
+// 设置上传文件缓冲大小，超过缓存大小就会被保存到临时目录中
+factory.setSizeThreshold(50 * 1024);
+```
 
 
 
