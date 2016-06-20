@@ -183,7 +183,10 @@ for (FileItem fileItem : items) {
 > 使用UUID来生成随机数作为文件的文件名
 
 ```java
+// 生成文件名
 String fileName = UUID.randomUUID().toString();
+// 获取文件的后缀名
+String extension = FilenameUtils.getExtension(fileItem.getName());
 ```
 
 
