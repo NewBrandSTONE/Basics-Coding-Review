@@ -123,6 +123,10 @@ public class LoginServlet extends HttpServlet {
 * 如何实现文件上传
   * 导包`commons-fileupload.jar`和`commons-io.jar`
 
+* 注意
+
+> 表单中的控件对应着`API`中的`FileItem`
+
 
 
 
