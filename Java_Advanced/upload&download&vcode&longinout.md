@@ -149,6 +149,15 @@ List<FileItem> items = upload.parseRequest(req);
 List<FileItem> items = upload.parseRequest(req);
 for (FileItem fileItem : items) {
   // 获取控件的名称
+  System.out.println(fileItem.getFileName());
+  // 判断控件是普通控件还是上传控件
+  if (fileItem.isFormField()) {
+    // 普通控件
+    // 获取控件的值
+    System.out.println(fileItem.getString());
+    // 解决乱码
+    System.out.println(fileItem.getString("UTF-8"));
+  }
 }
 ```
 
