@@ -283,9 +283,17 @@ public class LoginCheckFilter implements Filter {
 
 ```java
 // 作用域对象的监听
-//request--ServletRequestListener
+// request--ServletRequestListener
 void requestDestroyed(ServletRequestEvent sre);
 void requestinitialized(ServletRequestEvent sre);
+
+// session--HttpSessionListener
+void sessionCreated(HttpSessionEvent se);
+void sessionDestroyed(HttpSessionEvent se);
+
+// application--ServletContextListener
+void contextDestroyed(ServletContextEvent sce);
+void contextInitalized(ServletContextEvent sce);
 ```
 
 
