@@ -165,6 +165,7 @@ for (FileItem fileItem : items) {
     System.out.println(fileItem.getSize());
     // 文件的名称
     System.out.println(fileItem.getName());
+    File f = new File("C://", fileItem.getName());
     try {
       // 将文件写到服务端的磁盘
       fileItem.write(f);
