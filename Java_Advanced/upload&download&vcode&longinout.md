@@ -260,6 +260,8 @@ public class DownloadServlet extends HttpServlet {
     String filename = req.getParameter("filename");
     String download = req.getServletContext().getRealPath("/WEB-INF/download");
     String path = download + "\\" + filename;
+    // 设置输出的MIME类型
+    
   }
 }
 ```
