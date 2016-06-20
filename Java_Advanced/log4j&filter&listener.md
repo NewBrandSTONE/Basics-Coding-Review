@@ -317,5 +317,36 @@ void attributeRemoved(ServletContextAttributeEvent scab);
 void attributeReplaced(ServletContextAttributeEvent scab);
 ```
 
+* 注册监听器
+
+```xml
+<listener>
+  <listener-class></listener-class>
+</listener>
+```
+
+* 示例代码
+
+```java
+public class MySessionAttributeListener implements HttpSessionAttributeListener {
+  @Override
+  public void attributeAdded(HttpSessionBindingEvent se) {
+    System.out.println("添加共享数据");
+  }
+  
+  @Override
+  public void attributeRemoved(HttpSessionBindingEvent se) {
+    System.out.println("删除共享数据");
+  }
+  
+  @Override
+  public void attributeReplaced(HttpSessionBindingEvent se) {
+    System.out.println("修改共享数据");
+  }
+}
+```
+
+
+
 
 
