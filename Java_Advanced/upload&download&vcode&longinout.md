@@ -147,6 +147,9 @@ ServletFileUpload upload = new ServletFileUpload(factory);
 List<FileItem> items = upload.parseRequest(req); 
 // 解析请求，将页面中的表单控件解析成FileItem
 List<FileItem> items = upload.parseRequest(req);
+for (FileItem fileItem : items) {
+  // 获取控件的名称
+}
 ```
 
 
