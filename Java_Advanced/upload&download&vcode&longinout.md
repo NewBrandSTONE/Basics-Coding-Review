@@ -141,6 +141,7 @@ if (!isMultipart) {
 // 创建一个FileItem的工厂类
 FileItemFactory factory = new DiskFileItemFactory();
 // 创建一个文件上传的处理器(装饰模式)
+ServletFileUpload upload = new ServletFileUpload(factory);
 ```
 
 
