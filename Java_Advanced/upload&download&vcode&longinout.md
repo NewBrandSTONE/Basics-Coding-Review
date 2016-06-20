@@ -266,6 +266,10 @@ public class DownloadServlet extends HttpServlet {
     ServletOutputStream out = resp.getOutputStream();
     // 在非IE中设置文件名的方式
     String userAgent = req.getHeader("User-Agent");
+    if (userAgent.contains("MSIE")) {
+      // IE
+      filename = URLEncoder.encode(filename, "UTF-8");
+    }
   }
 }
 ```
