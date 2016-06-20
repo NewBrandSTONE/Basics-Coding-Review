@@ -222,6 +222,7 @@ upload.setSizeMax(siezeMax);
 DiskFileItemFactory factory = new DiskFileItemFactory();
 // 设置上传文件缓冲大小，超过缓存大小就会被保存到临时目录中
 factory.setSizeThreshold(50 * 1024);
+// 设置临时目录的位置，默认在服务器中的/temp
 ```
 
 
