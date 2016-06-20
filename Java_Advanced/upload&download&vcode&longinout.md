@@ -143,7 +143,7 @@ FileItemFactory factory = new DiskFileItemFactory();
 // 创建一个文件上传的处理器(装饰模式)
 ServletFileUpload upload = new ServletFileUpload(factory);
 // 解析请求，将页面中的表单控件解析成FileItem
-// FileItem:对应着表单中的一个控件<input name="name">
+// FileItem:对应着表单中的一个控件<input name="name" />
 ```
 
 
