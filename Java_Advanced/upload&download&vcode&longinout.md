@@ -250,7 +250,12 @@ response.setHeader("Content-Disposition","attachement;filename="+URLEncoder.enco
 
 * 示例代码
 
-
+```java
+@WebServlet("/download")
+public class DownloadServlet extends HttpServlet {
+  
+}
+```
 
 
 
