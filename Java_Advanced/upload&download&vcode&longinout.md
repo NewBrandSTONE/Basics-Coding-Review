@@ -37,7 +37,7 @@
 </html>
 ```
 
-* `LoginServlet.java`
+* LoginServlet.java
 
 ```java
 @WebServlet("/login")
