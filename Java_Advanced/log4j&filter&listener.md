@@ -58,11 +58,6 @@ log4j.appender.E.layout = org.apache.log4j.PatternLayout
 log4j.appender.E.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss}  [ %t:%r ] - [ %p ]
 ```
 
-
-
-
-
-
 ##过滤器概述
 
 * `WEB中的过滤器`
