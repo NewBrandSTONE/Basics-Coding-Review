@@ -157,6 +157,14 @@ for (FileItem fileItem : items) {
     System.out.println(fileItem.getString());
     // 解决乱码
     System.out.println(fileItem.getString("UTF-8"));
+  } else {
+    // 上传控件
+    // 文件的MIME类型
+    System.out.println(fileItem.getContentType());
+    // 文件的大小
+    System.out.println(fileItem.getSize());
+    // 文件的名称
+    System.out.println(fileItem.getName());
   }
 }
 ```
