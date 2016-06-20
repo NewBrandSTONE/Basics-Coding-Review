@@ -129,7 +129,16 @@ public class LoginServlet extends HttpServlet {
 
 > 表单中的控件对应着`API`中的`FileItem`
 
+* 示例代码
 
+```java
+// 验证表单是否满足文件上传的条件（提交的方式为post，enctype是否以multipart/开头）
+boolean isMultipart = ServletFileUpload.isMultipartContent(req);
+if (!isMultipart) {
+  // 不满足条件就什么都不做
+  return;
+}
+```
 
 
 
