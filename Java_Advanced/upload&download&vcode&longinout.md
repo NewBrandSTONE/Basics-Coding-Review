@@ -254,6 +254,13 @@ response.setHeader("Content-Disposition","attachement;filename="+URLEncoder.enco
 @WebServlet("/download")
 public class DownloadServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
+  
+  @Override
+  protected void service(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+    String filename = req.getParameter("filename");
+    String download = req.getServletContext().getRealPath("/WEB-INF/download");
+    String path = download + "\\" + filename;
+  }
 }
 ```
 
