@@ -138,6 +138,8 @@ if (!isMultipart) {
   // 不满足条件就什么都不做
   return;
 }
+// 创建一个FileItem的工厂类
+FileItemFactory factory = new DiskFileItemFactory();
 ```
 
 
