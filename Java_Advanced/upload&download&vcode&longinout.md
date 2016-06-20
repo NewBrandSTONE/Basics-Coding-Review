@@ -88,6 +88,8 @@ public class LoginServlet extends HttpServlet {
 }
 ```
 
+###Logout
+
 * LogoutServlet.java
 
 ```java
