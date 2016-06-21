@@ -243,6 +243,8 @@ public List<Student> list() {
 
 >发送参数到数据库中执行sql，***千万不要传递参数***如果传递了参数，则会调用Statement的方法了
 
+* 示例代码
+
 ```java
 boolean execute();
 ResultSet executeQuery();
