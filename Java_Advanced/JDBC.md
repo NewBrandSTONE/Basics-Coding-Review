@@ -278,6 +278,7 @@ public void testPreparedStatement() throws Exception {
 ```
 
 ##实现`DAO`和`CRUD`的操作
+---
 
 ```java
 public vod save(Student stu) {
@@ -330,12 +331,14 @@ public Student get(Long id) {
 ```
 
 ##`Statement`与`preparedStatement`的对比
+---
 * PreparedStatement的优势
   * 语法简单，便于维护
   * 执行的效率更高(MySQL不支持)
   * 安全性更高(防止SQL注入)
 
 ##数据库事务的概述
+---
 * 事务(Transaction,简写为tx)
 
 >指一组逻辑操作单元，使数据从一种状态变换到另一种状态。
@@ -386,7 +389,7 @@ try {
 
 * 注意事项
 
-> 1.在`JDBC`中，事务是默认提交的，必须下线设置事务为手动提交
+> 1.在`JDBC`中，`DML`的事务是默认提交的，必须下线设置事务为手动提交
 > 
 > Connecton对象.setAutoCommit(false);
 >
