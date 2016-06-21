@@ -46,9 +46,11 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 >对数据库的表进行`增加`、`删除`和`修改操作`
 
 ##`DQL`操作
+---
 >对数据库的表进行查询操作
 
 ##`DAO`的设计思想
+---
 * 概念
 
 >`DAO(Data Access Object)`是一个数据访问接口，数据访问：与数据库打交道。夹在业务逻辑(Service)与数据库资源中间。
