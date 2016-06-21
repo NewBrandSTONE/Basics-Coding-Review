@@ -84,7 +84,7 @@ jstl.jar
 standard.jar
 ```
 
-### `JSTL`的逻辑判断标签
+###JSTL的逻辑判断标签
 * 单条件的判断
 
   * `<c:if>`不包含内容
