@@ -54,6 +54,7 @@ TRUNCATE TABLE tablename
   * 通过使用快速路径访问方法快速定位数据，减少磁盘I/O
   * 与表独立存放
   * 由数据库自动维护
+  * 创建索引`CREATE INDEX index ON table (column[, column]...)`
 
 
 
