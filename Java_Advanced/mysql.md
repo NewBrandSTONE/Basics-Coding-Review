@@ -17,8 +17,29 @@ ALERT TABLE table
 MODIFY (column datatype [DEAULT expr] [,column datatype...])
 #可修改列的数据类型，大小，不是任何情况都可以修改的
 #当字段只包含空值的时候，类型、大小都可以修改，否则修改可能不成功
-
 ```
+
+* 删除表字段
+
+```sql
+ALERT TABLE table
+DROP column (columns)
+#从每行中删除掉字段占据的长度和数据
+#释放在数据块中占用的空间。
+#删除大表中的字段将需要比较长的时间
+```
+
+* 删除表
+
+```sql
+DROP table #删除表，但是并不释放表所占空间
+TRUNCATE TABLE tablename
+#清除表中所有的记录
+#DDL语句，不可以回滚
+#释放表的存储空间
+```
+
+
 
 
 
