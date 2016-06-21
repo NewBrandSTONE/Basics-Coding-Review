@@ -39,6 +39,16 @@ TRUNCATE TABLE tablename
 #释放表的存储空间
 ```
 
+* 约束
+  * 非空约束(NK):NOT NULL,不允许某列的内容为空。
+  * 设置列的默认值：DEFAULT。
+  * 唯一约束(UK):UNIQUE，在该表中，该列的内容必须唯一。
+  * 主键约束:PRIMARY KEY,非空并且唯一。
+  * 主键自增长:AUTO_INCREMENT，从1开始，步长为1.
+  * 外键约束：FOREIGN KEY
+
+
+
 
 
 
