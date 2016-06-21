@@ -163,6 +163,10 @@ standard.jar
 <c:forEach var="varName" [begin="begin"] [end="end"] [step="step"]>
   ${varName}
 </c:forEach>
+
+<c:forEach var="pageIndex" step="1" begin="1" end="10">
+  ${pageIndex}
+</c:forEach>
 ```
 
 * `<c:forEach>`标签的属性
