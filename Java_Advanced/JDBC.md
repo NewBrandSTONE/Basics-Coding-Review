@@ -511,8 +511,8 @@ public class JdbcUtil {
 }
 ```
 
-##`DML`和`DQL`操作使用`PreparedStatement`代替Statement
-
+##DML和DQL操作使用PreparedStatement代替Statement
+---
 * 示例代码
 
 >`DQL`查询语句
