@@ -72,7 +72,7 @@ ${pageContext.getRequest().getContextPath}
   * 导入`jstl.jar`和`standard.jar`
   * 引入标签库
 
->`<%@taglib uri="http://java.sun.com/jsp/jstl/cor" prefix="c"%>`
+> `<%@taglib uri="http://java.sun.com/jsp/jstl/cor" prefix="c"%>`
 
 * `JavaWeb`开发需要的最少的`jar包`
 
