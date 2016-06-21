@@ -48,6 +48,11 @@ TRUNCATE TABLE tablename
   * 外键约束：FOREIGN KEY
 
 
+* 索引
+  * 
+
+
+
 
 
 
