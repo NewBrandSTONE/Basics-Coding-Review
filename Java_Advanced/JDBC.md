@@ -389,7 +389,7 @@ try {
 
 * 注意事项
 
-> 1.在`JDBC`中，`DML`的事务是默认提交的，必须下线设置事务为手动提交
+> 1.在`JDBC`中，`DML`的事务是默认提交的，必须设置事务为手动提交
 > 
 > Connecton对象.setAutoCommit(false);
 >
