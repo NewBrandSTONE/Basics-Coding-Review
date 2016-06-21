@@ -32,7 +32,7 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 
 ```
 ##`JDBC`中常用的`API`
-
+---
 * JDBC操作步骤
   * 加载注册驱动
   * 获取连接对象
