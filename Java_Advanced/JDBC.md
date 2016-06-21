@@ -453,7 +453,7 @@ public void testGet() throws Exception {
 >释放资源`Connection对象.close()`的时候是是把`Connection对象`放回连接池，而不是和数据库断开
 
 ##Druid的使用
-
+---
 * 使用的步骤
   * 导入jar包(`druid-1.0.9.jar`)
   * 操作的方式和DBCP大致一样
@@ -484,7 +484,7 @@ public static Connection getConnection() throws Exception {
 
 
 ##代码重构
-
+---
 * JdbcUtil
 
 ```java
