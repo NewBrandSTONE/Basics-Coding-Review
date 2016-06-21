@@ -234,6 +234,7 @@ public List<Student> list() {
 ```
 
 ##预编译语句对象`PreparedStatement`
+---
 * 概念
 
 >创建一个预编译语句对象，将带有占位符的`SQL`发送到数据库中进行编译
