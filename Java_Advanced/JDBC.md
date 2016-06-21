@@ -32,7 +32,7 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 
 ```
 
-##`JDBC`中常用的`API`
+##JDBC中常用的API
 ---
 * JDBC操作步骤
   * 加载注册驱动
@@ -41,15 +41,15 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
   * 执行sql
   * 释放资源(***一定要记得关闭资源***)
 
-##`DML`操作
+##DML操作
 ---
 >对数据库的表进行`增加`、`删除`和`修改操作`
 
-##`DQL`操作
+##DQL操作
 ---
 >对数据库的表进行查询操作
 
-##`DAO`的设计思想
+##DAO的设计思想
 ---
 * 概念
 
@@ -233,7 +233,7 @@ public List<Student> list() {
 }
 ```
 
-##预编译语句对象`PreparedStatement`
+##预编译语句对象PreparedStatement
 ---
 * 概念
 
@@ -277,7 +277,7 @@ public void testPreparedStatement() throws Exception {
 }
 ```
 
-##实现`DAO`和`CRUD`的操作
+##实现DAO和CRUD的操作
 ---
 
 ```java
@@ -330,7 +330,7 @@ public Student get(Long id) {
 }
 ```
 
-##`Statement`与`preparedStatement`的对比
+##Statement与preparedStatement的对比
 ---
 * PreparedStatement的优势
   * 语法简单，便于维护
