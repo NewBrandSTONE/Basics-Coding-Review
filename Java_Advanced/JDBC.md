@@ -443,6 +443,7 @@ public void testGet() throws Exception {
 ```
 
 ##连接池的思想
+---
 * 作用
 
 >合理利用连接资源
