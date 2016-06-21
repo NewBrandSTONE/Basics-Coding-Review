@@ -56,7 +56,6 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 >`DAO(Data Access Object)`是一个数据访问接口，数据访问：与数据库打交道。夹在业务逻辑(Service)与数据库资源中间。
 
 * `DAO`实现的规范
-
   * `DAO`的命名
 
 ```java
@@ -71,7 +70,7 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mytes
 ```
 
 ##示例代码
-
+---
 >注意，记得关闭`Connection`,`Statement`,`ReusultSet`等类似的资源，下面的代码都省去了关闭资源的步骤
 
 * IStudentDAO
