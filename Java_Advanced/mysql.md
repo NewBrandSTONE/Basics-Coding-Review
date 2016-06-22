@@ -121,7 +121,18 @@ WHERE department_id = 10;
 SELECT CONCAT(productName, '商品的零售价为：', salePrice) AS productSalePrice FROM product;
 ```
 
-* AVG and SUM
+* 分组查询
+
+>语法格式
+
+```sql
+SELECT <selectlist>, 聚集函数
+FROM table_name
+WHERE 条件
+GROUP BY 列名
+HAVING 分组之后的条件
+#注意 GROUP BY 后面的列名的值要有重复性，分组才有意义。
+```
 
 
 
