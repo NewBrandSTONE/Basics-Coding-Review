@@ -115,6 +115,14 @@ WHERE department_id = 10;
   * 如有任何一个参数为NULL，则返回NULL
   * 允许有一个或多个参数
 
+* 示例代码
+
+```sql
+SELECT CONCAT(productName, '商品的零售价为：', salePrice) AS productSalePrice FROM product;
+```
+
+
+
 
 
 
