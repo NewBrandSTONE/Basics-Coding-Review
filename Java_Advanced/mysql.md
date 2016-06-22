@@ -95,6 +95,15 @@ FROM employees
 WHERE department_id = 10;
 ```
 
+* 注意
+
+> 默认情况下，可以直接通过对视图的`DML`操作去修改视图对应表中的内容
+
+> ***前提是视图中没有通过公式导出的列***
+
+> 删除一个视图 `DROP VIEW viewname`
+
+
 
 
 
