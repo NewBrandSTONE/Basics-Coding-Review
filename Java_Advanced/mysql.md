@@ -103,7 +103,8 @@ WHERE department_id = 10;
 
 > 删除一个视图 `DROP VIEW viewname`
 
-
+##MySQL查询函数
+---
 
 
 
