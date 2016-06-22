@@ -121,6 +121,11 @@ WHERE department_id = 10;
 SELECT CONCAT(productName, '商品的零售价为：', salePrice) AS productSalePrice FROM product;
 ```
 
+* AVG and SUM
+
+
+
+
 
 
 
