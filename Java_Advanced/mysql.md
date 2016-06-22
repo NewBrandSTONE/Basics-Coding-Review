@@ -79,6 +79,21 @@ TRUNCATE TABLE tablename
 
 > 提供了对相同数据的不同显示
 
+* 语法
+
+```sql
+在CREATE VIEW语句后加入子查询
+CREATE [OR REPLACE] VIEW view
+  [(alias[, alias]...)]
+  AS subquery
+  [WITH READ ONLY];a
+
+创建视图
+CREATE [OR REPLACE] VIEW emp_v_10
+AS SELECT employee_id, last_name, salary
+FROM employees
+WHERE department_id = 10;
+```
 
 
 
